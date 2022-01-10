@@ -12,4 +12,4 @@ subtitle: This is where I upload solutions I prepare
 #### [Tutorial 4](/MA109/tut4.pdf)
 #### [Tutorial 5](/MA109/tut5.pdf)
 #### [Tutorial 6](/MA109/tut6.pdf)
-#### [Tutorial 6](/MA109/tut7.pdf)
+#### [Tutorial 7](/MA109/tut7.pdf)
