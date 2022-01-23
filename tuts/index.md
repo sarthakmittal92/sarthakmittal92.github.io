@@ -9,6 +9,7 @@ subtitle: This is where I upload solutions I prepare
 ### Tutorial Booklet: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA109/booklet.pdf) | [In-browser](/MA109/booklet.pdf)
 ### Tutorial Solutions: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA109/solutions.pdf) | [In-browser](/MA109/solutions.pdf)
 
+### Session-Wise
 Tutorial 1: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA109/tut1.pdf) | [In-browser](/MA109/tut1.pdf)
 
 Tutorial 2: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA109/tut2.pdf) | [In-browser](/MA109/tut2.pdf)
