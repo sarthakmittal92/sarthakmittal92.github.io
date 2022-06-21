@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MA109-2021 Tutorials
-subtitle: This is where I upload solutions I prepare
+subtitle: This is where I upload tutorial solutions
 ---
 
 ### Tutorial Booklet: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA109-2021/ma109-2021-booklet.pdf) | [In-browser](/ma109-2021-booklet.pdf)
