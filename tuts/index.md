@@ -9,3 +9,5 @@ subtitle: This is where I upload tutorial solutions
 ## [MA106 - Linear Algebra - 2022](./MA106-2022/)
 
 ## [BB101 - Physical Biology - 2022](./BB101-PB-2022/)
+
+[Back](..)

@@ -17,6 +17,6 @@ Tutorial 4 | [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.gith
 Tutorial 5 | [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA106-2022/ma106-2022-tut5.pdf) | [In-browser](/ma106-2022-tut5.pdf)
 Tutorial 6 | [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/tuts/MA106-2022/ma106-2022-tut6.pdf) | [In-browser](/ma106-2022-tut6.pdf)
 
-## Credits: [Kartik Gokhale](https://aworldofchaos.github.io/)
+Credits: [Kartik Gokhale](https://aworldofchaos.github.io/)
 
 [Back](..)
