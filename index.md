@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Sarthak Mittal
-subtitle: Way too much about me
+subtitle: Thanks for dropping by!
 ---
 
 ### Hello
-You have landed on the main page of [my](/aboutme) website. [Here](https://github.com/sarthakmittal92/sarthakmittal92.github.io) is the webpage repository.
+My name is Sarthak Mittal. I am currently an undergraduate student (batch of 2024) in [Department of Computer Science and Engineering](https://www.cse.iitb.ac.in/) at [IIT Bombay](https://www.iitb.ac.in/).
 
-## Resume: [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/CV.pdf) | [In-browser](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/CV.pdf)
+[Here](https://github.com/sarthakmittal92/sarthakmittal92.github.io) is the webpage repository.
 
-## [Tutorials](/tuts)
+Also building [Mentor and Mom](https://www.mentorandmom.com/) with my mother and elder brother.

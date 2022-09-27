@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Sarthak Mittal
+title: Homepage
 
 # Your name to show in the footer
 author: Sarthak Mittal
@@ -14,7 +14,8 @@ author: Sarthak Mittal
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  Projects: "/projects"
+  Tutorials: "/tuts"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
@@ -48,7 +49,7 @@ social-network-links:
   # youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: sarthakmittal0902
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
