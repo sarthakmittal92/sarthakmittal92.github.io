@@ -5,8 +5,8 @@ subtitle: Past internships
 ---
 
 ## Language Modeling Intern - [International Workplace](https://www.internationalworkplace.com/)
-### May 2022 - Jul 2022 (Summer 2022)
-### Guide: [Sheruan Bashar](https://www.linkedin.com/in/sheruan-bashar-6b2517160/)
+May 2022 - Jul 2022 (Summer 2022)
+Guide: [Sheruan Bashar](https://www.linkedin.com/in/sheruan-bashar-6b2517160/)
 Worked remotely on mapping newsfeed to learning outcomes and converting it to a web API deployed using Azure ML.
 
 ## Software Developer Intern - [Greatfour Systems](https://greatfour.com/)

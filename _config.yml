@@ -15,8 +15,8 @@ author: Sarthak Mittal
 
 navbar-links:
   Projects: "/projects"
-  Tutorials: "/tuts"
   Internships: "/internships"
+  Tutorials: "/tuts"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
