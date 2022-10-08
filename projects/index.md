@@ -24,10 +24,10 @@ subtitle: Past projects
 
 ## Autumn 2021
 
-**Interface for GitHub Profiles** - [Course Project (Software Systems)](https://csedamp.wordpress.com/cs-251-software-systems-lab/)
+[**Interface for GitHub Profiles**](./github-profiles/)
 - Created an HTML webpage for user profiles secured with client-side HTTP Authentication tokens
 - Implemented the backend using Django along with PostgreSQL database and GitHub REST API
-- Deployed the project on Heroku Cloud Application Patform using GitLab CI/CD integration and CLI
+- Deployed the project on Heroku Cloud Application Platform using GitLab CI/CD integration and CLI
 
 **Scotland Yard on a Grid** - [Course Project (Software Systems)](https://csedamp.wordpress.com/cs-251-software-systems-lab/)
 - Completed a Java implementation of 8 × 8 grid Scotland Yard using semaphores and concurrency
