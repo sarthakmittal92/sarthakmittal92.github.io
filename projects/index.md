@@ -41,7 +41,7 @@ subtitle: Past projects
 - Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
-**Mandelbrot Zoom** - [Course Project (Data Structures & Algorithms)](https://csedamp.wordpress.com/cs-293-data-structures-lab/)
+[**Mandelbrot Zoom**](./aut21/mandelbrot-zoom/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 
