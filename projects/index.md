@@ -10,7 +10,7 @@ subtitle: Past projects
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
-**Image Segmentation via s-t Cuts** - [Course Project (Medical Image Computing)](https://www.cse.iitb.ac.in/~suyash/teaching/medical_image_computing.html)
+[**Image Segmentation via s-t Cuts**](./s-t-cut-seg/)
 - Performed s-t cuts on a generated graph of superpixels to implement binary image segmentation
 - Identified user scribbles to initialise Boykov-Kolmogorov algorithm and achieved accuracy of 80%
 
