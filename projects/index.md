@@ -37,7 +37,7 @@ subtitle: Past projects
 - Designed a dynamic learning environment with a Django REST framework for the modular object-oriented backend consisting of models for Students, Teachers, Assignments and Courses
 - Created an interactive user interface using HTML and React JavaScript library for the frontend
 
-**Data & Image Processing** - [Course Project (Data Analysis & Interpretation)](https://csedamp.wordpress.com/2020/07/26/cs-215-2019-20-review-1/)
+[**Data & Image Processing** ](./aut21/image-proc/)
 - Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
