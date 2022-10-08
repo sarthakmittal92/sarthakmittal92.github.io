@@ -33,7 +33,7 @@ subtitle: Past projects
 - Completed a Java implementation of 8 × 8 grid Scotland Yard using semaphores and concurrency
 - Simulated client-server model with socket connections and upto 10 player threads listening on ports
 
-**SNAP Moodle** - [Course Project (Software Systems)](https://csedamp.wordpress.com/cs-251-software-systems-lab/)
+[**SNAP Moodle**](./aut21/snap-moodle/)
 - Designed a dynamic learning environment with a Django REST framework for the modular object-oriented backend consisting of models for Students, Teachers, Assignments and Courses
 - Created an interactive user interface using HTML and React JavaScript library for the frontend
 
