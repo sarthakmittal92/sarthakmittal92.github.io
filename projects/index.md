@@ -14,7 +14,7 @@ subtitle: Past projects
 - Performed s-t cuts on a generated graph of superpixels to implement binary image segmentation
 - Identified user scribbles to initialise Boykov-Kolmogorov algorithm and achieved accuracy of 80%
 
-**Unblock Car Puzzle Solver** - [Course Project (Logic for CS)](https://www.cse.iitb.ac.in/~akg/courses/2022-logic/)
+[**Unblock Car Puzzle Solver**](./unblock-car/)
 - Applied Python API of Z3 to encode moves and overlaps of unblock car puzzle into a SAT problem
 - Solved the puzzle under the constraint of limited moves using conflict-driven clause learning
 
