@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Course Project - CS251>
+    <meta name="description" content="Course Project - CS251">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GitHub Profiles</title>
+    <title>Scotland Yard</title>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
     <script>
@@ -46,7 +46,7 @@
             <div class="columns is-centered">
                 <div class="column has-text-centered">
 
-                    <h1 class="title is-1 publication-title">Interface for GitHub Profiles</h1>
+                    <h1 class="title is-1 publication-title">Scotland Yard Game</h1>
 
                     <div class="is-size-5 publication-authors">
                         <span class="author-block">
@@ -64,7 +64,7 @@
                     <div class="column has-text-centered">
                         <div class="publication-links">
                             <span class="link-block">
-                                <a href="https://github.com/sarthakmittal92/github-profiles" class="external-link button is-normal is-rounded is-dark">
+                                <a href="https://github.com/sarthakmittal92/scotland-yard" class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="fab fa-github"></i>
                                     </span>
@@ -84,9 +84,34 @@
                     <h2 class="title is-3">Description</h2>
                         <div class="content has-text-justified">
                             <p>
-                                “Github Profiles” is a website where users can share their
-                                GitHub account’s statistics. Website deployed at: https://pure-oasis-35558.herokuapp.com/
+                                The Game:
                             </p>
+
+                            <p>
+                                The city is an 8 x 8 grid, a Fugitive runs amok. In a single
+                                turn, the Fugitive can move like a chess Queen: horizontally,
+                                vertically, or diagonally. Upto k (say, 5, but that’s easily
+                                winning for a smart Fugitive. You can tweak this) Detectives
+                                attempt to catch the Fugitive. Detectives move like chess
+                                Rooks: horizontally, or vertically. In this game, Players
+                                don’t block each others’ paths.
+                                
+                                The Detectives win if one of them lands on the same square as
+                                the Fugitive, or if the Fugitive quits the game.
+                                
+                                The Detectives lose if none of them can catch the Fugitive
+                                within N (say, 25; again, you can tweak this) timesteps.
+                                
+                                The Fugitive can see everyone, but is mostly invisible to the
+                                Detectives: the Fugitive only surfaces when 3 mod 5 timesteps
+                                have passed, i.e. at timesteps, 3, 8, … , 23, and finally 25,
+                                when the game is over.
+                            </p>
+
+                            <p>
+                                Rest of the details can be read <a href="https://github.com/sarthakmittal92/scotland-yard/blob/main/README.md">here</a>.
+                            </p>
+                            
                         </div>
                 </div>
             </div>

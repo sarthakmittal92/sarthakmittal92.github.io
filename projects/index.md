@@ -6,42 +6,42 @@ subtitle: Past projects
 
 ## Spring 2022
 
-[**Network Simulator**](./network-simulator/)
+[**Network Simulator**](./spr22/network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
-[**Image Segmentation via s-t Cuts**](./s-t-cut-seg/)
+[**Image Segmentation via s-t Cuts**](./spr22/s-t-cut-seg/)
 - Performed s-t cuts on a generated graph of superpixels to implement binary image segmentation
 - Identified user scribbles to initialise Boykov-Kolmogorov algorithm and achieved accuracy of 80%
 
-[**Unblock Car Puzzle Solver**](./unblock-car/)
+[**Unblock Car Puzzle Solver**](./spr22/unblock-car/)
 - Applied Python API of Z3 to encode moves and overlaps of unblock car puzzle into a SAT problem
 - Solved the puzzle under the constraint of limited moves using conflict-driven clause learning
 
-[**RISC Processor**](./risc-proc/)
+[**RISC Processor**](./spr22/risc-proc/)
 - Devised an efficient finite-state automaton for a processor with predefined functionality using VHDL
 - Tested architecture using testbench built in Quartus and a Python wrapper for assembly translation
 
 ## Autumn 2021
 
-[**Interface for GitHub Profiles**](./github-profiles/)
+[**Interface for GitHub Profiles**](./aut21/github-profiles/)
 - Created an HTML webpage for user profiles secured with client-side HTTP Authentication tokens
 - Implemented the backend using Django along with PostgreSQL database and GitHub REST API
 - Deployed the project on Heroku Cloud Application Platform using GitLab CI/CD integration and CLI
 
-**Scotland Yard on a Grid** - [Course Project (Software Systems)](https://csedamp.wordpress.com/cs-251-software-systems-lab/)
+[**Scotland Yard on a Grid**](./aut21/scotland-yard/)
 - Completed a Java implementation of 8 × 8 grid Scotland Yard using semaphores and concurrency
 - Simulated client-server model with socket connections and upto 10 player threads listening on ports
 
 **SNAP Moodle** - [Course Project (Software Systems)](https://csedamp.wordpress.com/cs-251-software-systems-lab/)
-- Designed a dynamic learning environment with a Django REST framework for the modular object-oriented backend onsisting of models for Students, Teachers, Assignments and Courses
+- Designed a dynamic learning environment with a Django REST framework for the modular object-oriented backend consisting of models for Students, Teachers, Assignments and Courses
 - Created an interactive user interface using HTML and React JavaScript library for the frontend
 
 **Data & Image Processing** - [Course Project (Data Analysis & Interpretation)](https://csedamp.wordpress.com/2020/07/26/cs-215-2019-20-review-1/)
-- Used random samplings, statistical measures and Bayesian estimation to analyse several distributions
+- Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
-**MAndelbrot Zoom** - [Course Project (Data Structures & Algorithms)](https://csedamp.wordpress.com/cs-293-data-structures-lab/)
+**Mandelbrot Zoom** - [Course Project (Data Structures & Algorithms)](https://csedamp.wordpress.com/cs-293-data-structures-lab/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 
