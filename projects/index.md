@@ -18,7 +18,7 @@ subtitle: Past projects
 - Applied Python API of Z3 to encode moves and overlaps of unblock car puzzle into a SAT problem
 - Solved the puzzle under the constraint of limited moves using conflict-driven clause learning
 
-**RISC Processor** - [Course Project (Digital Logic Design & Computer Architecture)](https://www.cse.iitb.ac.in/academics/courses.php)
+[**RISC Processor**](./risc-proc/)
 - Devised an efficient finite-state automaton for a processor with predefined functionality using VHDL
 - Tested architecture using testbench built in Quartus and a Python wrapper for assembly translation
 
