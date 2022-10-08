@@ -6,9 +6,9 @@ subtitle: Past projects
 
 ## Spring 2022
 
-**P2P Network Simulator** - [Course Project (Computer Networks)](https://csedamp.wordpress.com/course_reviews/core/cs-224-computer-networks/)
+[**Network Simulator**](./network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
-- Analysed the network simulation in 5 phases using configuration files and a Bash script to automate
+- Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
 **Image Segmentation via s-t Cuts** - [Course Project (Medical Image Computing)](https://www.cse.iitb.ac.in/~suyash/teaching/medical_image_computing.html)
 - Performed s-t cuts on a generated graph of superpixels to implement binary image segmentation
