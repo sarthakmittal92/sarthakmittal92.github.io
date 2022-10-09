@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Course Project - CS747">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-Armed Bandits</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+
+                    <h1 class="title is-1 publication-title">Multi-Armed Bandits</h1>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://linkedin.com/in/sarthakmittal0902">Sarthak Mittal</a>
+                        </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Indian Institute of Technology, Bombay</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <span class="link-block">
+                                <a href="https://github.com/sarthakmittal92/multi-armed-bandits" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Description</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                This project in about the regret minimization algorithms
+                                discussed in the course, and ability to extend them to
+                                different scenarios.
+                            </p>
+
+                            <p>
+                                Task 1 has implementation of UCB, KL-UCB, and Thompson Sampling,
+                                more or less identical to the versions discussed in the course.
+                            </p>
+
+                            <p>
+                                Task 2 involves an algorithm for batched sampling. The idea is
+                                that at every decision making step, the algorithm specifies an
+                                entire batch of arms to pull (for example, if the batch size
+                                is 100, it could be split as perhaps 25 pulls for arm 1, 55
+                                pulls for arm 2, and 20 pulls for arm 3). All these pulls are
+                                performed and the results returned to the algorithm in aggregate
+                                before its next batch of pulls.
+                            </p>
+
+                            <p>
+                                Task 3 has an algorithm for the case when the horizon is equal
+                                to the number of arms, but it is given that the arm means are
+                                distributed uniformly (so if the horizon is 100, the arm means
+                                are a permutation of [0, 0.01, 0.02, …, 0.99]).
+                            </p>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <div class="publication-links">
+                        <span class="link-block">
+                            <a href="https://sarthakmittal92.github.io/projects/" class="external-link button is-normal is-rounded is-dark">
+                                <span>All Projects</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <div class="content">
+                <p>
+                    Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

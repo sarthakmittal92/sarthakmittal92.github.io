@@ -4,6 +4,12 @@ title: Projects
 subtitle: Past projects
 ---
 
+## Autumn 2022
+
+[**Multi-Armed Bandits**](./aut22/multi-armed-bandits/)
+- Simulated regret minimization of multi-armed bandits using UCB, KL-UCB and Thompson Sampling
+- Extended the implementation to batched sampling and restricted non-infinite horizon variates
+
 ## Spring 2022
 
 [**Network Simulator**](./spr22/network-simulator/)
