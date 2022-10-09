@@ -51,7 +51,7 @@ subtitle: Past projects
 - Designed trading strategies in Python and compared styles like momentum and paired switching
 - Executed the algorithms on SENSEX 30 data of 2009-2020 and achieved profit upto 160% and 500%
 
-**Introduction to App Development** - [Web & Coding Club, IIT Bombay](https://wncc-iitb.org/events/event/intro-app-dev)
+[**Introduction to App Development**](./sum21/app-dev/)
 - Utilised Flutter SDK (Google’s UI Toolkit) integrated with Android Studio and Dart programming language (developed by Google) as codebase to develop and debug applications on a virtual device
 - Successfully built 3 Android applications (apk packages) from scratch including a 10-digit calculator, a true/false quiz app and a location-based weather app (by integrating an externally offered weather API
 
