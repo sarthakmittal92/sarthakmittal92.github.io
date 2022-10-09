@@ -60,7 +60,7 @@ subtitle: Past projects
 
 ## Spring 2021
 
-**Maze Game Builder** - [Course Project (Abstractions & Paradigms for Programming)](https://www.cse.iitb.ac.in/~rkj/cs152.html)
+[**Maze Game Builder**](./spr21/maze-game/)
 - Utilised FLTK (Fast Light Toolkit) widget library and C++ to create a graphic N × N maze game
 - Handled an input array describing the obstacle locations to automate designing of maze layout
 
