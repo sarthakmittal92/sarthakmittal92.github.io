@@ -64,7 +64,9 @@ subtitle: Past projects
 - Utilised FLTK (Fast Light Toolkit) widget library and C++ to create a graphic N × N maze game
 - Handled an input array describing the obstacle locations to automate designing of maze layout
 
-**The Lasso Game** - [Course Project (Computer Programming & Utilization)](https://www.cse.iitb.ac.in/~cs101/)
+## Autumn 2020
+
+[**The Lasso Game**](./aut20/lasso-game/)
 - Visualized implementation of a single-player Lasso game in C++ using SimpleCPP Graphics package
 - Enhanced the game by introducing 5 additional features using concepts of classes, inheritance & vectors
 
