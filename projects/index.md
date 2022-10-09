@@ -29,7 +29,7 @@ subtitle: Past projects
 - Implemented the backend using Django along with PostgreSQL database and GitHub REST API
 - Deployed the project on Heroku Cloud Application Platform using GitLab CI/CD integration and CLI
 
-[**Scotland Yard on a Grid**](./aut21/scotland-yard/)
+[**Scotland Yard Game**](./aut21/scotland-yard/)
 - Completed a Java implementation of 8 × 8 grid Scotland Yard using semaphores and concurrency
 - Simulated client-server model with socket connections and upto 10 player threads listening on ports
 
