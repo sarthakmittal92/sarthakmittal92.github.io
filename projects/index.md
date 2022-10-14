@@ -4,7 +4,8 @@ title: Projects
 subtitle: Past projects
 ---
 
-## Autumn 2022
+## <a href="./aut22/" style="color: black">Autumn 2022</a>
+
 [**MDP Planning & Cricket Game**](./aut22/mdp-and-cricket/)
 - Developed MDP planner using Value Iteration, Howard's Policy Iteration and Linear Programming
 - Utilised a pipeline of encoder, planner and decoder to predict outcome of a last-over cricket game
@@ -13,7 +14,7 @@ subtitle: Past projects
 - Simulated regret minimization of multi-armed bandits using UCB, KL-UCB and Thompson Sampling
 - Extended the implementation to batched sampling and restricted non-infinite horizon variates
 
-## Spring 2022
+## <a href="./spr22/" style="color: black">Spring 2022</a>
 
 [**Peer-to-Peer Network Simulator**](./spr22/network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
@@ -31,7 +32,7 @@ subtitle: Past projects
 - Devised an efficient finite-state automaton for a processor with predefined functionality using VHDL
 - Tested architecture using testbench built in Quartus and a Python wrapper for assembly translation
 
-## Autumn 2021
+## <a href="./aut21/" style="color: black">Autumn 2021</a>
 
 [**Interface for GitHub Profiles**](./aut21/github-profiles/)
 - Created an HTML webpage for user profiles secured with client-side HTTP Authentication tokens
@@ -54,7 +55,7 @@ subtitle: Past projects
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 
-## Summer 2021
+## <a href="./sum21/" style="color: black">Summer 2021</a>
 
 [**Algorithmic Trading**](./sum21/algo-trading/)
 - Designed trading strategies in Python and compared styles like momentum and paired switching
@@ -67,13 +68,13 @@ subtitle: Past projects
 [**Snake Game**](./sum21/snake-game/)
 - Implemented a graphics-based snake game using Object-Oriented Python and PyGame module
 
-## Spring 2021
+## <a href="./spr21/" style="color: black">Spring 2021</a>
 
 [**Maze Game Builder**](./spr21/maze-game/)
 - Utilised FLTK (Fast Light Toolkit) widget library and C++ to create a graphic N × N maze game
 - Handled an input array describing the obstacle locations to automate designing of maze layout
 
-## Autumn 2020
+## <a href="./aut20/" style="color: black">Autumn 2020</a>
 
 [**Lasso Game**](./aut20/lasso-game/)
 - Visualized implementation of a single-player Lasso game in C++ using SimpleCPP Graphics package
