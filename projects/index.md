@@ -5,6 +5,9 @@ subtitle: Past projects
 ---
 
 ## Autumn 2022
+[**MDP Planning & Cricket Game**](./aut22/mdp-and-cricket/)
+- Developed MDP planner using Value Iteration, Howard's Policy Iteration and Linear Programming
+- Utilised a pipeline of encoder, planner and decoder to predict outcome of a last-over cricket game
 
 [**Multi-Armed Bandits**](./aut22/multi-armed-bandits/)
 - Simulated regret minimization of multi-armed bandits using UCB, KL-UCB and Thompson Sampling
@@ -12,7 +15,7 @@ subtitle: Past projects
 
 ## Spring 2022
 
-[**Network Simulator**](./spr22/network-simulator/)
+[**Peer-to-Peer Network Simulator**](./spr22/network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
@@ -47,7 +50,7 @@ subtitle: Past projects
 - Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
-[**Mandelbrot Zoom**](./aut21/mandelbrot-zoom/)
+[**Mandelbrot Zoom Simulation**](./aut21/mandelbrot-zoom/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 
@@ -61,7 +64,7 @@ subtitle: Past projects
 - Utilised Flutter SDK (Google’s UI Toolkit) integrated with Android Studio and Dart programming language (developed by Google) as codebase to develop and debug applications on a virtual device
 - Successfully built 3 Android applications (apk packages) from scratch including a 10-digit calculator, a true/false quiz app and a location-based weather app (by integrating an externally offered weather API
 
-[**Graphic Snake Game**](./sum21/snake-game/)
+[**Snake Game**](./sum21/snake-game/)
 - Implemented a graphics-based snake game using Object-Oriented Python and PyGame module
 
 ## Spring 2021
@@ -72,7 +75,7 @@ subtitle: Past projects
 
 ## Autumn 2020
 
-[**The Lasso Game**](./aut20/lasso-game/)
+[**Lasso Game**](./aut20/lasso-game/)
 - Visualized implementation of a single-player Lasso game in C++ using SimpleCPP Graphics package
 - Enhanced the game by introducing 5 additional features using concepts of classes, inheritance & vectors
 
