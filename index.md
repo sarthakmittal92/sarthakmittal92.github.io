@@ -11,10 +11,4 @@ My name is Sarthak Mittal. I am currently an undergraduate student (batch of 202
 
 Also building [Mentor and Mom](https://www.mentorandmom.com/) with my mother and elder brother.
 
-## Visitor
-<table>
-    <tr>
-        <td>You are (approximately) visitor number</td>
-        <td><img src="https://profile-counter.glitch.me/sarthakmittal92/count.svg" alt="vistor count" height="50" /></td>
-    </tr>
-</table>
+Approximate visitors: <img src="https://profile-counter.glitch.me/sarthakmittal92/count.svg" alt="vistor count" height="12" />
