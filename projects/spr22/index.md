@@ -21,3 +21,5 @@ These are the projects I did during my fourth semester.
 [**RISC Processor**](./risc-proc/)
 - Devised an efficient finite-state automaton for a processor with predefined functionality using VHDL
 - Tested architecture using testbench built in Quartus and a Python wrapper for assembly translation
+
+[Back](..)

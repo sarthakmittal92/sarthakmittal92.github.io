@@ -26,3 +26,5 @@ These are the projects I did during my third semester.
 [**Mandelbrot Zoom Simulation**](./mandelbrot-zoom/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
+
+[Back](..)

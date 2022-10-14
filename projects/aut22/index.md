@@ -13,3 +13,5 @@ These are the projects I did during my fifth semester.
 [**Multi-Armed Bandits**](./multi-armed-bandits/)
 - Simulated regret minimization of multi-armed bandits using UCB, KL-UCB and Thompson Sampling
 - Extended the implementation to batched sampling and restricted non-infinite horizon variates
+
+[Back](..)
