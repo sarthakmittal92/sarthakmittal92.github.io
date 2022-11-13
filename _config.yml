@@ -14,10 +14,10 @@ author: Sarthak Mittal
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blog: ""
+  Blog: "/"
   Projects: "/projects/"
   Internships: "/internships/"
-  About Me: "/aboutme"
+  About Me: "/aboutme/"
   # Tutorials: "/tuts"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
