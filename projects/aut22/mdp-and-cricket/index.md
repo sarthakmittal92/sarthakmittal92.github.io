@@ -6,7 +6,7 @@ subtitle: CS747 (Reinforcement Learning), IIT Bombay
 cover-img: ../../../assets/img/path.jpg
 ---
 
-![<img src="https://i.imgur.com/AtIPmkl.png" alt="Code" width="50"/>](https://github.com/sarthakmittal92/mdp-and-cricket){: .mx-auto.d-block :}
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:400; margin-right:400"}](https://github.com/sarthakmittal92/mdp-and-cricket)
 
 ## Description
 This project has code to compute an optimal policy for a
