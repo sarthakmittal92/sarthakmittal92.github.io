@@ -1,9 +1,12 @@
 ---
 layout: post
-title: MDP Planning & Cricket Game
+date: 2022-10-14
+title: MDP Planning & Cricket
 subtitle: CS747 (Reinforcement Learning), IIT Bombay
 cover-img: ../../../assets/img/path.jpg
 ---
+
+[<img src="https://i.imgur.com/AtIPmkl.png" alt="Code" width="50"/>](https://github.com/sarthakmittal92/mdp-and-cricket){: .mx-auto.d-block :}
 
 ## Description
 This project has code to compute an optimal policy for a
