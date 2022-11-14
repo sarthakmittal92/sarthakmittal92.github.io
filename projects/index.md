@@ -6,7 +6,7 @@ subtitle: Past projects
 
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>
 
-[**MDP Planning & Cricket Game**](./aut22/mdp-and-cricket/)
+[**MDP Planning & Cricket**](./aut22/mdp-and-cricket/)
 - Developed MDP planner using Value Iteration, Howard's Policy Iteration and Linear Programming
 - Utilised a pipeline of encoder, planner and decoder to predict outcome of a last-over cricket game
 
