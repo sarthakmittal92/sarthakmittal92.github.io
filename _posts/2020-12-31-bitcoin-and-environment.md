@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Bitcoin - The environment catastrophe or not
+title: Bitcoin and the environment
 subtitle: My first blog post at NSS IIT Bombay
 tags: [NSS, bitcoin, environment]
 comments: true
-cover-img: https://i.imgur.com/5j8ya5v.png
+cover-img: https://i.imgur.com/bqL9pwv.jpg
 thumbnail-img: https://i.imgur.com/slVVwZI.jpg
 share-img: https://i.imgur.com/5j8ya5v.png
 ---
@@ -13,6 +13,7 @@ Original post at [NSS IITB Wordpress](https://nssiitbblog.wordpress.com/2020/12/
 
 ## Causes
 ![Causes](https://i.imgur.com/Wu0FAel.jpg){: .mx-auto.d-block :}
+
 Bitcoin was created in 2009. Since then, thousands of them have
 entered the financial currency circulation. Cryptocurrency gained
 popularity due to its virtuality. Bitcoin offers anonymity, freedom from
@@ -27,6 +28,7 @@ growth.
 
 ## Effects
 ![Effects](https://i.imgur.com/kkI5BaN.jpg){: .mx-auto.d-block :}
+
 Bitcoin consumes 0.34% of the world's total electricity production,
 accounting for 0.4% of the total consumption! This enormous amount
 is sufficient to power all the tea kettles in the UK for 19 years! The
@@ -39,6 +41,7 @@ global warming and environmental problems.
 
 ## Cryptocurrency Mining
 ![Cryptocurrency Mining](https://i.imgur.com/Ms3EnAQ.jpg){: .mx-auto.d-block :}
+
 The term "cryptocurrency mining" is one of the most controversial topics these
 days. While many seem to work out a profit in cryptocurrency mining, it is not
 that rewarding as calculations show that the investment made is over the revenue
@@ -61,6 +64,7 @@ the environment since most of their parts are non-biodegradable.
 
 ## Statistics of Cryptocurrency Mining
 ![Statistics](https://i.imgur.com/W7EnzCY.png){: .mx-auto.d-block :}
+
 Large strains on the energy sector with continuously running
 machines, as the computers in transactions require an extensive
 power supply. A typical server costs about 6,200 US dollars,
@@ -76,7 +80,8 @@ geographical reasons, countries like China account for approximately
 contribute 74% to the Bitcoin mining hash rates.
 
 ## Implications for Future
-![Future](https://i.imgur.com/o6UfcQ2.jpg){: .mx-auto.d-block :}
+![Future](https://i.imgur.com/5j8ya5v.png){: .mx-auto.d-block :}
+
 To mitigate the impact of crypto-mining activities on the energy
 sector, local and federal governments need to create a regulatory
 environment that manages the impact-including federal support and
@@ -91,20 +96,17 @@ safety and economic development.
 Thanks for giving a read!
 
 #### References
-- Susanne Köhler, Massimo Pizzol. Life Cycle Assessment of
-Bitcoin Mining. Environmental Science & Technology, 2019;
-DOI: 10.1021/acs.est.9b05687
-- https://jsis.washington.edu/news/the-political-geography-and-environmental-impacts-of-cryptocurrency-mining/#:~:text=The Environmental Impact of Cryptocurrency Mining&text=Depending on the energy source,tons of global carbon emissions
-- http://www.digitaljournal.com/tech-and-science/technology/just-how-bad-for-the-environment-is-bitcoin-mining/article/562377#ixzz6gcWvGZuF
-- https://earth.org/are-cryptocurrencies-harming-the-environment/
-- https://www.sciencedaily.com/releases/2019/11/191120080246.htm
-- https://dergipark.org.tr/en/download/article-file/641972
+- [Susanne Köhler, Massimo Pizzol. Life Cycle Assessment of Bitcoin Mining. Environmental Science & Technology, 2019; DOI: 10.1021/acs.est.9b05687](https://pubs.acs.org/doi/10.1021/acs.est.9b05687)
+- [https://jsis.washington.edu/news/the-political-geography-and-environmental-impacts-of-cryptocurrency-mining/](https://jsis.washington.edu/news/the-political-geography-and-environmental-impacts-of-cryptocurrency-mining/)
+- [https://earth.org/are-cryptocurrencies-harming-the-environment/](https://earth.org/are-cryptocurrencies-harming-the-environment/)
+- [https://www.sciencedaily.com/releases/2019/11/191120080246.htm](https://www.sciencedaily.com/releases/2019/11/191120080246.htm)
+- [https://dergipark.org.tr/en/download/article-file/641972](https://dergipark.org.tr/en/download/article-file/641972)
 
 #### Image sources
-- https://www.legal500.com/global_green_guide/do-cryptocurrencies-have-a-place-in-the-sustainable-investment-movement/
-- https://www.forbes.com/sites/martinrivers/2022/04/03/is-bitcoin-really-that-bad-for-the-environment/
-- https://tarumitra.org/cryptocurrency-mining/bitcoin-energy-consumption/
-- https://www.forbes.com/sites/shermanlee/2018/04/19/bitcoins-energy-consumption-can-power-an-entire-country-but-eos-is-trying-to-fix-that/?sh=1bfc3f9b1bc8
-- http://bxjmag.com/data-centers-continue-on-huge-growth-trajectory/
-- https://thenextweb.com/news/crypto-mining-renewable-energy-solution-blockchains-carbon-footprint
-- https://www.pinterest.com/pin/7-ways-the-blockchain-can-save-the-environment-and-stop-climate-change--729090627147620487/
+- [https://tunza.eco-generation.org/ambassadorReportView.jsp?viewID=56101](https://tunza.eco-generation.org/ambassadorReportView.jsp?viewID=56101)
+- [https://www.legal500.com/global_green_guide/do-cryptocurrencies-have-a-place-in-the-sustainable-investment-movement/](https://www.legal500.com/global_green_guide/do-cryptocurrencies-have-a-place-in-the-sustainable-investment-movement/)
+- [https://www.forbes.com/sites/martinrivers/2022/04/03/is-bitcoin-really-that-bad-for-the-environment/](https://www.forbes.com/sites/martinrivers/2022/04/03/is-bitcoin-really-that-bad-for-the-environment/)
+- [https://tarumitra.org/cryptocurrency-mining/bitcoin-energy-consumption/](https://tarumitra.org/cryptocurrency-mining/bitcoin-energy-consumption/)
+- [https://www.forbes.com/sites/shermanlee/2018/04/19/bitcoins-energy-consumption-can-power-an-entire-country-but-eos-is-trying-to-fix-that/?sh=1bfc3f9b1bc8](https://www.forbes.com/sites/shermanlee/2018/04/19/bitcoins-energy-consumption-can-power-an-entire-country-but-eos-is-trying-to-fix-that/?sh=1bfc3f9b1bc8)
+- [http://bxjmag.com/data-centers-continue-on-huge-growth-trajectory/](http://bxjmag.com/data-centers-continue-on-huge-growth-trajectory/)
+- [https://www.pinterest.com/pin/7-ways-the-blockchain-can-save-the-environment-and-stop-climate-change--729090627147620487/](https://www.pinterest.com/pin/7-ways-the-blockchain-can-save-the-environment-and-stop-climate-change--729090627147620487/)
