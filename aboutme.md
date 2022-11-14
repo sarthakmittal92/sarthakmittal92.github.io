@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sarthak Mittal
+title: Hey there!
 subtitle: Thanks for dropping by!
 ---
 
