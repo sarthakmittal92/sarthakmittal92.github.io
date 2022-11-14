@@ -2,7 +2,7 @@
 layout: post
 title: MDP Planning & Cricket Game
 subtitle: CS747 (Reinforcement Learning), IIT Bombay
-cover-img: /assets/img/path.jpg
+cover-img: ../../../assets/img/path.jpg
 ---
 
 ## Description
@@ -16,7 +16,7 @@ argument for the policy, which evaluates the value function
 for a given policy instead of finding the optimal policy, and
 returns the action and value function for each state in the
 same format.
-         
+
 MDP solvers have a variety of applications. The second part of
 this project uses the solver to find an optimal policy for
 a batter chasing a target during the last wicket in a game of
