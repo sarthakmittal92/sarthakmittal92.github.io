@@ -3,7 +3,7 @@ layout: post
 date: 2022-09-12
 title: Multi-Armed Bandits
 subtitle: CS747 (Reinforcement Learning), IIT Bombay
-cover-img: https://i.imgur.com/al84mIC.jpg
+cover-img: https://i.imgur.com/pkmHaiE.jpeg
 ---
 
 [![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/multi-armed-bandits)
