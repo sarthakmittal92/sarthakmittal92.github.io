@@ -25,7 +25,7 @@ a given number of moves (referred to as "limit")
 - Cars cannot collide with each other
 
 ### Contributors
-[Advait Padhye](https://github.com/Adu3108)
+[Advait Padhye](https://github.com/Adu3108)  
 [Kartik Gokhale](https://github.com/AWorldOfChaos)
 
 #### Image credits

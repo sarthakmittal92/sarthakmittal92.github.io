@@ -4,7 +4,7 @@ title: Bitcoin and the environment
 subtitle: My first blog post at NSS IIT Bombay
 tags: [NSS, bitcoin, environment]
 comments: true
-cover-img: https://i.imgur.com/bqL9pwv.jpg
+cover-img: https://i.imgur.com/gMdsLwn.png
 thumbnail-img: https://i.imgur.com/slVVwZI.jpg
 share-img: https://i.imgur.com/5j8ya5v.png
 ---

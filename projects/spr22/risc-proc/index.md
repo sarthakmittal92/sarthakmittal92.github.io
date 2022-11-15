@@ -25,8 +25,8 @@ three machine-code instruction formats (R, I, and J type) and
 a total of 17 instructions.
 
 ### Contributors
-[Koustubh Rao](https://github.com/YKoustubhRao)
-[Moiz Shakruwala](https://github.com/Moiz-Shakruwala)
+[Koustubh Rao](https://github.com/YKoustubhRao)  
+[Moiz Shakruwala](https://github.com/Moiz-Shakruwala)  
 [Pinkesh Raghuvanshi](https://github.com/Pinkesh2312)
 
 #### Image credits

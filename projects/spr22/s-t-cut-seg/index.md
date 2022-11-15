@@ -32,7 +32,7 @@ favorably with contemporary interactive image segmentation
 schemes when applied to colored and gray-scale images.
 
 ### Contributors
-[Hastyn Doshi](https://github.com/Hastyn)
+[Hastyn Doshi](https://github.com/Hastyn)  
 [Kartik Gokhale](https://github.com/AWorldOfChaos)
 
 #### Image credits

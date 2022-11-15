@@ -16,8 +16,8 @@ library for the frontend.
 Rest of the details can be read [here](https://github.com/sarthakmittal92/snap-moodle/blob/main/README.md).
 
 ### Contributors
-[Neeraj Jadhav](https://github.com/calcudexter)
-[Aditya Jain](https://github.com/adityajain3jan)
+[Neeraj Jadhav](https://github.com/calcudexter)  
+[Aditya Jain](https://github.com/adityajain3jan)  
 [Parshant Arora](https://github.com/Parshant-Arora)
 
 #### Image credits
