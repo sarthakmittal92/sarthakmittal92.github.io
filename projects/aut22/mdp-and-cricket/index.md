@@ -3,7 +3,7 @@ layout: post
 date: 2022-10-14
 title: MDP Planning & Cricket
 subtitle: CS747 (Reinforcement Learning), IIT Bombay
-cover-img: https://i.imgur.com/AFtLsMT.png
+cover-img: https://i.imgur.com/8usQR2n.png
 ---
 
 [![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/mdp-and-cricket)
@@ -27,4 +27,4 @@ cricket.
 
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
-- [https://vitalflux.com/reinforcement-learning-real-world-examples/](https://vitalflux.com/reinforcement-learning-real-world-examples/)
+- [https://www.bigbikerentalbangkok.com/bangkok-kaeng-krachan-national-park-hua-hin/](https://www.bigbikerentalbangkok.com/bangkok-kaeng-krachan-national-park-hua-hin/)
