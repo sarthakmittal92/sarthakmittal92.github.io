@@ -24,6 +24,11 @@ execution and multiple load and store execution. There are
 three machine-code instruction formats (R, I, and J type) and
 a total of 17 instructions.
 
+### Contributors
+[Koustubh Rao](https://github.com/YKoustubhRao)
+[Moiz Shakruwala](https://github.com/Moiz-Shakruwala)
+[Pinkesh Raghuvanshi](https://github.com/Pinkesh2312)
+
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
 - [https://ipc2u.com/articles/knowledge-base/don-t-want-to-risk-learn-more-about-risc-processors/](https://ipc2u.com/articles/knowledge-base/don-t-want-to-risk-learn-more-about-risc-processors/)

@@ -52,6 +52,9 @@ above mentioned directory path under a folder
 others who are searching, since this client is not the
 owner.
 
+### Contributors
+[Hastyn Doshi](https://github.com/Hastyn)
+
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
 - [https://hoteltechreport.com/news/cloud-computing](https://hoteltechreport.com/news/cloud-computing)

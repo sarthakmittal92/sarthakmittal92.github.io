@@ -31,6 +31,10 @@ The proposed scheme is experimentally shown to compare
 favorably with contemporary interactive image segmentation
 schemes when applied to colored and gray-scale images.
 
+### Contributors
+[Hastyn Doshi](https://github.com/Hastyn)
+[Kartik Gokhale](https://github.com/AWorldOfChaos)
+
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
 - [http://ftp.nmr.mgh.harvard.edu/pub/dist/freesurfer/tutorial_packages/centos6/fsl_507/doc/wiki/POSSUM(2f)UserGuide.html](http://ftp.nmr.mgh.harvard.edu/pub/dist/freesurfer/tutorial_packages/centos6/fsl_507/doc/wiki/POSSUM(2f)UserGuide.html)

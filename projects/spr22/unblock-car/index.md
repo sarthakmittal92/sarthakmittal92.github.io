@@ -24,6 +24,10 @@ a given number of moves (referred to as "limit")
 - There are some 1 x 1 mines on the grid. A car cannot drive over a mine.
 - Cars cannot collide with each other
 
+### Contributors
+[Advait Padhye](https://github.com/Adu3108)
+[Kartik Gokhale](https://github.com/AWorldOfChaos)
+
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
 - [https://appadvice.com/app/car-in-car-parking-jam-3d/1634176833](https://appadvice.com/app/car-in-car-parking-jam-3d/1634176833)
