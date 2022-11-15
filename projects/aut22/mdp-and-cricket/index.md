@@ -3,7 +3,7 @@ layout: post
 date: 2022-10-14
 title: MDP Planning & Cricket
 subtitle: CS747 (Reinforcement Learning), IIT Bombay
-cover-img: ../../../assets/img/path.jpg
+cover-img: https://i.imgur.com/AFtLsMT.png
 ---
 
 [![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/mdp-and-cricket)
@@ -24,3 +24,7 @@ MDP solvers have a variety of applications. The second part of
 this project uses the solver to find an optimal policy for
 a batter chasing a target during the last wicket in a game of
 cricket.
+
+#### Image credits
+- [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
+- [https://vitalflux.com/reinforcement-learning-real-world-examples/](https://vitalflux.com/reinforcement-learning-real-world-examples/)

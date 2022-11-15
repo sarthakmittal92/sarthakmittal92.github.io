@@ -28,3 +28,7 @@ Task 3 has an algorithm for the case when the horizon is equal
 to the number of arms, but it is given that the arm means are
 distributed uniformly (so if the horizon is 100, the arm means
 are a permutation of [0, 0.01, 0.02, …, 0.99]).
+
+#### Image credits
+- [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
+- [https://en.wikipedia.org/wiki/Slot_machines_by_country](https://en.wikipedia.org/wiki/Slot_machines_by_country)
