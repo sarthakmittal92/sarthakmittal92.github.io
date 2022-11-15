@@ -6,7 +6,7 @@ subtitle: CS215 (Data Analysis & Interpretation), IIT Bombay
 cover-img: https://i.imgur.com/zTyG366.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/image-proc)
 
 ## Description
 MATLAB implementations of sampling from Multivariate Gaussian, using

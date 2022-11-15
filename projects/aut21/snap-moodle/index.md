@@ -6,7 +6,7 @@ subtitle: CS251 (Software Systems Lab), IIT Bombay
 cover-img: https://i.imgur.com/AW5J9pH.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/snap-moodle)
 
 ## Description
 A MOODLE server created by Sarthak, Neeraj, Aditya & Parshant.

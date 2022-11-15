@@ -6,7 +6,7 @@ subtitle: CS251 (Software Systems Lab), IIT Bombay
 cover-img: https://i.imgur.com/2tnG69f.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/scotland-yard)
 
 ## Description
 The Game:
