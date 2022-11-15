@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bitcoin and the environment
+date: 2022-12-31
 subtitle: My first blog post at NSS IIT Bombay
 tags: [NSS, bitcoin, environment]
 comments: true

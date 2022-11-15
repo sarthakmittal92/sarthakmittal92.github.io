@@ -1,0 +1,184 @@
+---
+layout: post
+title: Application Links
+date: 2022-05-05
+subtitle: Research Opportunities for Undergraduates
+tags: [UG, research, univs]
+comments: true
+cover-img: https://i.imgur.com/vTZH2wp.png
+---
+
+## Useful Links
+  * ### [Original List](https://github.com/himahuja/Research-Internships-for-Undergraduates/blob/master/README.md)
+  * ### [How to get a Summer Research internship](http://marianlonga.com/how-to-get-a-summer-research-internship/)
+
+## CV, Penultimate UG year and Transcript (if required) are not included in Requirements.
+
+US
+
+  * [Santa Fe - ISRE](https://www.santafe.edu/engage/learn/programs/undergraduate-complexity-research)
+    - Requirements: 1 LoR, Research Statement
+    - Term: 10 weeks, June - August
+  * [CMU - RISS](https://riss.ri.cmu.edu/)
+    - Requirements: 1 LoR, SoP
+    - Term: 11 weeks, June - August
+  * [CMU - DSSGF](https://www.dssgfellowship.org/)
+    - Requirements: Management Experience, Q&A
+    - Term: 14 weeks, end-May - end-August
+  * [CMU - SmaSH Lab](https://smashlab.io/)
+    - Requirements: None
+    - Term: Decidable
+  * [Rockefeller - SURF](https://www.rockefeller.edu/education-and-training/surf/)
+    - Requirements: 2 LoRs, SoP
+    - Term: 10 weeks, June - mid-August
+  * [CalTech - SURF](https://sfp.caltech.edu/undergraduate-research/programs/surf/application_information)
+    - Requirements: 3 LoRs, Research Proposal
+    - Term: 10 weeks, May - mid-July
+  * [STScI - SAS](http://www.stsci.edu/opportunities/space-astronomy-summer-program)
+    - Requirements: ?
+    - Term: 9-10 weeks, June - August
+  * [McKelvey - ISRIP](https://engineering.wustl.edu/academics/undergraduate-research/international-student-research-internship-program.html)
+    - Requirements: 2 LoRs, SoP, 3 Research Areas
+    - Term: 8-10 weeks, mid-May - end-July
+  * [Stanford - SURF](https://engineering.stanford.edu/students-academics/equity-and-inclusion-initiatives/prospective-graduate-programs/summer)
+    - Requirements: 2 LoRs, SoP
+    - Term: 8 weeks, mid-June - mid-August
+  * [MIT IBM Watson AI Lab](https://mitibmwatsonailab.mit.edu/about/contact/)
+
+SWITZERLAND
+
+  * [ETH Zurich - SRF](https://www.inf.ethz.ch/studies/summer-research-fellowship.html)
+    - Requirements: 2 Research Areas, SoP
+    - Term: 8 weeks, July - August
+  * [CERN - SSP](https://careers.cern/summer)
+    - Requirements: 2 LoRs
+    - Term: 8 weeks, June - August
+  * [CERN - OpenLab](https://openlab.cern/education)
+    - Requirements: 1+ LoR(s)
+    - Term: 9 weeks, mid-June - mid-August
+  * [EPFL - E3](https://eee.epfl.ch/)
+    - Requirements: 3 Research Labs, SoP
+    - Term: ?
+  * [EPFL - Summer@EPFL](https://summer.epfl.ch/)
+    - Requirements: 3 Research Labs, SoP
+    - Term: 12 weeks, May - August
+    - Deadline: 4 Dec
+
+GERMANY
+  
+  * [MPISWS](https://www.cis.mpg.de/internships/)
+    - Requirements: 1+ LoR(s), SoP
+    - Term: 12-14 weeks, May - August
+    - Deadline: 1 Nov
+  * [Warwick - SIS](https://warwick.ac.uk/fac/sci/statistics/research/internships/)
+    - Requirements: SoP
+    - Term: 8 weeks, July - August
+    - Deadline: ?
+  * [DAAD - WISE](https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=50015295)
+    - Requirements: Research Proposal
+    - Term: 8-12 weeks, May - August
+    - Deadline: 8 Nov
+  * [HZDR Dresden - SSP](https://www.hzdr.de/db/Cms?pOid=34387&pNid=2519)
+    - Requirements: 1 LoR
+    - Term: 6-12 weeks, July - September
+    - Deadline: 28 Feb
+  * [MaxSIP](https://imprs-ls.opencampus.net/en/maxsip_application_info)
+    - Requirements: 1 LoR, 80+ TOEFL
+    - Term: ?
+    - Deadline: 10 Feb
+
+UK
+
+  * [Warwick - DSSGx](https://warwick.ac.uk/research/data-science/warwick-data/dssgx/)
+    - Requirements: ?
+    - Term: 12 weeks, June - August
+    - Deadline: ?
+  * [Visual Geometry Group](https://www.robots.ox.ac.uk/~vgg/jobs.html)
+    - Requirements: ?
+    - Term: ?
+    - Deadline: ? 
+
+SOUTH KOREA
+
+  * [GIST - GIP](https://www.gist.ac.kr/en/html/sub07/0702.html)
+    - Requirements: 1 LoR, 2 Research Labs, Research Plan, TOEFL
+    - Term: 8 weeks, July - August
+    - Deadline: 12 Mar
+
+JAPAN
+
+  * [OIST - RIP](https://admissions.oist.jp/apply-research-internship)
+    - Requirements: 1-3 LoR(s), SoP
+    - Term: 8-24 weeks, April - September
+    - Deadline: 15 Oct
+  * [NIMS](https://www.nims.go.jp/eng/hr-development/internship.html)
+    - Requirements: 1 LoR
+    - Term: 13 weeks, Decidable
+    - Deadline: ?
+  
+HONG KONG
+
+  * [HKUST - IVISP](https://pg.ust.hk/ivisp)
+    - Requirements: TOEFL, Research Supervisor, Institute Support Form
+    - Term: 4-24 weeks, June - August
+    - Deadline: ?
+  * [CUHK - SURP](http://www.summer.cuhk.edu.hk/surp/)
+    - Requirements: 1 LoR, TOEFL (optional)
+    - Term: 8 weeks, end-June - mid-August
+    - Deadline: 1 Apr
+
+ISRAEL
+
+  * [WIS KGISSS - Summer Intern](https://www.weizmann.ac.il/feinberg/admissions/kupcinet-getz-international-summer-school/about-program-0)
+    - Requirements: 1+ LoR(s), SoP, 1+ Research Areas
+    - Term: 8 weeks, ?
+    - Deadline: ?
+
+SAUDI ARABIA
+
+  * [KAUST - VSRP](https://vsrp.kaust.edu.sa/internship/search)
+    - Requirements: 1 LoR, 79+ TOEFL
+    - Term: 12-24 weeks, ?
+    - Deadline: ?
+
+FRANCE
+
+  * [Charpak Global Scholarship](https://www.inde.campusfrance.org/charpak-lab-scholarship)
+    - Requirements: Acceptance Letter, NOC, SoP, LoR(s) (optional)
+    - Term: 8 weeks, May - June
+    - Deadline: ?
+
+SINGAPORE
+
+  * [NTU-India Connect](https://www.ntu.edu.sg/education/student-exchanges/india-connect@ntu)
+    - Requirements: 2 ARLs, 1 LoR, 3 Research Titles
+    - Term: 8 weeks, May - mid-July
+
+CHINA
+
+  * [COE - SRP](https://eng-en.site.nthu.edu.tw/p/412-1060-3215.php)
+    - Requirements: ?
+    - Term: ?
+    - Deadline: ?
+
+OTHER LISTS
+
+  * [Cisco - Intern](https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&listFilterMode=1)
+  * [IPAM - RIPS](http://www.ipam.ucla.edu/programs/student-research-programs/)
+  * [Amgen Asia](https://amgenscholars.com/asia-program)
+    - Requirements: 72+ TOEFL
+    - Term: 8 weeks, early-June - early-August
+    - Deadline: 1 Feb
+  * [AI2](https://allenai.org/careers?title=Research+Internship&title=Engineering+Internship#current-openings)
+    - Requirements: Cover Letter, Motivation, Q&A
+    - Term: 12 weeks, April - June (Spring), July - September (Summer)
+    - Deadline: 15 Jul (Spring), 15 Oct (Summer)
+
+INDIA
+
+  * [IBM Watson Research](https://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=8101)
+  * [IBM](https://research.ibm.com/collaborate?lnk=hpmex_bure_inen&lnk2=learn#overview)
+
+#### Image credits
+- [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
+- [https://uh.edu/nsm/computer-science/undergraduate/research/](https://uh.edu/nsm/computer-science/undergraduate/research/)
