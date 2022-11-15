@@ -2,7 +2,7 @@
 layout: post
 date: 2021-04-21
 title: Maze Game Builder
-subtitle: CS152 (Abstractions & Paradigms in Programming), IIT Bombay
+subtitle: CS152 (Abstractions & Paradigms), IIT Bombay
 cover-img: https://i.imgur.com/9kVqx4i.png
 ---
 
@@ -10,7 +10,7 @@ cover-img: https://i.imgur.com/9kVqx4i.png
 
 ## Description
 Utilised FLTK (Fast Light Toolkit) widget library and C++ to
-create a graphic N $\times$ N maze game. Handled an input array
+create a graphic N × N maze game. Handled an input array
 describing the obstacle locations to automate designing of
 maze layout.
 

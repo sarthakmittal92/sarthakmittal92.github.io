@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-11-23
-title: Mandelbrot Zoom Simulation
+title: Mandelbrot Zoom
 subtitle: CS293 (Data Structures & Algorithms Lab), IIT Bombay
 cover-img: https://i.imgur.com/RFFGyGc.png
 ---

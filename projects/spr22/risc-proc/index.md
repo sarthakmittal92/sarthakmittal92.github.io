@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2022-05-12
-title: 
-subtitle: CS230 (Digital Design & Computer Architecture), IIT Bombay
+title: RISC Processor
+subtitle: CS230 (Digital Logic & Architecture), IIT Bombay
 cover-img: https://i.imgur.com/ABUkbbC.png
 ---
 

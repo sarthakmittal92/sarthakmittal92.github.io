@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-05-01
-title: Image Segmentation via s-t Cuts
+title: S-T Cut Segmentation
 subtitle: CS736 (Medical Image Computing), IIT Bombay
 cover-img: https://i.imgur.com/xEQBLpe.png
 ---

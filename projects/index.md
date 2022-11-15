@@ -24,7 +24,7 @@ subtitle: Past projects
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
-[**Image Segmentation via s-t Cuts**](./spr22/s-t-cut-seg/)
+[**S-T Cut Segmentation**](./spr22/s-t-cut-seg/)
 - Performed s-t cuts on a generated graph of superpixels to implement binary image segmentation
 - Identified user scribbles to initialise Boykov-Kolmogorov algorithm and achieved accuracy of 80%
 
@@ -55,7 +55,7 @@ subtitle: Past projects
 - Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
-[**Mandelbrot Zoom Simulation**](./aut21/mandelbrot-zoom/)
+[**Mandelbrot Zoom**](./aut21/mandelbrot-zoom/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 
@@ -65,8 +65,8 @@ subtitle: Past projects
 - Designed trading strategies in Python and compared styles like momentum and paired switching
 - Executed the algorithms on SENSEX 30 data of 2009-2020 and achieved profit upto 160% and 500%
 
-[**Introduction to App Development**](./sum21/app-dev/)
-- Utilised Flutter SDK (Google’s UI Toolkit) integrated with Android Studio and Dart programming language (developed by Google) as codebase to develop and debug applications on a virtual device
+[**App Development**](./sum21/app-dev/)
+- Utilised Flutter SDK (Google's UI Toolkit) integrated with Android Studio and Dart programming language (developed by Google) as codebase to develop and debug applications on a virtual device
 - Successfully built 3 Android applications (apk packages) from scratch including a 10-digit calculator, a true/false quiz app and a location-based weather app (by integrating an externally offered weather API
 
 [**Snake Game**](./sum21/snake-game/)

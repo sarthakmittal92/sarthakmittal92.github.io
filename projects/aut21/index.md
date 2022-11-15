@@ -23,7 +23,7 @@ These are the projects I did during my third semester.
 - Used random samplings, statistical measures and Bayesian estimation to analyze several distributions
 - Implemented Principle Component Analysis (PCA) for processing of high-dimensional images
 
-[**Mandelbrot Zoom Simulation**](./mandelbrot-zoom/)
+[**Mandelbrot Zoom**](./mandelbrot-zoom/)
 - Rendered Mandelbrot Zoom using Simple DirectMedia Layer library and Object-Oriented C++
 - Used Binary Search Tree, Bipartite Graph, and Heap data structures for parts of the functionality
 

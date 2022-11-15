@@ -11,7 +11,7 @@ cover-img: https://i.imgur.com/2tnG69f.png
 ## Description
 The Game:
 
-The city is an 8 x 8 grid, a Fugitive runs amok. In a single
+The city is an 8 × 8 grid, a Fugitive runs amok. In a single
 turn, the Fugitive can move like a chess Queen: horizontally,
 vertically, or diagonally. Upto k (say, 5, but that's easily
 winning for a smart Fugitive. You can tweak this) Detectives

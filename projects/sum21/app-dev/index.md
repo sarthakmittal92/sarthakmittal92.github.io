@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-07-30
-title: Introduction to App Development
+title: App Development
 subtitle: Learner's Space (Web & Coding Club), IIT Bombay
 cover-img: https://i.imgur.com/M5aLnIg.png
 ---
