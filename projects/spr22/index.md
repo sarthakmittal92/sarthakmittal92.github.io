@@ -6,7 +6,7 @@ subtitle: Spring 2022 projects
 
 These are the projects I did during my fourth semester.
 
-[**Peer-to-Peer Network Simulator**](./network-simulator/)
+[**P2P Network Simulator**](./network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 

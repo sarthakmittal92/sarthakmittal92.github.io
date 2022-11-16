@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-17
-title: Peer-to-Peer Network Simulator
+title: P2P Network Simulator
 subtitle: CS252 (Computer Networks Lab), IIT Bombay
 cover-img: https://i.imgur.com/6sKWh4m.png
 ---

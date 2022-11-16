@@ -20,7 +20,7 @@ subtitle: Past projects
 
 ## <a href="./spr22/" style="color: black">Spring 2022</a>
 
-[**Peer-to-Peer Network Simulator**](./spr22/network-simulator/)
+[**P2P Network Simulator**](./spr22/network-simulator/)
 - Implemented socket programming in C++ to transfer files between clients using TCP connections
 - Analyzed the network simulation in 5 phases using configuration files and a Bash script to automate
 
