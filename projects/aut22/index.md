@@ -6,6 +6,10 @@ subtitle: Autumn 2022 projects
 
 These are the projects I did during my fifth semester.
 
+[**Attendance System**](./attendance-system/)
+- Built an automated attendance system using deep learning techniques and face recognition
+- Trained the embedding model using triplet loss and achieved 75% accuracy in validation
+
 [**MDP Planning & Cricket**](./mdp-and-cricket/)
 - Developed MDP planner using Value Iteration, Howard's Policy Iteration and Linear Programming
 - Utilised a pipeline of encoder, planner and decoder to predict outcome of a last-over cricket game

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA &mdash; q3  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> q3
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">q3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">q3</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Module code</a> &raquo;</li>
+      <li>DSA</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for DSA</h1><div class="highlight"><pre>
+<span></span><span class="c1">################################## Data Structures ################################</span>
+
+<span class="c1"># ------------------------------- Singly Linked List -----------------------------</span>
+
+<div class="viewcode-block" id="SinglyLinkedListNode"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedListNode">[docs]</a><span class="k">class</span> <span class="nc">SinglyLinkedListNode</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Singly Linked List Node class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    string converter</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="SinglyLinkedListNode.__init__"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedListNode.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct a new Singly Linked List Node object</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: input value for the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedListNode</span>
+<span class="sd">        &gt;&gt;&gt; n = SinglyLinkedListNode(2)</span>
+<span class="sd">        &gt;&gt;&gt; n.data</span>
+<span class="sd">        2</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="kc">None</span></div>
+    
+<div class="viewcode-block" id="SinglyLinkedListNode.__str__"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedListNode.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Return node value as a string for printing</span>
+<span class="sd">        </span>
+<span class="sd">        |  Returns:</span>
+<span class="sd">        |    str: string of the node value</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedListNode</span>
+<span class="sd">        &gt;&gt;&gt; n = SinglyLinkedListNode(2)</span>
+<span class="sd">        &gt;&gt;&gt; print(n)</span>
+<span class="sd">        2</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span></div></div>
+
+<div class="viewcode-block" id="SinglyLinkedList"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList">[docs]</a><span class="k">class</span> <span class="nc">SinglyLinkedList</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Singly Linked List class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    insert</span>
+<span class="sd">    |    find</span>
+<span class="sd">    |    deleteVal</span>
+<span class="sd">    |    printer</span>
+<span class="sd">    |    reverse</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="SinglyLinkedList.__init__"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct a new Singly Linked List Node object</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; type(l)</span>
+<span class="sd">        &lt;class &#39;DSA.SinglyLinkedList&#39;&gt;</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="kc">None</span></div>
+   
+<div class="viewcode-block" id="SinglyLinkedList.insert"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.insert">[docs]</a>    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Insert node into the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: input value for the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [1, 2, 3]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">node</span> <span class="o">=</span> <span class="n">SinglyLinkedListNode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="c1"># new node</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="p">:</span> <span class="c1"># no head</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">node</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span> <span class="c1"># add behind tail</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">node</span> <span class="c1"># move tail</span></div>
+    
+<div class="viewcode-block" id="SinglyLinkedList.find"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.find">[docs]</a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SinglyLinkedListNode</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Find value in the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: value to be found</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    SinglyLinkedListNode: node if found</span>
+<span class="sd">        |    None: if not found</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(4)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; print(l.find(4))</span>
+<span class="sd">        2</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">while</span> <span class="n">head</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">head</span><span class="o">.</span><span class="n">data</span> <span class="o">!=</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">head</span>
+            <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
+        <span class="k">return</span> <span class="n">prev</span></div>
+    
+<div class="viewcode-block" id="SinglyLinkedList.deleteVal"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.deleteVal">[docs]</a>    <span class="k">def</span> <span class="nf">deleteVal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Delete value in the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: value to be deleted</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    bool: True/False</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(4)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; print(l.deleteVal(2))</span>
+<span class="sd">        True</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">prevPos</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">prevPos</span><span class="o">.</span><span class="n">next</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="n">prevPos</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">prevPos</span><span class="o">.</span><span class="n">next</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+    
+<div class="viewcode-block" id="SinglyLinkedList.printer"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.printer">[docs]</a>    <span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Print the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    sep: string separator</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [1, 2, 3]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">ptr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">ptr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">ptr</span> <span class="o">=</span> <span class="n">ptr</span><span class="o">.</span><span class="n">next</span>
+            <span class="k">if</span> <span class="n">ptr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">sep</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;]&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="SinglyLinkedList.reverse"><a class="viewcode-back" href="../DSA.html#DSA.SinglyLinkedList.reverse">[docs]</a>    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Reverse the list  </span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import SinglyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = SinglyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.reverse()</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [3, 2, 1]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="c1"># head pointer</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># previous pointer</span>
+        <span class="k">while</span> <span class="n">head</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># while there is forward link left</span>
+            <span class="n">newHead</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="c1"># save extra pointer to next element</span>
+            <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">prev</span> <span class="c1"># reverse the link of current element</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">head</span> <span class="c1"># move pointer to previous element</span>
+            <span class="n">head</span> <span class="o">=</span> <span class="n">newHead</span> <span class="c1"># use extra pointer to move to next element</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">prev</span></div></div>
+
+<div class="viewcode-block" id="merge"><a class="viewcode-back" href="../DSA.html#DSA.merge">[docs]</a><span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">list1</span><span class="p">:</span> <span class="n">SinglyLinkedList</span><span class="p">,</span> <span class="n">list2</span><span class="p">:</span> <span class="n">SinglyLinkedList</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SinglyLinkedList</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Merge two sorted linked lists</span>
+<span class="sd">    </span>
+<span class="sd">    |  Args:</span>
+<span class="sd">    |    list1: first list</span>
+<span class="sd">    |    list2: second list</span>
+<span class="sd">    </span>
+<span class="sd">    |  Return:</span>
+<span class="sd">    |    SinglyLinkedList: merged list</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; from DSA import SinglyLinkedList, merge</span>
+<span class="sd">    &gt;&gt;&gt; L1 = SinglyLinkedList()</span>
+<span class="sd">    &gt;&gt;&gt; L1.insert(2)</span>
+<span class="sd">    &gt;&gt;&gt; L1.insert(4)</span>
+<span class="sd">    &gt;&gt;&gt; L1.insert(7)</span>
+<span class="sd">    &gt;&gt;&gt; L2 = SinglyLinkedList()</span>
+<span class="sd">    &gt;&gt;&gt; L2.insert(1)</span>
+<span class="sd">    &gt;&gt;&gt; L2.insert(4)</span>
+<span class="sd">    &gt;&gt;&gt; L2.insert(5)</span>
+<span class="sd">    &gt;&gt;&gt; merge(L1,L2).printer()</span>
+<span class="sd">    [1, 2, 4, 4, 5, 7]</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">merged</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+    <span class="n">head1</span> <span class="o">=</span> <span class="n">list1</span><span class="o">.</span><span class="n">head</span>
+    <span class="n">head2</span> <span class="o">=</span> <span class="n">list2</span><span class="o">.</span><span class="n">head</span>
+    <span class="k">while</span> <span class="n">head1</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">head2</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># both lists not empty</span>
+        <span class="k">if</span> <span class="n">head1</span><span class="o">.</span><span class="n">data</span> <span class="o">&lt;</span> <span class="n">head2</span><span class="o">.</span><span class="n">data</span><span class="p">:</span> <span class="c1"># link node with smaller data</span>
+            <span class="n">merged</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">head1</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">head1</span> <span class="o">=</span> <span class="n">head1</span><span class="o">.</span><span class="n">next</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">merged</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">head2</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">head2</span> <span class="o">=</span> <span class="n">head2</span><span class="o">.</span><span class="n">next</span>
+    <span class="k">if</span> <span class="n">head1</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">head2</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># list 1 finished</span>
+        <span class="n">merged</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">head2</span> <span class="c1"># add remaining list 2 as is</span>
+    <span class="k">if</span> <span class="n">head1</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">head2</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># list 2 finished</span>
+        <span class="n">merged</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">head1</span> <span class="c1"># add remaining list 1 as is</span>
+    <span class="k">return</span> <span class="n">merged</span></div>
+
+<span class="c1"># ------------------------------ Doubly Linked List ----------------------------</span>
+
+<div class="viewcode-block" id="DoublyLinkedListNode"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedListNode">[docs]</a><span class="k">class</span> <span class="nc">DoublyLinkedListNode</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Doubly Linked List Node class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    string converter</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="DoublyLinkedListNode.__init__"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedListNode.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct new Doubly Linked List Node object</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: value of the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedListNode</span>
+<span class="sd">        &gt;&gt;&gt; n = DoublyLinkedListNode(3)</span>
+<span class="sd">        &gt;&gt;&gt; n.data</span>
+<span class="sd">        3</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span></div>
+    
+<div class="viewcode-block" id="DoublyLinkedListNode.__str__"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedListNode.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Return node value as a string for printing</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    str: string of the node value</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedListNode</span>
+<span class="sd">        &gt;&gt;&gt; n = DoublyLinkedListNode(3)</span>
+<span class="sd">        &gt;&gt;&gt; print(n)</span>
+<span class="sd">        3</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span> </div></div>
+
+<div class="viewcode-block" id="DoublyLinkedList"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedList">[docs]</a><span class="k">class</span> <span class="nc">DoublyLinkedList</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Doubly Linked List class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    insert</span>
+<span class="sd">    |    printer</span>
+<span class="sd">    |    reverse</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="DoublyLinkedList.__init__"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedList.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct a new Singly Linked List Node object</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = DoublyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; type(l)</span>
+<span class="sd">        &lt;class &#39;DSA.DoublyLinkedList&#39;&gt;</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="kc">None</span></div>
+    
+<div class="viewcode-block" id="DoublyLinkedList.insert"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedList.insert">[docs]</a>    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Insert node into the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    data: input value for the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = DoublyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [1, 2, 3]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">node</span> <span class="o">=</span> <span class="n">DoublyLinkedListNode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="c1"># new node</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="p">:</span> <span class="c1"># no head</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">node</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span> <span class="c1"># add behind tail</span>
+            <span class="n">node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">node</span> <span class="c1"># move tail</span></div>
+    
+<div class="viewcode-block" id="DoublyLinkedList.printer"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedList.printer">[docs]</a>    <span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Print the list</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    sep: string separator</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = DoublyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [1, 2, 3]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">ptr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">ptr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">ptr</span> <span class="o">=</span> <span class="n">ptr</span><span class="o">.</span><span class="n">next</span>
+            <span class="k">if</span> <span class="n">ptr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">sep</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;]&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="DoublyLinkedList.reverse"><a class="viewcode-back" href="../DSA.html#DSA.DoublyLinkedList.reverse">[docs]</a>    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Reverse the list  </span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import DoublyLinkedList</span>
+<span class="sd">        &gt;&gt;&gt; l = DoublyLinkedList()</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(2)</span>
+<span class="sd">        &gt;&gt;&gt; l.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; l.reverse()</span>
+<span class="sd">        &gt;&gt;&gt; l.printer()</span>
+<span class="sd">        [3, 2, 1]</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="c1"># head pointer</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># previous pointer</span>
+        <span class="k">while</span> <span class="n">head</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># new node left</span>
+            <span class="n">newHead</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="c1"># save pointer to next node (cut forward link)</span>
+            <span class="k">if</span> <span class="n">newHead</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># check if next node has a reverse link</span>
+                <span class="n">newHead</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">head</span> <span class="c1"># save pointer to previous node (cut reverse link)</span>
+            <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">prev</span> <span class="c1"># reverse the forward link</span>
+            <span class="n">head</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">newHead</span> <span class="c1"># reverse the reverse link</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">head</span> <span class="c1"># move pointer to previous element</span>
+            <span class="n">head</span> <span class="o">=</span> <span class="n">newHead</span> <span class="c1"># use saved pointer to move head</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">prev</span></div></div>
+
+<span class="c1"># -------------------------- Binary Search Tree ------------------------------</span>
+
+
+<div class="viewcode-block" id="BSTNode"><a class="viewcode-back" href="../DSA.html#DSA.BSTNode">[docs]</a><span class="k">class</span> <span class="nc">BSTNode</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  BST Node class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    string converter</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="BSTNode.__init__"><a class="viewcode-back" href="../DSA.html#DSA.BSTNode.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">info</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct new BST Node object</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    info: value of the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BSTNode</span>
+<span class="sd">        &gt;&gt;&gt; n = BSTNode(4)</span>
+<span class="sd">        &gt;&gt;&gt; type(n)</span>
+<span class="sd">        &lt;class &#39;DSA.BSTNode&#39;&gt;</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="n">info</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">level</span> <span class="o">=</span> <span class="kc">None</span></div>
+    
+<div class="viewcode-block" id="BSTNode.__str__"><a class="viewcode-back" href="../DSA.html#DSA.BSTNode.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Return node value as a string for printing</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    str: string of the node value</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BSTNode</span>
+<span class="sd">        &gt;&gt;&gt; n = BSTNode(4)</span>
+<span class="sd">        &gt;&gt;&gt; print(n)</span>
+<span class="sd">        4</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">info</span><span class="p">)</span></div></div>
+
+<div class="viewcode-block" id="BinarySearchTree"><a class="viewcode-back" href="../DSA.html#DSA.BinarySearchTree">[docs]</a><span class="k">class</span> <span class="nc">BinarySearchTree</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Binary Search Tree class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    insert</span>
+<span class="sd">    |    traverse</span>
+<span class="sd">    |    height</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="BinarySearchTree.__init__"><a class="viewcode-back" href="../DSA.html#DSA.BinarySearchTree.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct a new Binary Search Tree object</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BinarySearchTree</span>
+<span class="sd">        &gt;&gt;&gt; t = BinarySearchTree()</span>
+<span class="sd">        &gt;&gt;&gt; type(t)</span>
+<span class="sd">        &lt;class &#39;DSA.BinarySearchTree&#39;&gt;</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="kc">None</span></div>
+    
+<div class="viewcode-block" id="BinarySearchTree.insert"><a class="viewcode-back" href="../DSA.html#DSA.BinarySearchTree.insert">[docs]</a>    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>  
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Insert node into the tree</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    val: input value for the node</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BinarySearchTree</span>
+<span class="sd">        &gt;&gt;&gt; t = BinarySearchTree()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(6)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(4)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(5)</span>
+<span class="sd">        &gt;&gt;&gt; t.traverse(&#39;IN&#39;)</span>
+<span class="sd">        1 3 4 5 6 </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">current</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="n">current</span><span class="o">.</span><span class="n">info</span><span class="p">:</span> <span class="c1"># move to left sub-tree</span>
+                    <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">left</span><span class="p">:</span>
+                        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">left</span> <span class="c1"># root moved</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">current</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="c1"># left init</span>
+                        <span class="k">break</span>
+                <span class="k">elif</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="n">current</span><span class="o">.</span><span class="n">info</span><span class="p">:</span> <span class="c1"># move to right sub-tree</span>
+                    <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">right</span><span class="p">:</span>
+                        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">right</span> <span class="c1"># root moved</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">current</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="c1"># right init</span>
+                        <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">break</span> <span class="c1"># value exists</span></div>
+    
+<div class="viewcode-block" id="BinarySearchTree.traverse"><a class="viewcode-back" href="../DSA.html#DSA.BinarySearchTree.traverse">[docs]</a>    <span class="k">def</span> <span class="nf">traverse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Traverses the tree</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    order: traversal method out of &#39;PRE&#39;, &#39;IN&#39; and &#39;POST&#39;</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BinarySearchTree</span>
+<span class="sd">        &gt;&gt;&gt; t = BinarySearchTree()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(6)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(4)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(5)</span>
+<span class="sd">        &gt;&gt;&gt; t.traverse(&#39;IN&#39;)</span>
+<span class="sd">        1 3 4 5 6 </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">def</span> <span class="nf">preOrder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">preOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">preOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">inOrder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">inOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">inOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">postOrder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">postOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">postOrder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">order</span> <span class="o">==</span> <span class="s1">&#39;PRE&#39;</span><span class="p">:</span>
+            <span class="n">preOrder</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">order</span> <span class="o">==</span> <span class="s1">&#39;IN&#39;</span><span class="p">:</span>
+            <span class="n">inOrder</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">order</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">:</span>
+            <span class="n">postOrder</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="BinarySearchTree.height"><a class="viewcode-back" href="../DSA.html#DSA.BinarySearchTree.height">[docs]</a>    <span class="k">def</span> <span class="nf">height</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Calculates height of the tree</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    root: node to calculate height for</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import BinarySearchTree</span>
+<span class="sd">        &gt;&gt;&gt; t = BinarySearchTree()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(3)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(1)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(6)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(4)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(5)</span>
+<span class="sd">        &gt;&gt;&gt; t.height(t.root)</span>
+<span class="sd">        3</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">elif</span> <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">),</span><span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">))</span></div></div>
+
+<span class="c1"># --------------------------------- Suffix Trie --------------------------------</span>
+
+<div class="viewcode-block" id="Trie"><a class="viewcode-back" href="../DSA.html#DSA.Trie">[docs]</a><span class="k">class</span> <span class="nc">Trie</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    |  Trie class.</span>
+<span class="sd">    </span>
+<span class="sd">    |  Available member functions include:</span>
+<span class="sd">    |    initialising constructor</span>
+<span class="sd">    |    find</span>
+<span class="sd">    |    insert</span>
+<span class="sd">    |    checkPrefix</span>
+<span class="sd">    |    countPrefix</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<div class="viewcode-block" id="Trie.__init__"><a class="viewcode-back" href="../DSA.html#DSA.Trie.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Construct a new Trie object</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import Trie</span>
+<span class="sd">        &gt;&gt;&gt; t = Trie()</span>
+<span class="sd">        &gt;&gt;&gt; type(t)</span>
+<span class="sd">        &lt;class &#39;DSA.Trie&#39;&gt;</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T</span> <span class="o">=</span> <span class="p">{}</span></div>
+    
+<div class="viewcode-block" id="Trie.find"><a class="viewcode-back" href="../DSA.html#DSA.Trie.find">[docs]</a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">c</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Find a char in a Trie</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    root: Trie to search</span>
+<span class="sd">        |    c: character to find</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    bool: True/False</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import Trie</span>
+<span class="sd">        &gt;&gt;&gt; t = Trie()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;abcd&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;ace&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;about&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.find(t.T[&#39;a&#39;][&#39;b&#39;],&#39;o&#39;)</span>
+<span class="sd">        True</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">c</span> <span class="ow">in</span> <span class="n">root</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Trie.insert"><a class="viewcode-back" href="../DSA.html#DSA.Trie.insert">[docs]</a>    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Insert string into the Trie</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    s: string to insert</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import Trie</span>
+<span class="sd">        &gt;&gt;&gt; t = Trie()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;abcd&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;ace&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;about&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.find(t.T[&#39;a&#39;][&#39;b&#39;],&#39;o&#39;)</span>
+<span class="sd">        True</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+                <span class="n">root</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">root</span><span class="p">[</span><span class="s1">&#39;#&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span></div>
+    
+<div class="viewcode-block" id="Trie.checkPrefix"><a class="viewcode-back" href="../DSA.html#DSA.Trie.checkPrefix">[docs]</a>    <span class="k">def</span> <span class="nf">checkPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Check if string is a prefix</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    s: string to check</span>
+<span class="sd">        </span>
+<span class="sd">        |  Return:</span>
+<span class="sd">        |    bool: True/False</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import Trie</span>
+<span class="sd">        &gt;&gt;&gt; t = Trie()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;abcd&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;ace&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;about&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.checkPrefix(&#39;ab&#39;)</span>
+<span class="sd">        True</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">root</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>    
+                    <span class="n">root</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#&#39;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">root</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">elif</span> <span class="n">root</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;#&#39;</span> <span class="ow">or</span> <span class="n">idx</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">True</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="p">[</span><span class="n">char</span><span class="p">]</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+    
+<div class="viewcode-block" id="Trie.countPrefix"><a class="viewcode-back" href="../DSA.html#DSA.Trie.countPrefix">[docs]</a>    <span class="k">def</span> <span class="nf">countPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        |  Count strings who have some prefix</span>
+<span class="sd">        </span>
+<span class="sd">        |  Args:</span>
+<span class="sd">        |    s: string to check prefix</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; from DSA import Trie</span>
+<span class="sd">        &gt;&gt;&gt; t = Trie()</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;abcd&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;ace&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.insert(&#39;about&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; t.countPrefix(&#39;ab&#39;)</span>
+<span class="sd">        2</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+                <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">root</span><span class="p">[</span><span class="s1">&#39;#&#39;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="mi">0</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 200050129.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

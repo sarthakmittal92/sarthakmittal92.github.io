@@ -17,8 +17,8 @@ navbar-links:
   Blog: "/"
   Projects: "/projects/"
   Internships: "/internships/"
+  Assistantships: "/assistantships/"
   About Me: "/aboutme/"
-  # Tutorials: "/tuts"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"

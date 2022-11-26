@@ -6,6 +6,10 @@ subtitle: Past projects
 
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>
 
+[**Attendance System**](./aut22/attendance-system/)
+- Built an automated attendance system using deep learning techniques and face recognition
+- Trained the embedding model using triplet loss and achieved 75% accuracy in validation
+
 [**MDP Planning & Cricket**](./aut22/mdp-and-cricket/)
 - Developed MDP planner using Value Iteration, Howard's Policy Iteration and Linear Programming
 - Utilised a pipeline of encoder, planner and decoder to predict outcome of a last-over cricket game

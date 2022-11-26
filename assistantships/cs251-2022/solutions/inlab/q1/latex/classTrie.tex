@@ -1,0 +1,112 @@
+\hypertarget{classTrie}{}\doxysection{Trie Class Reference}
+\label{classTrie}\index{Trie@{Trie}}
+
+
+\mbox{\hyperlink{classTrie}{Trie}} class. Available member functions include default constructor, find, insert, check\+Prefix and count\+Prefix.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}\label{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}} 
+\mbox{\hyperlink{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}{Trie}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTrie}{Trie}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTrie_adf349469d2452a6e76b6420b791ad6f2}{find}} (\mbox{\hyperlink{classTrie}{Trie}} $\ast$T, char c)
+\begin{DoxyCompactList}\small\item\em Find a char in a trie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrie_a45e975d085aeff53b6ca714488dc7ff5}{insert}} (string s)
+\begin{DoxyCompactList}\small\item\em Insert string into a trie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}{check\+Prefix}} (string s)
+\begin{DoxyCompactList}\small\item\em Check if a string is a prefix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{DSA_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}} \mbox{\hyperlink{classTrie_aa27a3dca5e7f58094fb14dd5a37ff8a6}{count\+Prefix}} (string s)
+\begin{DoxyCompactList}\small\item\em Count how many strings have the given prefix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrie_a4b989c2755871f6b32a33d4c36f4732b}\label{classTrie_a4b989c2755871f6b32a33d4c36f4732b}} 
+\mbox{\hyperlink{DSA_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}} \mbox{\hyperlink{classTrie_a4b989c2755871f6b32a33d4c36f4732b}{count}}
+\begin{DoxyCompactList}\small\item\em count of the string from root to leaf \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTrie_a75b519c66d04cf7714a7bffd25ef624e}\label{classTrie_a75b519c66d04cf7714a7bffd25ef624e}} 
+map$<$ char, \mbox{\hyperlink{classTrie}{Trie}} $\ast$ $>$ \mbox{\hyperlink{classTrie_a75b519c66d04cf7714a7bffd25ef624e}{nodes}}
+\begin{DoxyCompactList}\small\item\em map/dictionary of nodes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classTrie}{Trie}} class. Available member functions include default constructor, find, insert, check\+Prefix and count\+Prefix. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}\label{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}} 
+\index{Trie@{Trie}!checkPrefix@{checkPrefix}}
+\index{checkPrefix@{checkPrefix}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{checkPrefix()}{checkPrefix()}}
+{\footnotesize\ttfamily bool Trie\+::check\+Prefix (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a string is a prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_aa27a3dca5e7f58094fb14dd5a37ff8a6}\label{classTrie_aa27a3dca5e7f58094fb14dd5a37ff8a6}} 
+\index{Trie@{Trie}!countPrefix@{countPrefix}}
+\index{countPrefix@{countPrefix}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{countPrefix()}{countPrefix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{DSA_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}} Trie\+::count\+Prefix (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Count how many strings have the given prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & prefix to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ll 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_adf349469d2452a6e76b6420b791ad6f2}\label{classTrie_adf349469d2452a6e76b6420b791ad6f2}} 
+\index{Trie@{Trie}!find@{find}}
+\index{find@{find}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily bool Trie\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTrie}{Trie}} $\ast$}]{T,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Find a char in a trie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em T} & trie root pointer \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & char to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_a45e975d085aeff53b6ca714488dc7ff5}\label{classTrie_a45e975d085aeff53b6ca714488dc7ff5}} 
+\index{Trie@{Trie}!insert@{insert}}
+\index{insert@{insert}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Trie\+::insert (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert string into a trie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to insert \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DSA_8cpp}{D\+S\+A.\+cpp}}\end{DoxyCompactItemize}

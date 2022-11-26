@@ -1,0 +1,146 @@
+\hypertarget{classHeap}{}\doxysection{Heap Class Reference}
+\label{classHeap}\index{Heap@{Heap}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHeap_ace21b7b2a58d0d8fd19fab3ee6e85302}{Heap}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHeap}{Heap}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeap_a7e293aaac5c9ecbf9259049877277104}{parent}} (int i)
+\begin{DoxyCompactList}\small\item\em Parent function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeap_aca874d589eb0b08b3e6e1ae92e3a8f75}{left}} (int i)
+\begin{DoxyCompactList}\small\item\em Left child function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeap_a62f9d53e49b61a72f1c13905949ea11d}{right}} (int i)
+\begin{DoxyCompactList}\small\item\em Right child function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeap_ae396de1fe11db661f1e5a25877485761}{insert}} (int e)
+\begin{DoxyCompactList}\small\item\em Insert function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeap_ad93f48e902acde400be6499bfbdf4b69}{min}} ()
+\begin{DoxyCompactList}\small\item\em Minimum of heap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeap_aaba4e3d25e14fa78dabaed5e4b5c65b5}{Heapify}} (int root)
+\begin{DoxyCompactList}\small\item\em Heapify function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHeap_af274948c7a2986556231a1ee7ed6bd4a}\label{classHeap_af274948c7a2986556231a1ee7ed6bd4a}} 
+void \mbox{\hyperlink{classHeap_af274948c7a2986556231a1ee7ed6bd4a}{delete\+Min}} ()
+\begin{DoxyCompactList}\small\item\em Delete minimum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeap_ace21b7b2a58d0d8fd19fab3ee6e85302}\label{classHeap_ace21b7b2a58d0d8fd19fab3ee6e85302}} 
+\index{Heap@{Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{Heap()}{Heap()}}
+{\footnotesize\ttfamily Heap\+::\+Heap (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classHeap}{Heap}} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em capacity} & max capacity of heap \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeap_aaba4e3d25e14fa78dabaed5e4b5c65b5}\label{classHeap_aaba4e3d25e14fa78dabaed5e4b5c65b5}} 
+\index{Heap@{Heap}!Heapify@{Heapify}}
+\index{Heapify@{Heapify}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{Heapify()}{Heapify()}}
+{\footnotesize\ttfamily void Heap\+::\+Heapify (\begin{DoxyParamCaption}\item[{int}]{root }\end{DoxyParamCaption})}
+
+
+
+Heapify function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em root} & root node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeap_ae396de1fe11db661f1e5a25877485761}\label{classHeap_ae396de1fe11db661f1e5a25877485761}} 
+\index{Heap@{Heap}!insert@{insert}}
+\index{insert@{insert}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Heap\+::insert (\begin{DoxyParamCaption}\item[{int}]{e }\end{DoxyParamCaption})}
+
+
+
+Insert function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em e} & value to insert \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeap_aca874d589eb0b08b3e6e1ae92e3a8f75}\label{classHeap_aca874d589eb0b08b3e6e1ae92e3a8f75}} 
+\index{Heap@{Heap}!left@{left}}
+\index{left@{left}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily int Heap\+::left (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Left child function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & index of node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeap_ad93f48e902acde400be6499bfbdf4b69}\label{classHeap_ad93f48e902acde400be6499bfbdf4b69}} 
+\index{Heap@{Heap}!min@{min}}
+\index{min@{min}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily int Heap\+::min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Minimum of heap. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeap_a7e293aaac5c9ecbf9259049877277104}\label{classHeap_a7e293aaac5c9ecbf9259049877277104}} 
+\index{Heap@{Heap}!parent@{parent}}
+\index{parent@{parent}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily int Heap\+::parent (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Parent function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & index of node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeap_a62f9d53e49b61a72f1c13905949ea11d}\label{classHeap_a62f9d53e49b61a72f1c13905949ea11d}} 
+\index{Heap@{Heap}!right@{right}}
+\index{right@{right}!Heap@{Heap}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily int Heap\+::right (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Right child function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & index of node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DSA_8h}{D\+S\+A.\+h}}\item 
+D\+S\+A.\+cpp\end{DoxyCompactItemize}

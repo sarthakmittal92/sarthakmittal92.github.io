@@ -1,0 +1,109 @@
+\hypertarget{classBinarySearchTree}{}\doxysection{Binary\+Search\+Tree Class Reference}
+\label{classBinarySearchTree}\index{BinarySearchTree@{BinarySearchTree}}
+
+
+\mbox{\hyperlink{classBinarySearchTree}{Binary\+Search\+Tree}} class. Available member functions include default constructor, insert, traverse and height.  
+
+
+
+
+{\ttfamily \#include $<$D\+S\+A.\+h$>$}
+
+
+
+Collaboration diagram for Binary\+Search\+Tree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBinarySearchTree__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBinarySearchTree_a2bfe7e336be4767e1882e22fde3fd1db}\label{classBinarySearchTree_a2bfe7e336be4767e1882e22fde3fd1db}} 
+enum \mbox{\hyperlink{classBinarySearchTree_a2bfe7e336be4767e1882e22fde3fd1db}{order}} \{ {\bfseries P\+RE}, 
+{\bfseries IN}, 
+{\bfseries P\+O\+ST}
+ \}
+\begin{DoxyCompactList}\small\item\em types of traversals \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBinarySearchTree_a5351a78a161520116785f8eefbb91183}\label{classBinarySearchTree_a5351a78a161520116785f8eefbb91183}} 
+\mbox{\hyperlink{classBinarySearchTree_a5351a78a161520116785f8eefbb91183}{Binary\+Search\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Binary Search Tree object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBinarySearchTree_a66d74598a193495676e94fa72841c3e9}{insert}} (\mbox{\hyperlink{DSA_8h_ae1d1ec9482079231e898236e2b23c9ba}{ll}} val)
+\begin{DoxyCompactList}\small\item\em Insert an element into the tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBinarySearchTree_a6eacd6ccf405996b1802cbe09b511b8e}{traverse}} (\mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} $\ast$T, \mbox{\hyperlink{classBinarySearchTree_a2bfe7e336be4767e1882e22fde3fd1db}{order}} tt)
+\begin{DoxyCompactList}\small\item\em Traverse the tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{DSA_8h_ae1d1ec9482079231e898236e2b23c9ba}{ll}} \mbox{\hyperlink{classBinarySearchTree_a23b04920fdbea5ed87cfb30951144e6c}{height}} (\mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} $\ast$T)
+\begin{DoxyCompactList}\small\item\em Calculate height of the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBinarySearchTree_a2c5ba2272f676e7d201920cbe35716c3}\label{classBinarySearchTree_a2c5ba2272f676e7d201920cbe35716c3}} 
+\mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} $\ast$ \mbox{\hyperlink{classBinarySearchTree_a2c5ba2272f676e7d201920cbe35716c3}{root}}
+\begin{DoxyCompactList}\small\item\em pointer to the root \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBinarySearchTree}{Binary\+Search\+Tree}} class. Available member functions include default constructor, insert, traverse and height. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBinarySearchTree_a23b04920fdbea5ed87cfb30951144e6c}\label{classBinarySearchTree_a23b04920fdbea5ed87cfb30951144e6c}} 
+\index{BinarySearchTree@{BinarySearchTree}!height@{height}}
+\index{height@{height}!BinarySearchTree@{BinarySearchTree}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{DSA_8h_ae1d1ec9482079231e898236e2b23c9ba}{ll}} Binary\+Search\+Tree\+::height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} $\ast$}]{T }\end{DoxyParamCaption})}
+
+
+
+Calculate height of the tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em T} & tree root pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ll 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBinarySearchTree_a66d74598a193495676e94fa72841c3e9}\label{classBinarySearchTree_a66d74598a193495676e94fa72841c3e9}} 
+\index{BinarySearchTree@{BinarySearchTree}!insert@{insert}}
+\index{insert@{insert}!BinarySearchTree@{BinarySearchTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Binary\+Search\+Tree\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DSA_8h_ae1d1ec9482079231e898236e2b23c9ba}{ll}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Insert an element into the tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em val} & value to be inserted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBinarySearchTree_a6eacd6ccf405996b1802cbe09b511b8e}\label{classBinarySearchTree_a6eacd6ccf405996b1802cbe09b511b8e}} 
+\index{BinarySearchTree@{BinarySearchTree}!traverse@{traverse}}
+\index{traverse@{traverse}!BinarySearchTree@{BinarySearchTree}}
+\doxysubsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily void Binary\+Search\+Tree\+::traverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} $\ast$}]{T,  }\item[{\mbox{\hyperlink{classBinarySearchTree_a2bfe7e336be4767e1882e22fde3fd1db}{order}}}]{tt }\end{DoxyParamCaption})}
+
+
+
+Traverse the tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em T} & tree root pointer \\
+\hline
+ & {\em tt} & type of traversal \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DSA_8h}{D\+S\+A.\+h}}\item 
+D\+S\+A.\+cpp\end{DoxyCompactItemize}

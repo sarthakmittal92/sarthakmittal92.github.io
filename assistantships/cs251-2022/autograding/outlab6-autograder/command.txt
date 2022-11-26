@@ -1,0 +1,12 @@
+To run:
+1. place your archive (<roll-number>_outlab6.tar.gz) in the folder having the script
+2. run the script with your roll-number as command line argument
+
+Directory structure:
+outlab6-autograder
+  |-grade-it.sh
+  |-command.txt
+  `-<roll-number>_outlab6.tar.gz
+
+Command:
+./grade-it.sh <roll-number>
