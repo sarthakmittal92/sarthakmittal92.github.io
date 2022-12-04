@@ -6,6 +6,10 @@ subtitle: Autumn 2022 projects
 
 These are the projects I did during my fifth semester.
 
+[**Python Library for DSA, ML and RL**](./python3-ug-cs/)
+- Deployed a Python library for implementation of several data structures and associated algorithms
+- Included various classes of machine learning models and reinforcement learning algorithms
+
 [**Attendance System**](./attendance-system/)
 - Built an automated attendance system using deep learning techniques and face recognition
 - Trained the embedding model using triplet loss and achieved 75% accuracy in validation

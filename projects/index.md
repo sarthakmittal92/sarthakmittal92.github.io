@@ -6,6 +6,10 @@ subtitle: Past projects
 
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>
 
+[**Python Library for DSA, ML and RL**](./aut22/python3-ug-cs/)
+- Deployed a Python library for implementation of several data structures and associated algorithms
+- Included various classes of machine learning models and reinforcement learning algorithms
+
 [**Attendance System**](./aut22/attendance-system/)
 - Built an automated attendance system using deep learning techniques and face recognition
 - Trained the embedding model using triplet loss and achieved 75% accuracy in validation
