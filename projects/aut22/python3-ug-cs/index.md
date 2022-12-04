@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-12-05
-title: DSA, ML & RL (Python Library)
+title: DSA, ML & RL in Python
 subtitle: IIT Bombay
 cover-img: https://i.imgur.com/fIEuJLa.png
 ---
