@@ -14,7 +14,6 @@ author: Sarthak Mittal
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blog: "/"
   Projects: "/projects/"
   Internships: "/internships/"
   Assistantships: "/assistantships/"
