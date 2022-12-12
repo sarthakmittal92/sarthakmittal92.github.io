@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ConvSumm</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7c46ec72-edb6-4f15-9d12-1cd08f2149ea" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">ConvSumm</h1></header><div class="page-body"><h2 id="c6c91fe5-83e6-4410-99d5-b071ff1843f2" class="">Official</h2><figure id="c0f4c71c-b998-499b-9bf7-009cd679867f"><a href="https://github.com/salesforce/ConvSumm/tree/master/CODS" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">ConvSumm/CODS at master · salesforce/ConvSumm</div><div class="bookmark-description">Chien-Sheng Wu*, Linqing Liu*, Wenhao Liu, Pontus Stenetorp, Caiming Xiong Please cite our work if you use the code or model in this repository @article{wu2021cods, title={Controllable Abstractive Dialogue Summarization with Sketch Supervision}, author={Wu, Chien-Sheng and Liu, Linqing and Liu, Wenhao and Stenetorp, Pontus and Xiong, Caiming}, journal={arXiv preprint arXiv:2105.14064}, year={2021} } In this paper, we aim to improve abstractive dialogue summarization quality and, at the sametime, enable granularity control.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/salesforce/ConvSumm/tree/master/CODS</div></div><img src="https://opengraph.githubassets.com/8d0c25da41f40e51491651b3bca6e0e7234bedf7f8debfdd29059bac28429e8c/salesforce/ConvSumm" class="bookmark-image"/></a></figure><h2 id="b7b42634-850f-46ec-a875-59e57d732e16" class="">Summary</h2><p id="a5af61cf-66f3-45e9-866e-578c6a60450a" class="">We aim to improve abstractive dialogue summarization quality and, at the same time, enable granularity control. Our model has two primary components and stages:</p><ul id="04f13e02-b957-4cfa-bb75-73123e87ccd6" class="bulleted-list"><li style="list-style-type:disc">a two-stage generation strategy that generates a preliminary summary sketch serving as the basis for the final summary. This summary sketch provides a weakly supervised signal in the form of pseudo-labeled interrogative pronoun categories and key phrases extracted using a constituency parser.</li></ul><ul id="bf2918ea-5ce6-40c8-a4f2-02e56ba329d5" class="bulleted-list"><li style="list-style-type:disc">a simple strategy to control the granularity of the final summary, in that our model can automatically determine or control the number of generated summary sentences for a given dialogue by predicting and highlighting different text spans from the source text.</li></ul><figure id="8d9e4714-f584-469f-875a-38cc794e3eb8" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-31-09.png"><img style="width:1499px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-31-09.png"/></a></figure><p id="dbb587ff-6931-4f9e-857b-ccc8730b168e" class="">To solve these challenges, we propose CODS, a COntrollable abstractive Dialogue Summarization model equipped with sketch generation. We first automatically create a summary sketch that contains user intent information and essential key phrases that may appear in summary. It identifies the interaction between speakers and salient information in each turn. This summary sketch is prefixed to the human-annotated summary while fine-tuning a generator, which provides weak supervision as the final summary is conditioned on the generated summary sketch. In addition, we propose a length-controllable generation method specifically for dialogue summarization. Desired lengths of summaries strongly depend on the amount of information contained in the source dialogue and granularity of information the user wants to understand. We first segment the dialogue into different segments by matching each summary sentence linearly to its corresponding dialogue context. Then we train our model to generate only one sentence for each dialogue segment. This strategy makes use of the distributed information of the dialogue and make the generated summaries more trackable.</p><h2 id="0cea972e-865a-4112-bcc9-5058e036e79a" class="">Architecture</h2><figure id="1f418a14-8ab6-4c52-b3fa-7d6f52033d0f" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-32-50.png"><img style="width:673px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-32-50.png"/></a></figure><h2 id="c1e186ae-24aa-46de-a487-feeeaa68c317" class="">Experiments</h2><figure id="d4d5703c-9d91-46e2-9ea7-67600bea1157" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-36-19.png"><img style="width:1534px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-36-19.png"/></a></figure><figure id="dff0f13d-b2f9-44bd-aac1-2fa4faf1903d" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-36-37.png"><img style="width:1490px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-36-37.png"/></a></figure><figure id="00d244bb-20f0-4b4b-8bc8-7f16c93c4fb5"><a href="https://pypi.org/project/pyrouge/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">pyrouge</div><div class="bookmark-description">You can evaluate your plain text summaries like this: from pyrouge import Rouge155 r = Rouge155() r.system_dir = &#x27;path/to/system_summaries&#x27; r.model_dir = &#x27;path/to/model_summaries&#x27; r.system_filename_pattern = &#x27;some_name.(\d+).txt&#x27; r.model_filename_pattern = &#x27;some_name.[A-Z].#ID#.txt&#x27; output = r.convert_and_evaluate() print(output) output_dict = r.output_to_dict(output) In order to evaluate summaries, ROUGE needs to know where your summaries and the gold standard summaries are, and how to match them.</div></div><div class="bookmark-href"><img src="https://pypi.org/static/images/favicon.6a76275d.ico" class="icon bookmark-icon"/>https://pypi.org/project/pyrouge/</div></div><img src="https://pypi.org/static/images/twitter.6fecba6f.jpg" class="bookmark-image"/></a></figure><h2 id="945adb93-f9f7-4257-b344-8fd74ccb5d8f" class="">Performance</h2><figure id="bbf42984-7469-4130-8aac-46050a61ec64" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-38-33.png"><img style="width:734px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-38-33.png"/></a></figure><figure id="acec1ad2-a9f4-4568-8b82-e9a4e80d4735" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-38-52.png"><img style="width:1472px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-38-52.png"/></a></figure><figure id="0f830997-23f9-4d45-8f69-ca4a39b49935" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-39-09.png"><img style="width:1432px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-39-09.png"/></a></figure><figure id="c993d049-884d-447e-a182-06fab39f06d7" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-36.png"><img style="width:736px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-36.png"/></a></figure><figure id="3b613d6a-0166-4eeb-841d-6170f6323a07" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-42.png"><img style="width:743px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-42.png"/></a></figure><figure id="60cc5ba9-57b5-4287-9e53-7c1dcb47a154" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-48.png"><img style="width:736px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-48.png"/></a></figure><figure id="23ec834b-d980-45db-a48e-06c394915343" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-56.png"><img style="width:1149px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-40-56.png"/></a></figure><figure id="9b5a34b8-31ed-4f72-b344-db14f1ded8e8" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-03.png"><img style="width:1505px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-03.png"/></a></figure><figure id="be171a4e-b125-4ad2-93b6-5f638952e2a1" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-09.png"><img style="width:1488px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-09.png"/></a></figure><figure id="db94494c-b15c-4c11-a100-2512bcfb2032" class="image"><a href="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-16.png"><img style="width:1488px" src="ConvSumm%207c46ec72edb64f159d121cd08f2149ea/Screenshot_from_2022-12-09_14-41-16.png"/></a></figure><h2 id="3df86261-ee32-404f-8dfc-3a6edba4fa80" class="">Further Readings</h2><figure id="811a84e3-f8de-49a7-9a59-441612ecf969"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00423/108199/Controllable-Summarization-with-Constrained-Markov" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Controllable Summarization with Constrained Markov Decision Process</div><div class="bookmark-description">Abstract. We study controllable text summarization, which allows users to gain control on a particular attribute (e.g., length limit) of the generated summaries. In this work, we propose a novel training framework based on Constrained Markov Decision Process (CMDP), which conveniently includes a reward function along with a set of constraints, to facilitate better summarization control.</div></div><div class="bookmark-href"><img src="https://mitp.silverchair-cdn.com/Themes/Client/app/img/favicons/v-638040610345798427/favicon.ico" class="icon bookmark-icon"/>https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00423/108199/Controllable-Summarization-with-Constrained-Markov</div></div><img src="https://mitp.silverchair-cdn.com/data/SiteBuilderAssets/Live/Images/tacl/TACL_cover-1343168140.png" class="bookmark-image"/></a></figure><figure id="a257d9ef-4d61-4611-a5da-5362584f0abe"><a href="https://www.connectedpapers.com/main/95085501ff72c296b2df3f12969e0f8a57c224fd/Controllable-Abstractive-Dialogue-Summarization-with-Sketch-Supervision/graph" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Connected Papers | Find and explore academic papers</div><div class="bookmark-description">Connected Papers is a visual tool to help researchers and applied scientists find academic papers relevant to their field of work.</div></div><div class="bookmark-href">https://www.connectedpapers.com/main/95085501ff72c296b2df3f12969e0f8a57c224fd/Controllable-Abstractive-Dialogue-Summarization-with-Sketch-Supervision/graph</div></div><img src="https://www.connectedpapers.com/share-preview-img.png" class="bookmark-image"/></a></figure><figure id="2a4f5717-7875-4bbb-be95-92617dbafab4"><a href="https://www.salesforceairesearch.com/research/conversational-ai" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Conversational AI | Salesforce Research</div><div class="bookmark-description">Communication platforms such as Slack have changed the ways we work and share. Salesforce AI Research focuses on building cutting edge AI solutions to understand these conversations and facilitate both human-human and human-machine interactions.</div></div><div class="bookmark-href"><img src="https://www.salesforceairesearch.com/favicon.ico" class="icon bookmark-icon"/>https://www.salesforceairesearch.com/research/conversational-ai</div></div><img src="https://www.salesforceairesearch.com/images/background/quotes.png" class="bookmark-image"/></a></figure><figure id="630ba645-783e-4066-8950-9edcc3db6842"><a href="https://lilianweng.github.io/posts/2021-01-02-controllable-text-generation/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Controllable Neural Text Generation</div><div class="bookmark-description">Updated on 2021-02-01: Updated to version 2.0 with several work added and many typos fixed.] [Updated on 2021-05-26: Add P-tuning and Prompt Tuning in the &quot;prompt design&quot; section.] [Updated on 2021-09-19: Add &quot;unlikelihood training&quot;.] There is a gigantic amount of free text on the Web, several magnitude more than labelled benchmark datasets.</div></div><div class="bookmark-href">https://lilianweng.github.io/posts/2021-01-02-controllable-text-generation/</div></div></a></figure><figure id="59d2ab4e-3796-4409-88fb-90b5a3de9fcd"><a href="https://github.com/microsoft/DialoGPT" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - microsoft/DialoGPT: Large-scale pretraining for dialogue</div><div class="bookmark-description">This repository contains the source code and trained model for a large-scale pretrained dialogue response generation model. The human evaluation results indicate that the response generated from DialoGPT is comparable to human response quality under a single-turn conversation Turing test.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/microsoft/DialoGPT</div></div><img src="https://opengraph.githubassets.com/5fc9a459b2ea25a6de3efe18ced4ab58595adc4db9656f7ffa345a09b1db79e2/microsoft/DialoGPT" class="bookmark-image"/></a></figure><figure id="b683f46c-666a-4f0e-8356-7327bf87a341"><a href="https://github.com/microsoft/unilm" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - microsoft/unilm: Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities</div><div class="bookmark-description">We are hiring at all levels (including FTE researchers and interns)! If you are interested in working with us on Foundation Models (aka large-scale pre-trained models) and AGI, NLP, MT, Speech, Document AI and Multimodal AI, please send your resume to fuwei@microsoft.com.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/microsoft/unilm</div></div><img src="https://opengraph.githubassets.com/d1e60b4514ef3bbd2b9a300875e21efd6729d9f8b78ebbd039036667ad4b0357/microsoft/unilm" class="bookmark-image"/></a></figure><figure id="d9c3142e-cce3-4619-b721-8ea3f457a0ca"><a href="https://huggingface.co/docs/transformers/model_doc/bart" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">BART</div><div class="bookmark-description">DISCLAIMER: If you see something strange, file a Github Issue and assign @patrickvonplaten The Bart model was proposed in BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov and Luke Zettlemoyer on 29 Oct, 2019.</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/docs/transformers/model_doc/bart</div></div><img src="https://huggingface.co/front/thumbnails/docs/transformers.png" class="bookmark-image"/></a></figure><p id="72b690eb-710c-4253-bc4b-db545a925de2" class="">
+</p></div></article></body></html>

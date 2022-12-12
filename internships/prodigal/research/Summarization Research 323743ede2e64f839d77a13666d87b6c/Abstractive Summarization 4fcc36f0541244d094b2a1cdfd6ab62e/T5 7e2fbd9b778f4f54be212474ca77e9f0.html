@@ -1,0 +1,672 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>T5</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7e2fbd9b-778f-4f54-be21-2474ca77e9f0" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">T5</h1></header><div class="page-body"><h2 id="776fdeba-dd33-4a5e-9245-e1453d8e85c0" class="">Official</h2><figure id="25644b5a-b082-4b4e-ae5f-625cc3bf52e9"><a href="https://github.com/google-research/text-to-text-transfer-transformer" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - google-research/text-to-text-transfer-transformer: Code for the paper &quot;Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer&quot;</div><div class="bookmark-description">T5X is the new and improved implementation of T5 (and more) in JAX and Flax. T5 on Tensorflow with MeshTF is no longer actively developed. If you are new to T5, we recommend starting with T5X. The t5 library serves primarily as code for reproducing the experiments in Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer .</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/google-research/text-to-text-transfer-transformer</div></div><img src="https://opengraph.githubassets.com/5fbf46311c749fa2f685cfa7313573f128952fe85ec642c5e4edbc4cc834ab73/google-research/text-to-text-transfer-transformer" class="bookmark-image"/></a></figure><figure id="118ce7f2-07c2-420f-83e0-02e827f83e6d"><a href="https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Exploring Transfer Learning with T5: the Text-To-Text Transfer Transformer</div><div class="bookmark-description">Over the past few years, transfer learning has led to a new wave of state-of-the-art results in natural language processing (NLP). Transfer learning&#x27;s effectiveness comes from pre-training a model on abundantly-available unlabeled text data with a self-supervised task, such as language modeling or filling in missing words.</div></div><div class="bookmark-href"><img src="https://ai.googleblog.com/favicon.ico" class="icon bookmark-icon"/>https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html</div></div><img src="https://1.bp.blogspot.com/-o4oiOExxq1s/Xk26XPC3haI/AAAAAAAAFU8/NBlvOWB84L0PTYy9TzZBaLf6fwPGJTR0QCLcBGAsYHQ/s72-c/image3.gif" class="bookmark-image"/></a></figure><h2 id="a588531e-09d9-415a-a499-4fe2c122914a" class="">Summary</h2><p id="cc94779d-be94-4167-a241-3d50acfd045e" class="">We explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format. Modern techniques for transfer learning in NLP often pre-train using unsupervised learning on unlabeled data. We leverage a unified approach to transfer learning that allows us to systematically study different approaches.</p><p id="f73df72f-f4b7-4bc4-a685-aabb7a7a9218" class="">The basic idea underlying our work is to treat every text processing problem as a “text-to-text” problem. This framework allows us to directly apply the same model, objective, training procedure, and decoding process to every task, including English-based NLP problems, question answering, document summarization, sentiment classification, etc.</p><figure id="119e6345-ab28-417a-b06f-209c137d4bc4" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-07_16-19-26.png"><img style="width:1408px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-07_16-19-26.png"/></a></figure><p id="2a045f42-70b7-473c-b384-51ec2e2ee160" class="">Early results on transfer learning for NLP leveraged recurrent neural networks, but it has recently become more common to use models based on the “Transformer” architecture. Due to its increasing ubiquity, all of the models we study are based on it.</p><figure id="2e1a339d-5f26-4f2d-ab39-78872acc5d59"><a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Annotated Transformer</div><div class="bookmark-description">There is now a new version of this blog post updated for modern PyTorch. -------- The Transformer from &quot;Attention is All You Need&quot; has been on a lot of people&#x27;s minds over the last year. Besides producing major improvements in translation quality, it provides a new architecture for many other NLP tasks.</div></div><div class="bookmark-href"><img src="http://nlp.seas.harvard.edu/SEAS.png" class="icon bookmark-icon"/>http://nlp.seas.harvard.edu/2018/04/03/attention.html</div></div><img src="http://nlp.seas.harvard.edu/images/the-annotated-transformer_14_0.png" class="bookmark-image"/></a></figure><figure id="eb988006-aad9-4c96-bd22-ddbfe9d34e77"><a href="https://jalammar.github.io/illustrated-transformer/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Illustrated Transformer</div><div class="bookmark-description">Discussions: Hacker News (65 points, 4 comments), Reddit r/MachineLearning (29 points, 3 comments) Translations: Arabic, Chinese (Simplified) 1, Chinese (Simplified) 2, French 1, French 2, Japanese, Korean, Persian, Russian, Spanish, Vietnamese Watch: MIT&#x27;s Deep Learning State of the Art lecture referencing this post In the previous post, we looked at Attention - a ubiquitous method in modern deep learning models.</div></div><div class="bookmark-href">https://jalammar.github.io/illustrated-transformer/</div></div></a></figure><h2 id="cb9ff4a1-74d9-4415-ad4f-6f585fae7cea" class="">Architecture</h2><p id="b1a94e2d-a4dc-4bf3-9cea-864439f8a8ba" class="">First, an input sequence of tokens is mapped to a sequence of embeddings, which is then passed into the encoder. The encoder consists of a stack of “blocks”, each of which comprises two sub-components: a self-attention layer followed by a small feed-forward network. We use a simplified version of input normalization (rescaling). A residual skip connection adds each sub-component’s input to its output. Dropout is applied within the feed-forward network, on the skip connection, on the attention weights and at the input and output of the entire stack.</p><figure id="250074b5-6924-4569-95bc-10e37bab0b44" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-16-39.png"><img style="width:1454px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-16-39.png"/></a></figure><p id="470a562d-3878-49c1-9232-2fa890a886cc" class="">The decoder is similar in structure to the encoder except that it includes a standard attention mechanism after each self-attention layer that attends to the output of the encoder. The self-attention mechanism in the decoder also uses a form of auto-regressive or casual self-attention which only allows the model to attend past outputs.</p><p id="f4142b20-168b-4393-a19d-891a6b18fc78" class="">The output of the final decoder block is fed into a dense layer with a softmax output, whose weights are shared with the input embedding matrix. All attention mechanisms in the Transformer are split up into independent “heads” whose outputs are concatenated before being further processed.</p><figure id="c01909cc-aef9-4de3-83c9-3538bde3589d" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-22-30.png"><img style="width:1485px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-22-30.png"/></a></figure><p id="52f3755e-f642-4c34-b8b7-169c17a37def" class="">Instead of using a fixed embedding for each position, relative position embeddings produce
+a different learned embedding according to the offset between the “key” and “query” being
+compared in the self-attention mechanism.</p><p id="e3551e66-95a4-41a2-8413-c440dd102479" class="">We use a simplified form of position embeddings where each “embedding” is simply a scalar that is added to the corresponding logit used for computing the attention weights. For efficiency, we also share the position embedding parameters across all layers in our model, though within a given layer each attention head uses a different learned position embedding.</p><h2 id="01654a64-afe7-4e62-a9a8-f11506cc8f2e" class="">Dataset (C4)</h2><figure id="f413753a-e120-4a87-9657-dce7e495e605"><a href="https://commoncrawl.org/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Common Crawl</div><div class="bookmark-description">We build and maintain an open repository of web crawl data that can be accessed and analyzed by anyone. Need years of free web page data to help change the world. Please donate today, so we can continue to provide you and others like you with this priceless resource.</div></div><div class="bookmark-href"><img src="https://commoncrawl.org/favicon.ico" class="icon bookmark-icon"/>https://commoncrawl.org/</div></div><img src="https://commoncrawl.org/wp-content/uploads/2016/03/box-3.png" class="bookmark-image"/></a></figure><p id="2a5da4f0-ad69-4e9e-9080-b39e86a0ef41" class="">We used the following heuristics for cleaning up Common Crawl’s web-extracted text:</p><ul id="ee66ab11-be4a-4567-8ed2-8888ca2c1b3c" class="bulleted-list"><li style="list-style-type:disc">only retained lines ending in a terminal punctuation mark</li></ul><ul id="67c309b9-410e-4a41-a9a4-94a8a531dcb4" class="bulleted-list"><li style="list-style-type:disc">discard pages with fewer than 5 sentences and only retained lines that contained at least 3 words</li></ul><ul id="472c6fa8-eb33-4e52-8bd8-1cb107b39885" class="bulleted-list"><li style="list-style-type:disc">removed any page that contained any word on list of dirty, naughty, obscene or otherwise bad words</li></ul><ul id="e539a511-df1e-4a91-9403-d02042f8dce2" class="bulleted-list"><li style="list-style-type:disc">removed any line with the word Javascript</li></ul><ul id="395d1561-41f5-4226-8fd9-2b7af239c28a" class="bulleted-list"><li style="list-style-type:disc">removed any page where the phrase “lorem ipsum” appeared</li></ul><ul id="9a692f16-a65c-4711-aed3-5a5e4ea1fdca" class="bulleted-list"><li style="list-style-type:disc">removed any pages that contained a curly bracket</li></ul><ul id="a41383cd-e9f1-4f06-b325-f317c8d4da21" class="bulleted-list"><li style="list-style-type:disc">discarded all but one of any three-sentence span occurring more than once in the dataset</li></ul><ul id="b6955397-f745-4066-bdf0-b54ca0531145" class="bulleted-list"><li style="list-style-type:disc">used langdetect to filter out any pages not classified as English with a probability of at least 0.09</li></ul><figure id="db17b367-370d-411f-b54e-e17346d0a590"><a href="https://pypi.org/project/langdetect/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">langdetect</div><div class="bookmark-description">Port of Nakatani Shuyo&#x27;s language-detection library (version from 03/03/2014) to Python. $ pip install langdetect Supported Python versions 2.7, 3.4+.</div></div><div class="bookmark-href"><img src="https://pypi.org/static/images/favicon.6a76275d.ico" class="icon bookmark-icon"/>https://pypi.org/project/langdetect/</div></div><img src="https://pypi.org/static/images/twitter.6fecba6f.jpg" class="bookmark-image"/></a></figure><figure id="07055c6e-5a95-405d-b1c2-e0a5f8ef51bc"><a href="https://www.tensorflow.org/datasets/catalog/c4" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">c4 | TensorFlow Datasets</div><div class="bookmark-description">Warning: Manual download required. See instructions below. A colossal, cleaned version of Common Crawl&#x27;s web crawl corpus. Based on Common Crawl dataset: https://commoncrawl.org To generate this dataset, please follow the instructions from t5. Due to the overhead of cleaning the dataset, it is recommend you prepare it with a distributed service like Cloud Dataflow.</div></div><div class="bookmark-href"><img src="https://www.gstatic.com/devrel-devsite/prod/v04993a285e47ce7ae4bb513179c3071d4f2a8975b8f303b510c516323adf1b16/tensorflow/images/favicon.png" class="icon bookmark-icon"/>https://www.tensorflow.org/datasets/catalog/c4</div></div><img src="https://www.tensorflow.org/static/images/tf_logo_social.png" class="bookmark-image"/></a></figure><figure id="76ffb8e5-9508-4b50-b3ab-31f1aa93c1a9"><a href="https://github.com/jcpeterson/openwebtext" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - jcpeterson/openwebtext: Open clone of OpenAI&#x27;s unreleased WebText dataset scraper. This version uses pushshift.io files instead of the API for speed.</div><div class="bookmark-description">Open clone of OpenAI&#x27;s unreleased WebText dataset scraper. This version uses pushshift.io files instead of the API for speed. - GitHub - jcpeterson/openwebtext: Open clone of OpenAI&#x27;s unreleased WebText dataset scraper. This version uses pushshift.io files instead of the API for speed.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/jcpeterson/openwebtext</div></div><img src="https://opengraph.githubassets.com/42f9d72210a230a758d5d9440c40e5fb4920feda977ff06e33206330608d576b/jcpeterson/openwebtext" class="bookmark-image"/></a></figure><h2 id="af05e50d-8d0e-4c81-939a-0776acab6a6a" class="">Downstream Tasks</h2><p id="1e7e6f5b-2654-48e4-bb6d-619ca33a26c8" class="">We measure performance on the GLUE and SuperGLUE text classification meta-benchmarks:</p><ul id="939b40ac-2578-42ef-9f90-7d905daa174f" class="bulleted-list"><li style="list-style-type:disc">sentence acceptability judgement</li></ul><ul id="31b66145-0c33-4fce-9407-d3be30f95c37" class="bulleted-list"><li style="list-style-type:disc">sentiment analysis</li></ul><ul id="90f3da94-3bae-43f3-8c5f-3af923e73a61" class="bulleted-list"><li style="list-style-type:disc">paraphrasing/sentence similarity</li></ul><ul id="187c05c7-68ff-404d-9981-1262f4f4727a" class="bulleted-list"><li style="list-style-type:disc">natural language inference</li></ul><ul id="cfb8ca60-08b9-40c6-8673-d9de65f6e207" class="bulleted-list"><li style="list-style-type:disc">coreference resolution</li></ul><ul id="f4d9283a-8bc3-4eef-9c74-a693fa5f5938" class="bulleted-list"><li style="list-style-type:disc">sentence completion</li></ul><ul id="2379de8c-c72d-4444-947c-4cef731bbc1f" class="bulleted-list"><li style="list-style-type:disc">word sentence disambiguation</li></ul><ul id="cb161b3c-dd87-4f8f-9571-e286e28ecc6c" class="bulleted-list"><li style="list-style-type:disc">question answering</li></ul><figure id="c19af32e-16e6-4b8b-8356-ec1d6690259c" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-48-48.png"><img style="width:1412px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-48-48.png"/></a></figure><figure id="f5ea9717-e3a4-4f4f-ac60-d015a59e4ee1"><a href="https://super.gluebenchmark.com/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">SuperGLUE Benchmark</div><div class="bookmark-description">SuperGLUE is a new benchmark styled after original GLUE benchmark with a set of more difficult language understanding tasks, improved resources, and a new public leaderboard.</div></div><div class="bookmark-href"><img src="https://super.gluebenchmark.com/assets/images/superglue_icon.png" class="icon bookmark-icon"/>https://super.gluebenchmark.com/</div></div><img src="http://super.gluebenchmark.com/assets/images/superglue_logo_og.png" class="bookmark-image"/></a></figure><h2 id="fcdd72d1-ae82-4beb-8d4b-6b9d75c7d528" class="">Pre-Training</h2><p id="b846044f-e3bb-4dc6-a11e-3a162e1cad5d" class="">The model is trained with a maximum likelihood objective (using “teacher forcing”) regardless of the task. To specify which task the model should perform, we add a task-specific prefix to the original input sequence before feeding it to the model.</p><p id="b855c487-6fd5-4cf1-9f7a-305316075471" class="">Note that the choice of text prefix used for a given task is essentially a hyperparameter. We found that changing the exact wording of the prefix had limited impact and so did not perform extensive experiments into different prefix choices. We allow for separately fine-tuning the model on each individual task and use short task prefixes instead of an explicit question-answer format.</p><figure id="252f8ec2-c837-4b2a-a2ae-db8bd62e0311" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-43-59.png"><img style="width:1403px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-43-59.png"/></a></figure><p id="bef04eeb-39b7-4336-a219-01c0113da557" class="">We mainly consider models that explicitly process an input with an encoder before generating an output with a separate decoder and we focus on transfer learning rather than zero-shot learning. Our framework also allows for generative tasks like machine translation and abstractive summarization, where it is not possible to enumerate all possible output choices.</p><figure id="a4d581df-f563-4081-a9bd-ec4a079646ed" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-45-48.png"><img style="width:1416px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-45-48.png"/></a></figure><p id="20f27208-efeb-443f-b371-7f44f55d3c85" class="">During pre-training, we use an “inverse square root” learning rate schedule: 1 / sqrt(max(n, k)) where n is the current training iteration and k is the number of warm-up steps (set to 104 in all of our experiments). This sets a constant learning rate of 0.01 for the first 104 steps, then exponentially decays the learning rate until pre-training is over.</p><figure id="dc4dbe62-5bc1-4224-bf8b-9ff5e1af9553" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-46-55.png"><img style="width:1472px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-46-55.png"/></a></figure><h2 id="9b2a93dd-e1a6-4fa9-87f3-da01bab39b31" class="">Experiments</h2><figure id="4647444a-1275-4b44-900e-66b84c1a803c" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-12-20.png"><img style="width:1443px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-12-20.png"/></a></figure><figure id="16fb6928-4720-4174-9ad6-5f28efa9bf39" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-13-52.png"><img style="width:1395px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-13-52.png"/></a></figure><p id="a5dfd6be-db20-4992-952d-4440a87b8f01" class="">To provide a reasonable means of comparison, we consider multiple configurations for our encoder-decoder model.  We will refer to the number of layers and parameters in a BERT(BASE) -sized layer stack as L and P, respectively. We will use M to refer to the number of FLOPs required for an L + L-layer encoder-decoder model or L-layer decoder-only model to process a given input-target pair.</p><figure id="54e8c94f-55b0-4a4d-9f69-46a575cc4076" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-40-47.png"><img style="width:1422px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-40-47.png"/></a></figure><p id="a7a19acc-4fed-462e-b931-1d1b3b51436d" class="">In total, we will compare:</p><ul id="7cbb5409-14e7-4c0a-a922-b588dcfe3d5c" class="bulleted-list"><li style="list-style-type:disc">An encoder-decoder model with L layers in the encoder and L layers in the decoder. This model has 2P parameters and a computation cost of M FLOPs.</li></ul><ul id="b1e36fcb-6225-48e2-96e2-5d0da73565a2" class="bulleted-list"><li style="list-style-type:disc">An equivalent model, but with parameters shared across the encoder and decoder, resulting in P parameters and an M-FLOP computational cost.</li></ul><ul id="7d7ee473-8434-4d18-b0d0-64919b42d5ed" class="bulleted-list"><li style="list-style-type:disc">An encoder-decoder model with L/2 layers each in the encoder and decoder, giving P parameters and an M/2-FLOP cost.</li></ul><ul id="886cc8c0-b076-47da-9d18-c1b50b5e1d73" class="bulleted-list"><li style="list-style-type:disc">A decoder-only language model with L layers and P parameters and a resulting computational cost of M FLOPs.</li></ul><ul id="815230aa-0c2c-400e-97ce-065bfeaefedc" class="bulleted-list"><li style="list-style-type:disc">A decoder-only prefix LM with the same architecture (and thus the same number of parameters and computational cost) but with fully-visible self-attention over the input.</li></ul><figure id="3b4544a9-ebc3-45af-ac74-460d7814cf48" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-28-16.png"><img style="width:1561px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-28-16.png"/></a></figure><figure id="c87a0aad-877b-4b2c-abf2-fa11caa1ee31" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-30-46.png"><img style="width:1393px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-30-46.png"/></a></figure><figure id="a67ae049-c8f2-4c1b-9996-19d08f4ae209" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-34-19.png"><img style="width:1345px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-34-19.png"/></a></figure><figure id="20e4eea2-8cac-4ecc-b270-a7f1ceb7778b" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-39-52.png"><img style="width:1435px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-39-52.png"/></a></figure><figure id="18a92758-4022-4e37-956e-018cad28acd8" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-51-16.png"><img style="width:1438px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-51-16.png"/></a></figure><figure id="7316abe6-1c71-4d62-8bb4-6bd526317b5b" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-53-04.png"><img style="width:1454px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-53-04.png"/></a></figure><figure id="7a1870c4-3c01-44a6-b167-b5a82feec6d9" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-55-08.png"><img style="width:1406px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-55-08.png"/></a></figure><h2 id="72a0d31a-0781-4c9e-937a-ab13c52cc954" class="">Performance</h2><figure id="3f702930-4dfc-41fc-bb82-7f11f8166f2e" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-56-58.png"><img style="width:602px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-56-58.png"/></a></figure><figure id="3e052c84-6669-41db-83f1-3b8d19716810" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-57-43.png"><img style="width:1423px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_12-57-43.png"/></a></figure><figure id="6788bae4-1a71-427a-bfb3-c98140de8461" class="image"><a href="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_13-00-19.png"><img style="width:1728px" src="T5%207e2fbd9b778f4f54be212474ca77e9f0/Screenshot_from_2022-12-08_13-00-19.png"/></a></figure><h2 id="02c063b4-e561-44ed-a8bf-a0aad4f0b27f" class="">Further Readings</h2><figure id="e1aaec74-62d5-4a0e-914b-cc5642467a57"><a href="https://sh-tsang.medium.com/review-t5-text-to-text-transfer-transformer-b3f0f3c07295" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Review - T5: Text-to-Text Transfer Transformer</div><div class="bookmark-description">Language Model where Input: Text, Output: Text Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer, T5, by Google 2020 JMLR, Over 3000 Citations ( Sik-Ho Tsang @ Medium)Language Model, Natural Language Processing, NLP, Transformer A unified framework that converts all text-based language problems into a text-to-text format.</div></div><div class="bookmark-href"><img src="https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png" class="icon bookmark-icon"/>https://sh-tsang.medium.com/review-t5-text-to-text-transfer-transformer-b3f0f3c07295</div></div><img src="https://miro.medium.com/max/844/1*8a_8EaqqxaUmFWzNbANAGA.png" class="bookmark-image"/></a></figure><figure id="48aaafe2-9953-4817-825a-8e9be3696805"><a href="https://towardsdatascience.com/understanding-t5-model-text-to-text-transfer-transformer-model-69ce4c165023" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Understanding T5 Model : Text to Text Transfer Transformer Model</div><div class="bookmark-description">Recent years have seen a plethora of pre-trained models such as ULMFiT, BERT, GPT, etc being open-sourced to the NLP community. Given the size of such humungous models, it&#x27;s nearly impossible to train such networks from scratch considering the amount of data and computation that is required.</div></div><div class="bookmark-href"><img src="https://miro.medium.com/fit/c/256/256/1*VzTUkfeGymHP4Bvav-T-lA.png" class="icon bookmark-icon"/>https://towardsdatascience.com/understanding-t5-model-text-to-text-transfer-transformer-model-69ce4c165023</div></div><img src="https://miro.medium.com/max/1200/1*oPH8tAGqu3aUp6qjMtqcHg.png" class="bookmark-image"/></a></figure><figure id="52a2a272-fe6e-438f-95fe-1a73d70f0c69"><div class="source"><a href="https://www.youtube.com/watch?v=91iLu6OOrwk">https://www.youtube.com/watch?v=91iLu6OOrwk</a></div></figure><figure id="213ab58c-5219-479b-a025-36eaa7c585de"><a href="https://github.com/google-research/bert/blob/master/multilingual.md" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">bert/multilingual.md at master · google-research/bert</div><div class="bookmark-description">There are two multilingual models currently available.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/google-research/bert/blob/master/multilingual.md</div></div><img src="https://opengraph.githubassets.com/3e2441d0c2a637ba07c5f692aa2dd1801fb3a8feecbc388a722dd7eba8428862/google-research/bert" class="bookmark-image"/></a></figure><figure id="ef809d86-90e3-471c-a18c-fe5476b4144c"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4096413" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Comparative analysis of T5 model for abstractive text summarization on different datasets</div><div class="bookmark-description">7 Pages Posted: 3 May 2022 See all articles by Tawmo T National Institute of Technology Silchar National Institute of Technology Silchar National Institute of Technology Silchar National Institute of Technology (NIT), Silchar Date Written: April 29, 2022 Abstractive Text Summarization is a burgeoning natural language processing task that has seen success with the Transformer model.</div></div><div class="bookmark-href"><img src="https://papers.ssrn.com/favicon.ico" class="icon bookmark-icon"/>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4096413</div></div></a></figure><p id="b170ab86-e6c2-4566-b7c6-0690c1151350" class="">
+</p></div></article></body></html>
