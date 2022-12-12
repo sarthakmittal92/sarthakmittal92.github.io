@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SAMSum Corpus</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="0deda7f2-1c84-4941-b86b-196ff6e4efb8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">SAMSum Corpus</h1></header><div class="page-body"><h2 id="55d7ba5b-8268-40cd-a4c1-b94f5aad8d8b" class="">Official</h2><figure id="bcf7be2b-35d6-465d-b5ee-fb73caf85783"><a href="https://huggingface.co/datasets/samsum" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">samsum · Datasets at Hugging Face</div><div class="bookmark-description">We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science.</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/datasets/samsum</div></div><img src="https://thumbnails.huggingface.co/social-thumbnails/datasets/samsum.png" class="bookmark-image"/></a></figure><h2 id="310169e9-1942-4e5f-ab64-98fa02012bd2" class="">Models</h2><figure id="21bd4b8f-29b5-4688-be17-072ffead71a5"><a href="https://huggingface.co/models?search=samsum" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Models - Hugging Face</div><div class="bookmark-description">We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science.</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/models?search=samsum</div></div><img src="https://huggingface.co/front/thumbnails/models.png" class="bookmark-image"/></a></figure><h2 id="b935c695-ad88-4685-92f2-5905479648df" class="">Papers</h2><p id="9bd7e95f-dd63-4a11-8e41-832a7726997b" class="">SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization</p><figure id="45df592c-6c96-46ac-be90-9141377d3bdb"><a href="https://arxiv.org/pdf/1911.12237v2.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/1911.12237v2.pdf</div></div></a></figure><p id="74b3138b-4bef-490e-868c-f873846263b1" class="">Calibrating Sequence likelihood Improves Conditional Language Generation</p><figure id="941918ef-d558-41f7-aca3-9ae83d5ad546"><a href="https://arxiv.org/pdf/2210.00045v1.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/2210.00045v1.pdf</div></div></a></figure><p id="f1ce62b2-d431-497e-9a5c-4283b68ddf84" class="">UL2: Unifying Language Learning Paradigms</p><figure id="66e4ff7f-0aa7-4ec0-bd88-2fe986cdbbc4"><a href="https://arxiv.org/pdf/2205.05131v2.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/2205.05131v2.pdf</div></div></a></figure><p id="bd6cd766-cd2f-4b5c-9748-106c729fb474" class="">SummerTime: Text Summarization Toolkit for Non-experts</p><figure id="0ad5b30c-1978-4dbc-9cd5-2c341276a843"><a href="https://arxiv.org/pdf/2108.12738v2.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/2108.12738v2.pdf</div></div></a></figure><p id="173f183b-b9a5-4887-bfb9-0e8177d404e7" class="">Language Model as an Annotator: Exploring DialoGPT for Dialogue Summarization</p><figure id="0f4953f2-b06d-4342-8451-ee84262cd8a6"><a href="https://arxiv.org/pdf/2105.12544v2.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/2105.12544v2.pdf</div></div></a></figure><p id="399cd575-a946-4f30-b5c6-dc9e0ada549b" class="">MediaSum: A Large-scale Media Interview Dataset for Dialogue Summarization</p><figure id="ad5ab570-3679-4c2c-8c49-25706dbbbfa6"><a href="https://arxiv.org/pdf/2103.06410v2.pdf" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href"><img src="https://arxiv.org/favicon.ico" class="icon bookmark-icon"/>https://arxiv.org/pdf/2103.06410v2.pdf</div></div></a></figure><h2 id="8368ca8e-5a40-4095-ae2e-1b4f4ad8449d" class="">Summary</h2><p id="16b7cb27-24a3-4f99-b561-e7553f2b228c" class="">This paper introduces the Samsung Abstractive Messenger Summarization Corpus, a new dataset with abstractive dialogue summaries. We investigate the challenges it poses for automated summarization by testing several models and comparing their results with those obtained on a corpus of news articles.</p><figure id="67749a39-6568-49ab-a9cb-00b59faf0648" class="image"><a href="Screenshot_from_2022-12-09_15-11-53.png"><img style="width:675px" src="Screenshot_from_2022-12-09_15-11-53.png"/></a></figure><p id="f43f5171-2d3d-4bca-917f-9605a8974611" class="">Inspired by the Lead-n model, we propose a few different simple models:</p><ul id="25acfeb5-1254-46f1-bd81-18c3e7c53bac" class="bulleted-list"><li style="list-style-type:disc">MIDDLE-n, which takes n utterances from the middle of the dialogue</li></ul><ul id="83e72ef9-f232-452c-b31c-3bdc5c43f3c7" class="bulleted-list"><li style="list-style-type:disc">LONGEST-n, treating only n longest utterances in order of length as a summary</li></ul><ul id="6010a6d8-99b8-4967-abd8-1a635080636f" class="bulleted-list"><li style="list-style-type:disc">LONGER-THAN-n, taking only utterances longer than n characters in order of length (if there is no such long utterance in the dialogue, takes the longest one)</li></ul><ul id="4f1ed074-de6e-44b7-b0f0-f35e89d29899" class="bulleted-list"><li style="list-style-type:disc">MOST-ACTIVE-PERSON, which treats all utterances of the most active person in the dialogue as a summary</li></ul><figure id="33de4db7-584b-4b68-9041-7060206c7bb0" class="image"><a href="Screenshot_from_2022-12-09_15-12-29.png"><img style="width:753px" src="Screenshot_from_2022-12-09_15-12-29.png"/></a></figure><h2 id="1e3a3919-ba4a-4870-8321-ce21047d0e52" class="">Experiments</h2><figure id="987f91ab-43c2-434b-abc8-743c2b30c237"><a href="https://github.com/abisee/pointer-generator" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - abisee/pointer-generator: Code for the ACL 2017 paper &quot;Get To The Point: Summarization with Pointer-Generator Networks&quot;</div><div class="bookmark-description">Note: this code is no longer actively maintained. However, feel free to use the Issues section to discuss the code with other users. Some users have updated this code for newer versions of Tensorflow and Python - see information below and Issues section.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/abisee/pointer-generator</div></div><img src="https://opengraph.githubassets.com/b97d84832b9643cfaba39586cee28895358959d7f0471b22cef18b266dec65d8/abisee/pointer-generator" class="bookmark-image"/></a></figure><figure id="58f25ff5-c263-4209-8a67-50e46919617f"><a href="https://github.com/OpenNMT/OpenNMT-py" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - OpenNMT/OpenNMT-py: Open Source Neural Machine Translation in PyTorch</div><div class="bookmark-description">OpenNMT-py is the PyTorch version of the OpenNMT project, an open-source (MIT) neural machine translation framework. It is designed to be research friendly to try out new ideas in translation, summary, morphology, and many other domains. Some companies have proven the code to be production ready. We love contributions!</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/OpenNMT/OpenNMT-py</div></div><img src="https://opengraph.githubassets.com/7b2591fed7a5fdac65deb0e63297de1f8f9e22ba90b7f68939ac628ee8f9d7a2/OpenNMT/OpenNMT-py" class="bookmark-image"/></a></figure><figure id="219681f2-dec7-48ae-bc0b-fe8dfa0810a4"><a href="https://github.com/ChenRocks/fast_abs_rl" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - ChenRocks/fast_abs_rl: Code for ACL 2018 paper: &quot;Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting. Chen and Bansal&quot;</div><div class="bookmark-description">This repository contains the code for our ACL 2018 paper: Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting .</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/ChenRocks/fast_abs_rl</div></div><img src="https://opengraph.githubassets.com/9e7accb3c9b2d5e7fd7f8219d29cb1ca0373c7ab3cf9a023ee39b7d6b9bc734e/ChenRocks/fast_abs_rl" class="bookmark-image"/></a></figure><figure id="50fedcc6-29b2-42a7-a178-95e7b88fff6d"><a href="https://github.com/glample/fastBPE" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - glample/fastBPE: Fast BPE</div><div class="bookmark-description">C++ implementation of Neural Machine Translation of Rare Words with Subword Units, with Python API.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/glample/fastBPE</div></div><img src="https://opengraph.githubassets.com/a509c22e4bb05b0bcb2fe8359e894a32804fc2fd74bfa05bbc1749e5a6df7492/glample/fastBPE" class="bookmark-image"/></a></figure><figure id="0f011b73-6f54-4dbf-af4c-8343992df2e7"><a href="https://pypi.org/project/py-rouge/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">py-rouge</div><div class="bookmark-description">A full Python implementation of the ROUGE metric, producing same results as in the official perl implementation. The original Porter stemmer in NLTK is slightly different than the one use in the official ROUGE perl script as it has been written by end. Therefore, there might be slightly different stems for certain words.</div></div><div class="bookmark-href"><img src="https://pypi.org/static/images/favicon.6a76275d.ico" class="icon bookmark-icon"/>https://pypi.org/project/py-rouge/</div></div><img src="https://pypi.org/static/images/twitter.6fecba6f.jpg" class="bookmark-image"/></a></figure><figure id="20407e6a-8f88-4acf-9c57-3d3f52ab0555" class="image"><a href="Screenshot_from_2022-12-09_15-17-04.png"><img style="width:731px" src="Screenshot_from_2022-12-09_15-17-04.png"/></a></figure><figure id="4cce956b-8d94-444e-ace0-da435b595134" class="image"><a href="Screenshot_from_2022-12-09_15-17-57.png"><img style="width:992px" src="Screenshot_from_2022-12-09_15-17-57.png"/></a></figure><h2 id="862a95fb-6c3a-4168-b0c4-e2174af3f47f" class="">Performance</h2><figure id="e5d4e1ab-72f8-4b01-aefd-0e8871b01a83" class="image"><a href="Screenshot_from_2022-12-09_15-18-09.png"><img style="width:1478px" src="Screenshot_from_2022-12-09_15-18-09.png"/></a></figure><figure id="4fb770ab-ddad-493d-a8af-3af61a169d5f" class="image"><a href="Screenshot_from_2022-12-09_15-18-18.png"><img style="width:1037px" src="Screenshot_from_2022-12-09_15-18-18.png"/></a></figure><figure id="961516a4-0366-4ce0-b8bd-01585fa63d4f" class="image"><a href="Screenshot_from_2022-12-09_15-18-34.png"><img style="width:1095px" src="Screenshot_from_2022-12-09_15-18-34.png"/></a></figure><figure id="77c648f5-7f04-4ce1-957c-71c4c75e3521" class="image"><a href="Screenshot_from_2022-12-09_15-18-48.png"><img style="width:827px" src="Screenshot_from_2022-12-09_15-18-48.png"/></a></figure><h2 id="0f015381-93ab-4968-962e-1c7b64fddd7e" class="">Further Readings</h2><figure id="413c718f-2ac6-4d10-ae97-ceeb11fac63f"><a href="https://ashwinpathak20.github.io/multimodal/2021/10/blog-post-13/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Exploring Datasets And Approaches For Conversational Summarization</div><div class="bookmark-description">In this blog we will be exploring the available datasets. The AMI Meeting Corpus consists of 100 hours of meeting recordings. The recordings use a range of signals synchronized to a common timeline. These include close-talking and far-field microphones, individual and room-view video cameras, and output from a slide projector and an electronic whiteboard.</div></div><div class="bookmark-href"><img src="https://ashwinpathak20.github.io/images/favicon-16x16.png?v=M44lzPylqQ" class="icon bookmark-icon"/>https://ashwinpathak20.github.io/multimodal/2021/10/blog-post-13/</div></div><img src="https://ashwinpathak20.github.io/images/IMG_4941.jpg" class="bookmark-image"/></a></figure><figure id="5a8ed939-5f8c-4ccb-b608-01e6ed2c58ac"><a href="https://paperswithcode.com/dataset/samsum-corpus" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Papers with Code - SAMSum Corpus Dataset</div><div class="bookmark-description">A new dataset with abstractive dialogue summaries.</div></div><div class="bookmark-href"><img src="https://paperswithcode.com/favicon.ico" class="icon bookmark-icon"/>https://paperswithcode.com/dataset/samsum-corpus</div></div><img src="https://production-assets.paperswithcode.com/perf/images/default_dataset-efab89e8.jpeg" class="bookmark-image"/></a></figure><figure id="f0e37f0d-251e-4865-99a6-fa0a1e34cc75"><a href="https://medium.com/rocket-mortgage-technology-blog/conversational-summarization-with-natural-language-processing-c073a6bcaa3a" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Conversational Summarization with Natural Language Processing</div><div class="bookmark-description">Imagine a world where car companies release better and faster cars every month, but they have a completely different set of controls, and they don&#x27;t give anyone instructions on how to operate them. This is the current state of data science and machine learning in natural language processing.</div></div><div class="bookmark-href"><img src="https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png" class="icon bookmark-icon"/>https://medium.com/rocket-mortgage-technology-blog/conversational-summarization-with-natural-language-processing-c073a6bcaa3a</div></div><img src="https://miro.medium.com/max/1000/1*-pEhqx0cIHOwzXHBmRDuow.png" class="bookmark-image"/></a></figure><figure id="84897208-b403-43f3-af02-24cbb51936df"><a href="http://pfliu.com/pl-summarization/summ_data.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">NLP2019</div><div class="bookmark-description">Don&#x27;t Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural Networks for Extreme Summarization</div></div><div class="bookmark-href">http://pfliu.com/pl-summarization/summ_data.html</div></div></a></figure><p id="2f99bb30-efcb-402e-85a3-ff70aaeaba02" class="">
+</p></div></article></body></html>

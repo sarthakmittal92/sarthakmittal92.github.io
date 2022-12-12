@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>PEGASUS</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="75797dfe-2fd2-4258-be0b-2759e38b62da" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">PEGASUS</h1></header><div class="page-body"><h2 id="4519bf80-0566-45d0-8ced-9feba6abb795" class="">Official</h2><figure id="9c18437b-0908-46d0-9644-405aa85da5e7"><a href="https://github.com/google-research/pegasus" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GitHub - google-research/pegasus</div><div class="bookmark-description">Pre-training with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models, or PEGASUS, uses self-supervised objective Gap Sentences Generation (GSG) to train a transformer encoder-decoder model. The paper can be found on arXiv. ICML 2020 accepted.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/google-research/pegasus</div></div><img src="https://opengraph.githubassets.com/6bc0a8fb418d45f0897346abaa8ff71b678320dbab4352e4feeb2291239d9d7d/google-research/pegasus" class="bookmark-image"/></a></figure><figure id="4b377cef-42ee-4f9d-958b-adb0ba0e17fc"><a href="https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">PEGASUS: A State-of-the-Art Model for Abstractive Text Summarization</div><div class="bookmark-description">Students are often tasked with reading a document and producing a summary (for example, a book report) to demonstrate both reading comprehension and writing ability. This abstractive text summarization is one of the most challenging tasks in natural language processing, involving understanding of long passages, information compression, and language generation.</div></div><div class="bookmark-href"><img src="https://ai.googleblog.com/favicon.ico" class="icon bookmark-icon"/>https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.html</div></div><img src="https://1.bp.blogspot.com/-CreZaGEN9bw/Xt51V8isuTI/AAAAAAAAGEE/yri6lVxDtRMzxnTOr9hVKfIK6L8ofFiuwCLcBGAsYHQ/s640/ROUGEScores.png" class="bookmark-image"/></a></figure><h2 id="fb0f6080-d24a-418a-a9f7-a129c75319d4" class="">Summary</h2><p id="75af5eb9-6d4d-4919-84de-d6bcec966554" class="">They propose pre-training large Transformer-based encoder-decoder models. The important sentences are removed/masked from an input document and are generated together as one output sequence from the remaining sentences (similar to extractive summary). Recent work leveraging pre-trained Transformer-based sequence-to-sequence models has extended the success in NLP tasks to text generation, including abstractive summarization.</p><h2 id="f8f73880-28ed-45fa-81db-b688542d27de" class="">Architecture</h2><figure id="8b333dee-6480-43c2-b136-296da0b81100" class="image"><a href="Screenshot_from_2022-12-06_15-53-01.png"><img style="width:844px" src="Screenshot_from_2022-12-06_15-53-01.png"/></a></figure><h2 id="3b5d8f77-3390-4696-b83f-c937eb4d71f8" class="">Pre-Training Task</h2><p id="2be0662d-41f3-4407-8c0e-480c428fd0fe" class="">Masking whole sentences from a document and generating these gap-sentences from the rest of the document works well as a pre-training objective for downstream summarization tasks. Choosing putatively important sentences outperforms lead or randomly selected ones. This self-supervised objective is called Gap Sentences Generation (GSG).</p><p id="eeb43e45-dfa2-4989-8499-7475050428eb" class="">We select and mask whole sentences from documents, and concatenate the gap-sentences into a pseudo-summary. The corresponding position of each selected gap sentence is replaced by a mask token to inform the model. Gap Sentences Ratio (GSR), refers to the number of selected gap sentences to the total number of sentences in the document.</p><p id="49392e79-9f39-4102-bca6-09cb90693d53" class="">We select sentences that appear to be important to the document, based on 3 primary strategies:</p><ul id="1107eb1b-9817-49f2-8a5f-8afa7f5ef363" class="bulleted-list"><li style="list-style-type:disc">Random (uniformly select m)</li></ul><ul id="2e82b2e4-1d84-4a6e-8789-5c75dcbabeef" class="bulleted-list"><li style="list-style-type:disc">Lead (first m)</li></ul><ul id="0a217cb6-1d94-466d-af98-80b091f39931" class="bulleted-list"><li style="list-style-type:disc">Principal (top-m scored independently and selected sequentially according to importance computed by ROUGE-F1 but with n-grams as sets)</li></ul><figure id="2ee6384a-15ca-48a6-bc90-11965e417d96" class="image"><a href="Screenshot_from_2022-12-06_16-14-33.png"><img style="width:762px" src="Screenshot_from_2022-12-06_16-14-33.png"/></a></figure><p id="39aa7389-f986-4ff7-a87e-8ab8b9531d3b" class="">We apply Masked Language Model (MLM) to train the Transformer encoder as the sole pre-training objective or along with GSG. However, MLM does not improve downstream tasks at large number of pre-training steps.</p><p id="f4bdf242-2d7e-44df-863e-f8ec4116a5df" class="">We consider two large text corpora:</p><ul id="f337a60d-742a-4c47-9add-e544c222ea51" class="bulleted-list"><li style="list-style-type:disc">C4 (Colossal and Cleaned version of Common Crawl)</li></ul><ul id="989bfd19-cf66-4a94-86c0-e4827bd79515" class="bulleted-list"><li style="list-style-type:disc">HugeNews</li></ul><h2 id="73ccda43-7190-4675-ab01-da8804193044" class="">Downstream Tasks</h2><p id="7e9d3620-6dc7-42cd-801c-534f02d3fb34" class="">We use public abstractive summarization datasets accessible through:</p><figure id="a033fa0a-1b18-4de1-8d8a-c8dfa4bb1c42"><a href="https://www.tensorflow.org/datasets/catalog/overview" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">TensorFlow Datasets</div><div class="bookmark-description">The datasets documented here are from Note: HEAD and so not all are available in the current tensorflow-datasets package. They are all accessible in our nightly package tfds-nightly. See our getting-started guide for a quick introduction. for ex in tfds.load(&#x27;cifar10&#x27;, split=&#x27;train&#x27;): ...</div></div><div class="bookmark-href"><img src="https://www.gstatic.com/devrel-devsite/prod/v04993a285e47ce7ae4bb513179c3071d4f2a8975b8f303b510c516323adf1b16/tensorflow/images/favicon.png" class="icon bookmark-icon"/>https://www.tensorflow.org/datasets/catalog/overview</div></div><img src="https://www.tensorflow.org/static/images/tf_logo_social.png" class="bookmark-image"/></a></figure><figure id="f201acb0-4e21-4e21-ac5b-e766fd54a0d3" class="image"><a href="Screenshot_from_2022-12-06_16-26-42.png"><img style="width:767px" src="Screenshot_from_2022-12-06_16-26-42.png"/></a></figure><h2 id="011578c9-aa3f-437c-9450-cbda29d82b5a" class="">Experiments</h2><figure id="75a32057-59b9-4be1-9e06-1b0b4b87949d" class="image"><a href="Screenshot_from_2022-12-06_16-27-39.png"><img style="width:783px" src="Screenshot_from_2022-12-06_16-27-39.png"/></a></figure><figure id="3967a7be-f2ed-468b-9c2f-dbaf58e463ca" class="image"><a href="Screenshot_from_2022-12-06_16-29-50.png"><img style="width:1536px" src="Screenshot_from_2022-12-06_16-29-50.png"/></a></figure><figure id="41a9eb03-007a-4ccb-8122-947cb63282d2" class="image"><a href="Screenshot_from_2022-12-06_16-30-12.png"><img style="width:763px" src="Screenshot_from_2022-12-06_16-30-12.png"/></a></figure><p id="37a21343-af85-47e8-a74e-0fcba64c0e00" class="">There are several paragraph-ideal-model examples appended to the paper.</p><h2 id="db8b896f-797b-4579-9353-6f78bfefaac4" class="">Performance</h2><figure id="3f4497f2-f6c0-47fd-9cb9-36b124cf3f5a" class="image"><a href="Screenshot_from_2022-12-06_16-34-34.png"><img style="width:1543px" src="Screenshot_from_2022-12-06_16-34-34.png"/></a></figure><figure id="e663af0c-8ff5-49c0-bf88-20588bd6fcc9" class="image"><a href="Screenshot_from_2022-12-06_16-35-20.png"><img style="width:1540px" src="Screenshot_from_2022-12-06_16-35-20.png"/></a></figure><figure id="cca3f458-d85e-47d9-8c0b-77538e6c81fa" class="image"><a href="Screenshot_from_2022-12-06_16-36-52.png"><img style="width:1570px" src="Screenshot_from_2022-12-06_16-36-52.png"/></a></figure><figure id="f1b59ca0-739b-4834-b23d-4a363a050067" class="image"><a href="Screenshot_from_2022-12-06_16-37-12.png"><img style="width:756px" src="Screenshot_from_2022-12-06_16-37-12.png"/></a></figure><figure id="3cf21434-6c06-433f-9ff0-60a80f6f49fe" class="image"><a href="Screenshot_from_2022-12-06_16-38-40.png"><img style="width:775px" src="Screenshot_from_2022-12-06_16-38-40.png"/></a></figure><h2 id="584fd557-d729-4a86-9a0e-c691191deb76" class="">Further Readings</h2><figure id="4373e128-b8ef-46aa-98a0-ce8f923eed97"><a href="https://towardsdatascience.com/how-to-perform-abstractive-summarization-with-pegasus-3dd74e48bafb" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">How to Perform Abstractive Summarization with PEGASUS</div><div class="bookmark-description">Through the article, we hope that you can adapt and adopt PEGASUS for your abstractive summarization tasks. To put it analogously, we no longer need to work like a horse and can instead ride on PEGASUS to achieve great heights and results 😉.</div></div><div class="bookmark-href"><img src="https://miro.medium.com/fit/c/256/256/1*VzTUkfeGymHP4Bvav-T-lA.png" class="icon bookmark-icon"/>https://towardsdatascience.com/how-to-perform-abstractive-summarization-with-pegasus-3dd74e48bafb</div></div><img src="https://miro.medium.com/max/973/1*VYjychEGK6h3EKJ7rQ06oA.png" class="bookmark-image"/></a></figure><figure id="48cf3972-849e-430b-b57b-8347dd6643fe"><a href="https://medium.com/analytics-vidhya/pegasus-pre-training-with-extracted-gap-sentences-for-abstractive-summarization-acb238aa1096" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization</div><div class="bookmark-description">Understanding current SOTA Summarization System Text summarization is the task of shortening a given text yet retaining the essential gist of the entire document. Summarization is usually seen to be broadly divided into two categories Extractive and Abstractive. Extractive summarization can be...</div></div><div class="bookmark-href"><img src="https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png" class="icon bookmark-icon"/>https://medium.com/analytics-vidhya/pegasus-pre-training-with-extracted-gap-sentences-for-abstractive-summarization-acb238aa1096</div></div><img src="https://miro.medium.com/max/529/1*YGj5iXEAm_271tIUCpIO7g.png" class="bookmark-image"/></a></figure><figure id="af466c45-20de-42f0-953a-c281914d0588"><div class="source"><a href="https://youtu.be/QY8oZxS0txs">https://youtu.be/QY8oZxS0txs</a></div></figure><figure id="acdc22c3-7d09-43e3-a32d-db6a6913c033"><a href="https://pub.towardsai.net/summarization-using-pegasus-model-with-the-transformers-library-553cd0dc5c2" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Summarization Using Pegasus Model with the Transformers Library</div><div class="bookmark-description">PEGASUS is the latest state-of-the-art model for abstractive summarization open-sourced by Google, recently in June 2020. It stands for Pre-training with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models. For more details on the model, refer to the paper on arXiv .</div></div><div class="bookmark-href"><img src="https://miro.medium.com/fit/c/256/256/1*yPSiS-zAdm-XKV-t6eEuOg.png" class="icon bookmark-icon"/>https://pub.towardsai.net/summarization-using-pegasus-model-with-the-transformers-library-553cd0dc5c2</div></div><img src="https://miro.medium.com/max/1200/0*4REIeAVLLNnVrWu4" class="bookmark-image"/></a></figure><figure id="41a0a91b-0bc1-453b-b786-94389f336c3d"><a href="https://turbolab.in/abstractive-summarization-using-pegasus/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Abstractive Summarization Using Pegasus - Turbolab Technologies</div><div class="bookmark-description">In the last article, we have seen how to perform extractive summarization of some text, which selects important sentences and gives them out by ranking them, without changing any text. While they are suitable for some cases, they do not achieve the sophistication of human-like summaries.</div></div><div class="bookmark-href"><img src="https://i1.wp.com/turbolab.in/wp-content/uploads/2018/03/turbo_black_trans-space.png?fit=192%2C192&amp;ssl=1" class="icon bookmark-icon"/>https://turbolab.in/abstractive-summarization-using-pegasus/</div></div><img src="https://www.scrapehero.com/wp/wp-content/uploads/2021/06/Screenshot-from-2021-06-17-18-40-06-2-e1623935594144.png" class="bookmark-image"/></a></figure><figure id="e878f083-51c4-4fdf-9e4e-021ffdec1923"><a href="https://towardsdatascience.com/pegasus-google-state-of-the-art-abstractive-summarization-model-627b1bbbc5ce?gi=00cf4c1329a3" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">PEGASUS: Google&#x27;s State of the Art Abstractive Summarization Model</div><div class="bookmark-description">The ability to summarize evaluates one&#x27;s understanding of a given piece of text or a language. Perhaps the best test of a man&#x27;s intelligence is his capacity for making a summary - Lytton Strachey Hence, summarization is a fairly significant concept in NLP.</div></div><div class="bookmark-href"><img src="https://miro.medium.com/fit/c/256/256/1*VzTUkfeGymHP4Bvav-T-lA.png" class="icon bookmark-icon"/>https://towardsdatascience.com/pegasus-google-state-of-the-art-abstractive-summarization-model-627b1bbbc5ce?gi=00cf4c1329a3</div></div><img src="https://miro.medium.com/max/1200/0*f1FmAwsoR1HpO1Nr" class="bookmark-image"/></a></figure><p id="a4019f23-e67e-4e4d-95b0-55381deabbb9" class="">
+</p></div></article></body></html>
