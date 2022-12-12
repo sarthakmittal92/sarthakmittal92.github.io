@@ -4,6 +4,11 @@ title: Internships
 subtitle: Past internships
 ---
 
+## <a style="color: black">Winter 2022</a>
+**Machine Learning Intern** - [Prodigal SoftTech](https://www.prodigaltech.com/)  
+Guide: [Atul Kumar](https://in.linkedin.com/in/atul-kumar-9366117b)  
+(on-going)
+
 ## <a style="color: black">Summer 2022</a>
 **Language Modeling Intern** - [International Workplace](https://www.internationalworkplace.com/)  
 Guide: [Sheruan Bashar](https://www.linkedin.com/in/sheruan-bashar-6b2517160/)
