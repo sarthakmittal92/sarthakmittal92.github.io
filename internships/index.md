@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Internships
-subtitle: Past internships
 ---
 
 ## <a style="color: black">Winter 2022</a>
@@ -17,7 +16,7 @@ Guide: [Sheruan Bashar](https://www.linkedin.com/in/sheruan-bashar-6b2517160/)
 - Deployed language model mapping newsfeed to learning outcomes as a web API using Azure ML
 
 ## <a style="color: black">Winter 2021</a>
-**Software Developer Intern** - [Greatfour Systems](https://greatfour.com/)  
+**Software Developer Intern** - [GreatFour Systems](https://greatfour.com/)  
 Guide: [Sai Kumar Attivilli](https://in.linkedin.com/in/sai-kumar-attivilli-368521b1)
 - Utilised Python API for OpenCV and MTM in image resizing and multi-scale template matching
 - Made multiple algorithmic enhancements to improve template to destination matching speed by 60%

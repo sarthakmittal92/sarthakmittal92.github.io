@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Autumn 2022 projects
+subtitle: Autumn 2022
 ---
 
 These are the projects I did during my fifth semester.

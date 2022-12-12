@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Spring 2022 projects
+subtitle: Spring 2022
 ---
 
 These are the projects I did during my fourth semester.

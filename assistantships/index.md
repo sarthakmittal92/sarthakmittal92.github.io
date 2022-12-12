@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Assistantships
-subtitle: TAships and RAships
 ---
+
+## [CS490 - Research & Development - 2022](./cs490-2022/)
 
 ## [CS251 - Software Systems Lab - 2022](./cs251-2022/)
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Summer 2021 projects
+subtitle: Summer 2021
 ---
 
 These are the projects I did during my first-year summer.

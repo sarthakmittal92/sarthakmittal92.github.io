@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-subtitle: Past projects
 ---
 
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>

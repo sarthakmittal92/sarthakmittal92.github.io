@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Autumn 2020 projects
+subtitle: Autumn 2020
 ---
 
 These are the projects I did during my first semester.
