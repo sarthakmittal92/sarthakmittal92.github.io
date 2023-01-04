@@ -13,7 +13,7 @@ Inlab |[In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/
 Outlab | [In-GitHub](https://github.com/sarthakmittal92/sarthakmittal92.github.io/blob/main/assistantships/cs251-2022/outlab6.pdf) | [In-browser](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/assistantships/cs251-2022/outlab6.pdf)
 
 ## Lab Solutions & Grading
-- [Model Solutions](https://github.com/sarthakmittal92/sarthakmittal92.github.io/assistantships/cs251-2022/solutions/)
-- [Autograding Scripts](https://github.com/sarthakmittal92/sarthakmittal92.github.io/assistantships/cs251-2022/autograding/)
+- [Model Solutions](https://github.com/sarthakmittal92/sarthakmittal92.github.io/tree/main/assistantships/cs251-2022/solutions/)
+- [Autograding Scripts](https://github.com/sarthakmittal92/sarthakmittal92.github.io/tree/main/assistantships/cs251-2022/autograding/)
 
 [Back](..)
