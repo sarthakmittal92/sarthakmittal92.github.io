@@ -5,8 +5,9 @@ title: Internships
 
 ## <a style="color: black">Winter 2022</a>
 **Machine Learning Intern** - [Prodigal SoftTech](https://www.prodigaltech.com/)  
-Guide: [Atul Kumar](https://in.linkedin.com/in/atul-kumar-9366117b)  
-(on-going)
+Guide: [Atul Kumar](https://in.linkedin.com/in/atul-kumar-9366117b)
+- Compared ROUGE scores of several models such as PEGASUS, BART, T5 for text summarization
+- Analysed plasticity of BART-large model by fine-tuning on a 5% tweaked SAMSum Corpus subset
 
 ## <a style="color: black">Summer 2022</a>
 **Language Modeling Intern** - [International Workplace](https://www.internationalworkplace.com/)  
