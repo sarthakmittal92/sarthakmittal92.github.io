@@ -3,6 +3,10 @@ layout: page
 title: Projects
 ---
 
+## <a href="./spr22/" style="color: black">Spring 2023</a>
+
+[**IITB CSE Research Symposium Website**](./spr23/symposium/)
+
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>
 
 [**Python Library for DSA, ML and RL**](./aut22/python3-ug-cs/)
