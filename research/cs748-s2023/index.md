@@ -35,7 +35,7 @@ Authors: Nate Kohl and Peter Stone
 Year: 2004  
 [Review 06](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/06-policy-gradient-rl-quadrupedal.pdf)
 
-[On the Complexity of Policy Iteration](https://docs.google.com/viewer?url=https://www.tau.ac.il/~mansour/papers/99uai.ps)  
+[On the Complexity of Policy Iteration](https://docs.google.com/viewer?url=https://arxiv.org/pdf/1301.6718.pdf)  
 Authors: Yishay Mansour and Satinder Singh  
 Year: 1999  
 Review 07
