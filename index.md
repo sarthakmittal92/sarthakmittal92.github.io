@@ -7,5 +7,6 @@ subtitle: Navigation page
 ## [Blog Page](https://sdgr8blog.github.io/)
 ## [Projects](./projects/)
 ## [Internships](./internships/)
-## [Assistantships](./assistantships/)
+## [Research](./research/)
+## [TAships](./taships/)
 ## [About Me](./aboutme/)

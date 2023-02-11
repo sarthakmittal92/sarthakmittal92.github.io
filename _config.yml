@@ -16,7 +16,8 @@ author: Sarthak Mittal
 navbar-links:
   Projects: "/projects/"
   Internships: "/internships/"
-  Assistantships: "/assistantships/"
+  Research: "/research/"
+  TAships: "/taships/"
   About Me: "/aboutme/"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"

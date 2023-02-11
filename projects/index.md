@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-## <a href="./spr22/" style="color: black">Spring 2023</a>
+## <a href="./spr23/" style="color: black">Spring 2023</a>
 
 [**IITB CSE Research Symposium Website**](./spr23/symposium/)
 
