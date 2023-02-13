@@ -38,9 +38,9 @@ Year: 2004
 [**On the Complexity of Policy Iteration**](https://docs.google.com/viewer?url=https://arxiv.org/pdf/1301.6718.pdf)  
 Authors: Yishay Mansour and Satinder Singh  
 Year: 1999  
-Review 07
+[Review 07](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/07-policy-iteration-complexity.pdf)
 
-[**A Tighter Analysis of Randomised Policy Iteration**](https://docs.google.com/viewer?url=https://meettaraviya.github.io/pdfs/174.pdf)  
+[**A Tighter Analysis of Randomised Policy Iteration**](https://docs.google.com/viewer?url=https://www.cse.iitb.ac.in/~shivaram/papers/tk_uai_2019.pdf)  
 Authors: Meet Taraviya and Shivaram Kalyanakrishnan  
 Year: 2019  
 Review 08
