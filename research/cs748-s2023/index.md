@@ -43,6 +43,6 @@ Year: 1999
 [**A Tighter Analysis of Randomised Policy Iteration**](https://docs.google.com/viewer?url=https://www.cse.iitb.ac.in/~shivaram/papers/tk_uai_2019.pdf)  
 Authors: Meet Taraviya and Shivaram Kalyanakrishnan  
 Year: 2019  
-Review 08
+[Review 08](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/08-policy-iteration-tighter-analysis.pdf)
 
 [Back](..)
