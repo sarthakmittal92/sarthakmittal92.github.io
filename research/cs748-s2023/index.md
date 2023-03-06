@@ -45,4 +45,9 @@ Authors: Meet Taraviya and Shivaram Kalyanakrishnan
 Year: 2019  
 [Review 08](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/08-policy-iteration-tighter-analysis.pdf)
 
+[**Is it Enough to Get the Behaviour Right?**](https://docs.google.com/viewer?url=http://www.cs.toronto.edu/~hector/Papers/chinese.pdf)  
+Authors: Hector J. Levesque  
+Year: 2009  
+[Review 09](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/09-right-behaviour.pdf)
+
 [Back](..)
