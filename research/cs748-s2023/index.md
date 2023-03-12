@@ -21,7 +21,7 @@ Authors: Meet Taraviya and Shivaram Kalyanakrishnan
 Year: 2019  
 [Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/08-policy-iteration-tighter-analysis.pdf)
 
-[**Neural Architecture Search with Reinforcement Learning**](https://docs.google.com/viewer?url=https://openreview.net/pdf?id=r1Ue8Hcxg)  
+[**Neural Architecture Search with Reinforcement Learning**](https://docs.google.com/viewer?url=https://arxiv.org/pdf/1611.01578.pdf)  
 Authors: Barret Zoph and Quoc V. Le  
 Year: 2017  
 Review
