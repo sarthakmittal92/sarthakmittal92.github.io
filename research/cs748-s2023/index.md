@@ -16,6 +16,11 @@ Authors: David Abel, Will Dabney, Anna Harutyunyan, Mark K. Ho, Michael L. Littm
 Year: 2021  
 [Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/05-markov-reward-expressivity.pdf)
 
+[**Neural Thompson Sampling**](https://docs.google.com/viewer?url=https://openreview.net/pdf?id=tkAtoZkcUnm)  
+Authors: Weitong Zhang, Dongruo Zhou, Lihong Li, and Quanquan Gu  
+Year: 2021  
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/12-neural-ts.pdf)
+
 [**A Tighter Analysis of Randomised Policy Iteration**](https://docs.google.com/viewer?url=https://www.cse.iitb.ac.in/~shivaram/papers/tk_uai_2019.pdf)  
 Authors: Meet Taraviya and Shivaram Kalyanakrishnan  
 Year: 2019  
@@ -24,7 +29,12 @@ Year: 2019
 [**Neural Architecture Search with Reinforcement Learning**](https://docs.google.com/viewer?url=https://arxiv.org/pdf/1611.01578.pdf)  
 Authors: Barret Zoph and Quoc V. Le  
 Year: 2017  
-Review
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/10-nas-rl.pdf)
+
+[**A Contextual-Bandit Approach to Personalized News Article Recommendation**](https://docs.google.com/viewer?url=https://www.ra.ethz.ch/cdstore/www2010/www/p661.pdf)  
+Authors: Lihong Li, Wei Chu, John Langford, and Robert E. Schapire  
+Year: 2012  
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/11-contextual-bandit-personalized-news.pdf)
 
 [**Is it Enough to Get the Behaviour Right?**](https://docs.google.com/viewer?url=http://www.cs.toronto.edu/~hector/Papers/chinese.pdf)  
 Authors: Hector J. Levesque  
