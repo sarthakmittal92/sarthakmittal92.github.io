@@ -31,6 +31,11 @@ Authors: Barret Zoph and Quoc V. Le
 Year: 2017  
 [Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/10-nas-rl.pdf)
 
+[**Action Selection for Hammer Shots in Curling**](https://docs.google.com/viewer?url=http://webdocs.cs.ualberta.ca/~holte/Publications/ijcai2016-curling.pdf)  
+Authors: Zaheen Farraz Ahmad, Robert C. Holte, and Michael Bowling  
+Year: 2016  
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/13-hammer-shots-curling.pdf)
+
 [**A Contextual-Bandit Approach to Personalized News Article Recommendation**](https://docs.google.com/viewer?url=https://www.ra.ethz.ch/cdstore/www2010/www/p661.pdf)  
 Authors: Lihong Li, Wei Chu, John Langford, and Robert E. Schapire  
 Year: 2012  
