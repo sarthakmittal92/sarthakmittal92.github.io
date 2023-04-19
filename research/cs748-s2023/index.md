@@ -6,9 +6,8 @@ subtitle: Research
 
 ## Readings & Reviews
 
-These are the research papers (and technical reviews) written by me during the course on
-Advanced Reinforcement Learning in Spring 2023. They are arranged in decreasing order of
-recency of the publication.
+These are the research papers (ang technical reviews written by me) that I read during the course on Advanced Reinforcement Learning in Spring 2023. They are arranged in decreasing
+order of recency of the publication.
 
 [**Outracing champion Gran Turismo drivers with deep reinforcement learning**](https://docs.google.com/viewer?url=https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/nature22.pdf)  
 Authors: Peter R. Wurman, Samuel Barrett, Kenta Kawamoto, James MacGlashan, Kaushik Subramanian, Thomas J. Walsh, Roberto Capobianco, Alisa Devlic, Franziska Eckert, Florian Fuchs, Leilani Gilpin, Piyush Khandelwal, Varun Kompella, HaoChih Lin, Patrick MacAlpine, Declan Oller, Takuma Seno, Craig Sherstan, Michael D. Thomure, Houmehr Aghabozorgi, Leon Barrett, Rory Douglas, Dion Whitehead, Peter Dürr, Peter Stone, Michael Spranger, and Hiroaki Kitano  
