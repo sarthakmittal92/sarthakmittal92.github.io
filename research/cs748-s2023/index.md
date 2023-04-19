@@ -6,10 +6,19 @@ subtitle: Research
 
 ## Readings & Reviews
 
+These are the research papers (and technical reviews) written by me during the course on
+Advanced Reinforcement Learning in Spring 2023. They are arranged in decreasing order of
+recency of the publication.
+
 [**Outracing champion Gran Turismo drivers with deep reinforcement learning**](https://docs.google.com/viewer?url=https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/nature22.pdf)  
 Authors: Peter R. Wurman, Samuel Barrett, Kenta Kawamoto, James MacGlashan, Kaushik Subramanian, Thomas J. Walsh, Roberto Capobianco, Alisa Devlic, Franziska Eckert, Florian Fuchs, Leilani Gilpin, Piyush Khandelwal, Varun Kompella, HaoChih Lin, Patrick MacAlpine, Declan Oller, Takuma Seno, Craig Sherstan, Michael D. Thomure, Houmehr Aghabozorgi, Leon Barrett, Rory Douglas, Dion Whitehead, Peter Dürr, Peter Stone, Michael Spranger, and Hiroaki Kitano  
 Year: 2022  
 [Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/02-turismo-deep-rl.pdf)
+
+[**On the Dangers of Stochastic Parrots:Can Language Models Be Too Big? 🦜**](https://docs.google.com/viewer?url=https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)  
+Authors: Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell  
+Year: 2021  
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/15-stochastic-parrots.pdf)
 
 [**On the Expressivity of Markov Reward**](https://docs.google.com/viewer?url=https://david-abel.github.io/papers/neurips2021_oteomr.pdf)  
 Authors: David Abel, Will Dabney, Anna Harutyunyan, Mark K. Ho, Michael L. Littman, Doina Precup, and Satinder Singh  
@@ -50,6 +59,11 @@ Year: 2009
 Authors: Arthur Guez, Robert D. Vincent, Massimo Avoli, and Joelle Pineau  
 Year: 2008  
 [Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/01-epilepsy-batch-rl.pdf)
+
+[**Cross-Domain Transfer for Reinforcement Learning**](https://docs.google.com/viewer?url=https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/ICML07-taylor.pdf)  
+Authors: Matthew E. Taylor and Peter Stone  
+Year: 2007  
+[Review](https://docs.google.com/viewer?url=https://sarthakmittal92.github.io/research/cs748-s2023/14-transfer-rl.pdf)
 
 [**Labeling Images with a Computer Game**](https://docs.google.com/viewer?url=https://www.cs.cmu.edu/~biglou/ESP.pdf)  
 Authors: Luis von Ahn and Laura Dabbish  
