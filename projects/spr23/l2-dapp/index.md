@@ -12,6 +12,10 @@ cover-img: https://i.imgur.com/6sGwg73.png
 The problem statement can be found here:  
 [Layer 2 Decentralized Application](https://github.com/sarthakmittal92/layer-2-dapp/blob/main/cs765-s2023-assignment3.pdf)
 
+### Contributors
+[Sanchit Jindal](https://github.com/sanchit1053)  
+[Virendra Kabra](https://github.com/virendrakabra14)
+
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
 - [https://www.leewayhertz.com/layer-2-chain-vs-side-chain-vs-app-chain/](https://www.leewayhertz.com/layer-2-chain-vs-side-chain-vs-app-chain/)
