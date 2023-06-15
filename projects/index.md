@@ -5,6 +5,9 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Inter-IIT Tech: Route Planning Optimisation**](./spr23/inter-iit/)
+- Worked on Reinforcement Learning based approach to solve the vehicle routing problem
+
 [**IITB CSE Research Symposium Website**](./spr23/symposium/)
 
 ## <a href="./aut22/" style="color: black">Autumn 2022</a>

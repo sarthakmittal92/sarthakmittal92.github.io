@@ -3,6 +3,11 @@ layout: page
 title: Internships
 ---
 
+## <a style="color: black">Summer 2023</a>
+**Quantitative Strategist Intern** - [Quadeye](https://www.quadeye.com/)  
+Guide: [Vipul Agarwal](https://in.linkedin.com/in/vipul-agarwal-9492a71a2)
+- Working on developing strategies for Options trading
+
 ## <a style="color: black">Winter 2022</a>
 **Machine Learning Intern** - [Prodigal SoftTech](https://www.prodigaltech.com/)  
 Guide: [Atul Kumar](https://in.linkedin.com/in/atul-kumar-9366117b)
