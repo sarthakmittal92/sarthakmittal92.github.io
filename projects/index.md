@@ -5,6 +5,11 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**P2P Crypto Network**](./spr23/p2p-crypto/)
+- Build a P2P Cryptocurrency simulator using peers, transactions and blocks along with
+probabilistic parameters
+- Simulated transactions in the network by modeling latencies and handling proof-of-work
+
 [**Audio-Visual Instance Discrimination**](./spr23/avid/)
 - Evaluated the AVID-CMA model using HMDB-51 dataset and modified evaluation parameters
 
