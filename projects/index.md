@@ -5,6 +5,10 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Limestone Data Challenge**](./spr23/ldc-2023/)
+- Analyzed stock indices data in a toy dataset using clustering and predicted the composition
+of indices
+
 [**Inter-IIT Tech: Route Planning Optimisation**](./spr23/inter-iit/)
 - Worked on Reinforcement Learning based approach to solve the vehicle routing problem
 
