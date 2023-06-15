@@ -6,6 +6,10 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**P2P Crypto Network with Attacks**](./p2p-crypto-attacks/)
+- Extended the Cryptocurrency network simulator by adding malicious miners along with honest
+- Implemented selfish and stubborn modes of adversarial behaviour and analyzed block trees
+
 [**P2P Crypto Network**](./p2p-crypto/)
 - Build a P2P Cryptocurrency simulator using peers, transactions and blocks along with
 probabilistic parameters
