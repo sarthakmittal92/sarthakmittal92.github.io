@@ -5,6 +5,10 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Layer 2 Dapp**](./spr23/l2-dapp/)
+- Developed a layer 2 decentralized application in Solidity on top of Blockchain
+- Created a joint-accounts transfer network and simulated balances across nodes
+
 [**P2P Crypto Network with Attacks**](./spr23/p2p-crypto-attacks/)
 - Extended the Cryptocurrency network simulator by adding malicious miners along with honest
 - Implemented selfish and stubborn modes of adversarial behaviour and analyzed block trees
