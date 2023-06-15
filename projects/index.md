@@ -5,6 +5,9 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Audio-Visual Instance Discrimination**](./spr23/avid/)
+- Evaluated the AVID-CMA model using HMDB-51 dataset and modified evaluation parameters
+
 [**Limestone Data Challenge**](./spr23/ldc-2023/)
 - Analyzed stock indices data in a toy dataset using clustering and predicted the composition
 of indices

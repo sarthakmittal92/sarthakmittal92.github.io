@@ -6,6 +6,9 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**Audio-Visual Instance Discrimination**](./avid/)
+- Evaluated the AVID-CMA model using HMDB-51 dataset and modified evaluation parameters
+
 [**Limestone Data Challenge**](./ldc-2023/)
 - Analyzed stock indices data in a toy dataset using clustering and predicted the composition
 of indices
