@@ -5,6 +5,12 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Databases Labs**](./spr23/dbis-labs/)
+- Worked on labs based on databases and query handling using SQL and Psycopg in Python
+- Implemented a course registration portal using PostgreSQL, ReactJS and Node
+- Utilised Spark and Kafka for Big Data and Data Streaming for IMDB movies database
+- Analyzed Postgres query handling internals and SQL query planning and costs 
+
 [**Mega NetWorks**](./spr23/mega-networks/)
 - Designed a LinkedIn clone using PostgreSQL, Express, ReactJS and NodeJS with CSS styling
 - Implemented functionality for connections, jobs, profiles, post feed and chat messaging

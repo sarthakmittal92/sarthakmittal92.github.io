@@ -19,4 +19,3 @@ The final report can be found here:
 
 #### Image credits
 - [Imgur](https://imgur.com/) and [BeFunky](https://www.befunky.com/dashboard/)
-- []()

@@ -6,6 +6,12 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**Databases Labs**](./dbis-labs/)
+- Worked on labs based on databases and query handling using SQL and Psycopg in Python
+- Implemented a course registration portal using PostgreSQL, ReactJS and Node
+- Utilised Spark and Kafka for Big Data and Data Streaming for IMDB movies database
+- Analyzed Postgres query handling internals and SQL query planning and costs 
+
 [**Mega NetWorks**](./mega-networks/)
 - Designed a LinkedIn clone using PostgreSQL, Express, ReactJS and NodeJS with CSS styling
 - Implemented functionality for connections, jobs, profiles, post feed and chat messaging
