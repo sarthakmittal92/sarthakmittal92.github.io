@@ -5,6 +5,9 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**ASR Models**](./spr23/asr-models/)
+- Evaluated and fine-tuned CRDNN model on HVB dataset and trained a sentiment-detection model
+
 [**Speech Recognition**](./spr23/speech-recog/)
 - Trained LLMs including M5, M11 and LSTM-based RNN using MFCC features on Speech Commands dataset
 

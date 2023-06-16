@@ -6,6 +6,9 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**ASR Models**](./asr-models/)
+- Evaluated and fine-tuned CRDNN model on HVB dataset and trained a sentiment-detection model
+
 [**Speech Recognition**](./speech-recog/)
 - Trained LLMs including M5, M11 and LSTM-based RNN using MFCC features on Speech Commands dataset
 
