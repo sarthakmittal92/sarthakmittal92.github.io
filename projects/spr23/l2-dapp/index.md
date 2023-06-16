@@ -6,7 +6,7 @@ subtitle: CS765 (Introduction to Blockchains, Cryptocurrency and Smart Contracts
 cover-img: https://i.imgur.com/6sGwg73.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/l2-dapp)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/layer-2-dapp)
 
 ## Description
 The problem statement can be found here:  

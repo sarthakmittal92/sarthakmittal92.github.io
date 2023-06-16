@@ -6,6 +6,9 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**Speech Recognition**](./speech-recog/)
+- Trained LLMs including M5, M11 and LSTM-based RNN using MFCC features on Speech Commands dataset
+
 [**Layer 2 Dapp**](./l2-dapp/)
 - Developed a layer 2 decentralized application in Solidity on top of Blockchain
 - Created a joint-accounts transfer network and simulated balances across nodes

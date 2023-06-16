@@ -5,6 +5,9 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Speech Recognition**](./spr23/speech-recog/)
+- Trained LLMs including M5, M11 and LSTM-based RNN using MFCC features on Speech Commands dataset
+
 [**Layer 2 Dapp**](./spr23/l2-dapp/)
 - Developed a layer 2 decentralized application in Solidity on top of Blockchain
 - Created a joint-accounts transfer network and simulated balances across nodes
