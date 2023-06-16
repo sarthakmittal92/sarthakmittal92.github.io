@@ -6,6 +6,10 @@ subtitle: Spring 2023
 
 These are the projects I did during my sixth semester.
 
+[**Mega NetWorks**](./mega-networks/)
+- Designed a LinkedIn clone using PostgreSQL, Express, ReactJS and NodeJS with CSS styling
+- Implemented functionality for connections, jobs, profiles, post feed and chat messaging
+
 [**ASR Models**](./asr-models/)
 - Evaluated and fine-tuned CRDNN model on HVB dataset and trained a sentiment-detection model
 

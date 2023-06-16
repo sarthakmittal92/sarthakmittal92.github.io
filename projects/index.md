@@ -5,6 +5,10 @@ title: Projects
 
 ## <a href="./spr23/" style="color: black">Spring 2023</a>
 
+[**Mega NetWorks**](./spr23/mega-networks/)
+- Designed a LinkedIn clone using PostgreSQL, Express, ReactJS and NodeJS with CSS styling
+- Implemented functionality for connections, jobs, profiles, post feed and chat messaging
+
 [**ASR Models**](./spr23/asr-models/)
 - Evaluated and fine-tuned CRDNN model on HVB dataset and trained a sentiment-detection model
 
