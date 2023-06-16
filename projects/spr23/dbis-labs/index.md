@@ -10,17 +10,7 @@ cover-img: https://i.imgur.com/veE0Hfl.png
 
 ## Description
 The labs were based on several topics and concepts:  
-| Lab Number | Concept | Software/Language |
-| --- | --- | --- |
-| 1 | Queries | RelaX and SQL |
-| 2 | Queries | Advanced SQL |
-| 3 | Python API | Psycopg |
-| 4 | Course Reg Portal | ReactJS, Node, PostgreSQL |
-| 5 | Big Data | PySpark |
-| 6 | Postgres Internals | Postgres |
-| 7 | Data Streaming | PySpark and Kafka |
-| 8 | Query Planning | SQL and Postgres |
-| 9 | Blocks and Transactions | SQL and Postgres |
+[![Topics](https://i.imgur.com/BsTOTCM.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:60%;"}](./dbis-topics.png)
 
 ### Contributors
 [Mayank Jain](https://github.com/Mayank27Jain)
