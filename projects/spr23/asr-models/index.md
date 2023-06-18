@@ -6,7 +6,7 @@ subtitle: CS753 (Automatic Speech Recognition), IIT Bombay
 cover-img: https://i.imgur.com/A8GoqMA.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/asr-models)
 
 ## Description
 The problem statement is included within the notebook:  
