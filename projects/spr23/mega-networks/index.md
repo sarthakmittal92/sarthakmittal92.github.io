@@ -1,12 +1,12 @@
 ---
 layout: post
 date: 2023-05-04
-title: Mega Networks
+title: Mega NetWorks
 subtitle: CS387 (Databases and Information Systems Lab), IIT Bombay
 cover-img: https://i.imgur.com/wmmaVkJ.png
 ---
 
-[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/)
+[![Code](https://i.imgur.com/AtIPmkl.png){:style="display:block; margin-left:auto; margin-right:auto; max-width:10%;"}](https://github.com/sarthakmittal92/cs387-project-NetWorks)
 
 ## Description
 The final report can be found here:  
