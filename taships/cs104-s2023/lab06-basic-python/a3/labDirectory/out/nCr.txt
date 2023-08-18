@@ -1,0 +1,5 @@
+Function: nCr
+Arguments: (13, 4)
+Answer: 715
+Lookups: 60
+Calls: 93

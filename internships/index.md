@@ -6,7 +6,9 @@ title: Internships
 ## <a style="color: black">Summer 2023</a>
 **Quantitative Strategist Intern** - [Quadeye](https://www.quadeye.com/)  
 Guide: [Vipul Agarwal](https://in.linkedin.com/in/vipul-agarwal-9492a71a2)
-- Working on developing strategies for Options trading
+- Explored option theory to understand the applications of greeks in stocks and derivative markets
+- Implemented the Black Scholes model in C++ with low-latency (700µs for 200+ strikes per time snapshot) for computing option premium and implied volatility (IV) using Newton-Raphson method
+- Designed 2 final strategies based on cubic splines with 3-7 knots and implied volatility surfaces
 
 ## <a style="color: black">Winter 2022</a>
 **Machine Learning Intern** - [Prodigal SoftTech](https://www.prodigaltech.com/)  

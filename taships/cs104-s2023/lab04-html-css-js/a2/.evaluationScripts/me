@@ -1,0 +1,27 @@
+
+{
+    "data": [
+        {
+            "testid": "1",
+            "status": "success",
+            "score": 0,
+            "message": {
+                "hometitle": 0,
+                "projecttitle": 0,
+                "educationtitle": 0,
+                "introduction": 0,
+                "profileImage": 0,
+                "profileImageCaption": 0,
+                "video": 0,
+                "contact-me-openInNewTab": 0,
+                "contact-me-linksWorking": 0,
+                "projects": 0,
+                "inlineCss": 0,
+                "internalCss": 0,
+                "externalCss": 0,
+                "education": 0,
+                "total_marks": 0
+            }
+        }
+    ]
+}

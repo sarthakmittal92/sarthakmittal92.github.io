@@ -1,0 +1,17 @@
+{
+    "marks": {
+        "task1": 1,
+        "task2": 2,
+        "task3": 1,
+        "task4": 2,
+        "task5": 2
+    },
+    "total": 8,
+    "feedback": {
+        "task1": "success",
+        "task2": "success",
+        "task3": "success",
+        "task4": "success",
+        "task5": "success"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "marks": {
+        "plot0": 1,
+        "plot1": 1,
+        "plot2": 1,
+        "plot3": 1,
+        "plot4": 1,
+        "plot5": 1,
+        "plot6": 1,
+        "plot7": 1,
+        "plot8": 1
+    },
+    "total": 9,
+    "feedback": {
+        "plot0": "success",
+        "plot1": "success",
+        "plot2": "success",
+        "plot3": "success",
+        "plot4": "success",
+        "plot5": "success",
+        "plot6": "success",
+        "plot7": "success",
+        "plot8": "success"
+    }
+}

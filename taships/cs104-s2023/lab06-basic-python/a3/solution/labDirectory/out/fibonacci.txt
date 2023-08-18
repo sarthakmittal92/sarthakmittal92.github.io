@@ -1,0 +1,5 @@
+Function: fibonacci
+Arguments: (40,)
+Answer: 102334155
+Lookups: 41
+Calls: 79

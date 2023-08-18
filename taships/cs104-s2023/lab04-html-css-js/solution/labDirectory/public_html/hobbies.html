@@ -1,0 +1,50 @@
+<!-- Hobbies -->
+<!DOCTYPE html>
+
+<html>
+
+<script>
+    function showHobbies () {
+        var checkBox1 = document.getElementById('hb1');
+        var text1 = document.getElementById('desc1');
+        if (checkBox1.checked == true) {
+            text1.style.display = "block";
+        }
+        else {
+            text1.style.display = "none";
+        }
+        var checkBox2 = document.getElementById('hb2');
+        var text2 = document.getElementById('desc2');
+        if (checkBox2.checked == true) {
+            text2.style.display = "block";
+        }
+        else {
+            text2.style.display = "none";
+        }
+    }
+</script>
+
+<div class="topnav">
+    <a href="./index.html" target="_blank">Home</a>
+    <a href="./projects.html" target="_blank">Projects</a>
+    <a href="./education.html" target="_blank">Education</a>
+    <a href="./hobbies.html" target="_blank">Hobbies</a>
+    <a href="./contact.html" target="_blank">Contact</a>
+</div>
+
+<title>Hobbies</title>
+
+<body>
+
+    <div style="color:blue" id="hobbies">
+        <input type="checkbox" id="hb1">Hobby 1
+        <p id="desc1" style="display:none">Desc 1</p>
+        <input type="checkbox" id="hb2">Hobby 2
+        <p id="desc2" style="display:none">Desc 2</p>
+    </div>
+
+    <button onclick="showHobbies()">Learn More</button>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "marks": {
+        "factorial": 1.5,
+        "fibonacci": 1.5,
+        "nCr": 1.5,
+        "ackermann": 1.5
+    },
+    "total": 6.0,
+    "feedback": {}
+}

@@ -1,0 +1,86 @@
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What all is present in output of command 'ls -l'? Select all that apply.
+OPTIONS=
+A. permission string
+B. time of last modification
+C. directory/file bit/character
+D. hidden files and folders
+ANSWER=A,B,C
+ANSDESC=
+The output is fairly indicative of the correct options. For hidden files/folders we need to use -a switch.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can mv command be used for? Select all that apply.
+OPTIONS=
+A. rename files
+B. move files
+C. rename folders
+D. move folders
+ANSWER=A,B,C,D
+ANSDESC=
+mv can move files or folders to destination, and hence even rename them.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can cp command be used for? Select all that apply.
+OPTIONS=
+A. copy files
+B. copy folders (using option -f)
+C. copy folders (using option -r)
+ANSWER=A,C
+ANSDESC=
+cp can copy files amd -r tells it to recursively copy the folder.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can rm command be used for? Select all that apply.
+OPTIONS=
+A. remove files
+B. remove folders (using option -f)
+C. remove folders (using option -r)
+ANSWER=A,C
+ANSDESC=
+rm can remove files amd -r tells it to recursively copy the folder.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can wc command be used for (assume appropriate options can be used)? Select all that apply.
+OPTIONS=
+A. count characters
+B. count lines
+C. count files
+D. count folders
+ANSWER=A,B
+ANSDESC=
+wc can count characters and lines in files. To count files and folders we need to combine it with ls.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can cd command be used for? Select all that apply.
+OPTIONS=
+A. move to a specific directory using its relative path
+B. move to a specific directory using its absolute path
+C. move to child directory using '..'
+D. move to home directory using 'cd' without arguments
+ANSWER=A,B,D
+ANSDESC=
+cd can help move across directories using absolute and relative paths.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+If we have a text (txt) file with 8 lines, what command(s) can be used to print it to terminal? Select all that apply.
+OPTIONS=
+A. cat
+B. head
+C. tail
+D. more
+ANSWER=A,B,C,D
+ANSDESC=
+cd can help move across directories using absolute and relative paths.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can diff command be used for? Select all that apply.
+OPTIONS=
+A. compare different files
+B. compare directories having different files and same structure
+C. compare directories having same files and different structure
+D. compare directories having same files and same structure
+ANSWER=A,D
+ANSDESC=
+diff can compare different files, or compare files with same name and in same place in different directories.
+=========================================================================================

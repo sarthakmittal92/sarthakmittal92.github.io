@@ -1,0 +1,5 @@
+Function: factorial
+Arguments: (10,)
+Answer: 3628800
+Lookups: 11
+Calls: 11

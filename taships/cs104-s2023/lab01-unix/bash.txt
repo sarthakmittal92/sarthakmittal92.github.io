@@ -1,0 +1,691 @@
+﻿QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What is Unix?
+OPTIONS=
+A. A software program
+B. A programming language
+C. An operating system
+D. A command line
+ANSWER=C
+ANSDESC=
+Unix is an operating system.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which language is Unix written in?
+OPTIONS=
+A. Java
+B. C
+C. Python
+D. C++
+ANSWER=B
+ANSDESC=
+Unix was originally written in Assembly but then re-written in C.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash
+Which features are supported across all versions of Unix? Select all that apply.
+OPTIONS=
+A. Shell
+B. Commands
+C. System calls
+D. Graphical UI
+ANSWER=A,B,C
+ANSDESC=
+The shell is the utility which processes our requests. System calls are a handful of functions which are used to interact with the
+kernel and make available the services provided by the operating system. A Graphical user interface (GUI) is available in Unix,
+but the traditional Unix interface is the command line only.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Who developed Linux?
+OPTIONS=
+A. Dennis Ritchie
+B. Linus Torvalds
+C. Ken Thompson
+ANSWER=B
+ANSDESC=
+Linux was written by Linus Torvalds from scratch.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash
+Which are distributions of Linux? Select all that apply.
+OPTIONS=
+A. Debian
+B. Ubuntu
+C. Catalina
+D. Fedora
+ANSWER=A,B,D
+ANSDESC=
+Linux OS often come packaged with lot of additional free software.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Shell is a command line interpreter for Unix.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+Computers don’t have any capability of translating commands into actions. To do so we require shell-a command interpreter which translates our commands into actions. It is actually the interface between the user and kernel. There could be multiple shells in action on a single system.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=easy#bash:basic
+What are the features of the command line? Select all that apply.
+OPTIONS=
+A. text-based
+B. terse commands
+C. supports file management
+D. has a pre-programmed GUI
+ANSWER=A,B,C
+ANSDESC=
+Command line is text based because it is light on resources. The commands are terse to avoid many keystrokes. It supports file management, but is a scripting language.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Options are also command line arguments.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+Options to a command begin with a dash (-).
+
+
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What is bash?
+OPTIONS=
+A. file editor
+B. scripting language
+C. operating system
+D. python library
+ANSWER=B
+ANSDESC=
+Bash is short form for Bourne Again SHell and is a scripting command line language.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to list files in a directory? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='ls'
+ANSDESC=
+ls stands for list and it lists the current directory.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2, CATEGORY=medium#bash: basic
+What options are correctly mapped for the list (ls) command? Select all that apply.
+OPTIONS=
+A. a – all
+B.  l (small L) – long
+C.  d – deleted
+D. s – sort by size
+ANSWER=A,B
+ANSDESC=
+The “a” switch shows hidden files in the list. The “l” switch enables a long description that includes permissions. The d switch is to list directories. The s switch lists sizes, while S sorts them.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to move across directories in a file system? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='cd'
+ANSDESC=
+cd stands for change directory and it switches to given directory.
+
+
+=========================================================================================
+QUESTION=singlecorrect, MARKS=2.00, CATEGORY=medium#bash:basic
+Unix command to move (back) to previous working directory (if any)?
+OPTIONS=
+A. cd ~
+B. cd ..
+C. cd -
+D. cd .
+ANSWER=C
+ANSDESC=
+The - flag takes us back to the previous (if any) directory.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=2, CATEGORY=medium#bash:basic
+Unix command to move (back) to previous working directory (if any)?
+OPTIONS=
+A. cd ~
+B. cd ..
+C. cd -
+D. cd .
+ANSWER=C
+ANSDESC=
+The - flag takes us back to the previous (if any) directory.
+=====================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to rename a file or folder? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='mv'
+ANSDESC=
+mv stands for move and it moves the first file to the second file.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to copy files or folders? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='cp'
+ANSDESC=
+cp stands for copy and it copies files/folders from source to destination.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=2.00, CATEGORY=medium#bash:basic
+Unix command to fully copy a folder having multiple files/folders within? (assume permissions exist)
+OPTIONS=
+A. cp -f
+B. cp -r
+C. cp -a
+D. copy
+ANSWER=B
+ANSDESC=
+The r flag stands for recursive, telling copy to move recursively through directories and copy all files and folders.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to delete a file? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='rm'
+ANSDESC=
+rm stands for remove and it deletes (permanently) files.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to delete an empty folder? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='rmdir'
+ANSDESC=
+rmdir stands for remove directory and it deletes an empty directory.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=2.00, CATEGORY=medium#bash:basic
+Unix command to delete a folder having multiple files/folders within? (give the command along with the flag, assume permissions exist)
+OPTIONS=
+A. rm -f
+B. rm -a
+C. rmdir -r
+D. rm -r
+ANSWER=D
+ANSDESC=
+The r flag make rm recursively delete files and folders.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to print the contents of a file to the terminal? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='cat'
+ANSDESC=
+cat stands for concatenation, and it reads files sequentially and then prints to terminal.
+=========================================================================================
+
+
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to print the content of a file (along with line number) to terminal? (give the keyword with the flag/option(s) if any, do not add the file/input argument)
+BLANK=text, MARKS=2.00, ANSWER ='cat -n','nl'
+ANSDESC=
+cat stands for concatenation, and n flag tells it to output numbers.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to print a given text to the terminal? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='echo'
+ANSDESC=
+echo stands for ‘echo’, as in ‘repeat after me’, to tell the shell that it needs to say (print) the text that we say (input string).
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash:basic
+Unix command to count characters/word/bytes in a file? (give only the keyword in lowercase without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='wc'
+ANSDESC=
+wc stands for word count and can count various things from file or text.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=hard#bash:basic
+Which options are correctly mapped for the characters/word/bytes in the wc command? Select all that apply.
+OPTIONS=
+A. b – byte count
+B. c – char count
+C. w – word count
+D. l – line count
+ANSWER=C,D
+ANSDESC=
+The c flag is for bytes, m flag is for characters, and w flag for words.
+The l flag makes wc count the number of lines in the file.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=easy#bash:advanced
+Which of these are correct about processes? Select all that apply.
+OPTIONS=
+A. init has process id 0
+B. processes can create processes
+C. process could be running or suspended
+D. processes can only run in foreground
+ANSWER=B,C
+ANSDESC=
+init has process id 1. processes can use fork call to create more processes. states could be running or suspended. Processes can
+run in both foreground and background.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Which command(s) are correctly mapped (the dash ‘-’ is the separator)? Select all that apply.
+OPTIONS=
+A. < - input redirect
+B. || - pipe
+C. >> - output overwrite
+D. | - pipe
+ANSWER=A,D
+ANSDESC=
+< and > redirect (overwrite) input and output. >> appends to output. | is pipe. || is for parallel commands.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Which command(s) are correctly mapped (the dash ‘-’ is the separator)? Select all that apply.
+OPTIONS=
+A. ps – all running processes
+B. ps aux – can be used to find user of some process
+C. ps ax – all running processes
+D. kill -9 – terminates all processes
+ANSWER=B,C
+ANSDESC=
+ps just lists command line processes. ax makes it display all processes, and aux adds user to the output. Kill -9 can kill a particular process whose pid is given.
+=========================================================================================
+
+
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Which permission octal value(s) against a directory will allow access to a given directory’s files? Select all that apply.
+OPTIONS=
+A. 7
+B. 6
+C. 5
+D. 4
+ANSWER=A,C
+ANSDESC=
+Both read and execute permissions are needed. 7 (111 = rwx) and 5 (101 = r-x) are fine.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Which flags are correct for grep command? Select all that apply.
+OPTIONS=
+A. i – invert (negation) search
+B. n – numerical search
+C. r – recursive search
+D. v – invert (negation) search
+ANSWER=C,D
+ANSDESC=
+i is for case-insensitive, n is for line number, r is for recursive and v is for inverting (negation).
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+Unix command to sort a file numerically in descending order?
+OPTIONS=
+A. sort
+B. sort -n
+C. sort -kr
+D. sort -nr
+ANSWER=D
+ANSDESC=
+sort command sorts contents of a file, and n flag makes it sort numerically, while r add reverse order.
+
+
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+If I want to silence error outputs of a command or program, what can I use?
+OPTIONS=
+A. append ‘>/dev/null’ to the command
+B. append ‘2>/dev/null’ to the command
+C. append ‘-v’ as a flag
+D. append ‘shhhh’ to the command
+ANSWER=B
+ANSDESC=
+this tells the command to redirect stderr (2) output to ‘/dev/null’
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=medium#bash:advanced
+If a file ‘hello.txt’ contains only the string “Hello” (without quotes), then the command “touch myfile-$(echo hello.txt).txt” 
+
+
+will create a file named “myfile-Hello.txt”?
+OPTIONS=
+A. True
+B. False
+ANSWER=B
+ANSDESC=
+we need to use the cat command within substitution
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Mark the correct statements (assume they are run by a non-root user on a Unix shell). Select all that apply.
+OPTIONS=
+A. “su <username>” starts the shell for the user <username>
+B. “sudo su <username>” is identical in behaviour to “sudo su”
+C. the shell started by “sudo su” has regular privileges
+D. “sudo -u root bash” is identical in behaviour to “sudo su”
+ANSWER=A,D
+ANSDESC=
+su just switches the shell session (creates a new bash session) for the user. sudo su by default switches to superuser, and if given username, behaves identical to su <username>. the shell launched by sudo su (or sudo -u root bash) has root priviledges.
+
+
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=hard#bash:advanced
+We want to print the content of all text (txt) files whose name either starts with ‘foo’ or with ‘bar’. What command would we use, if we want to do this using 'cat' but without using ranges (curly braces)? (give the full command)
+BLANK=text, MARKS=3.0, ANSWER ='cat foo*.txt || cat bar*.txt'
+ANSDESC=
+The range will be expanded, and then the regex * will append to foo and bar.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command is used for extracting details of the operating system?
+OPTIONS=
+A. uname
+B. cd
+C. ls
+D. echo
+ANSWER=A
+ANSDESC=
+uname gives details of the OS.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+The sequence of directories that a shell searches while looking for a command is specified in PATH variable.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+PATH contains list of directories containing commands.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+How can we specify more than one command in command line at the same time?
+OPTIONS=
+A. using ==
+B. using /
+C. using >
+D. using ;
+ANSWER=D
+ANSDESC=
+; acts as a separator for commands
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which command is used to display the documentation of commands in UNIX?
+OPTIONS=
+A. help
+B. detail
+C. man
+D. docs
+ANSWER=C
+ANSDESC=
+man stands for manual
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command(s) is/are correct for displaying the calendar of February 2024 in UNIX? Select all that apply.
+OPTIONS=
+A. cal Febr 2024
+B. cal Feb 2024
+C. cal 2 2024
+D. ncal 2 2024
+ANSWER=A,B,C,D
+ANSDESC=
+cal displays the calendar of given month and year, and by default shows current month
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+What are meta-characters?
+OPTIONS=
+
+
+A. special characters having pre-defined meaning
+B. special symbols
+C. shell symbols
+D. command symbols
+ANSWER=A
+ANSDESC=
+meta-characters are special characters having a predefined meaning to the shell. They are used as wild cards for special purposes like pattern matching, output redirecting etc. *, |, < are meta-characters.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command(s) is/are correct for displaying date in format mm/dd/yy? Select all that apply.
+OPTIONS=
+A. date +%M/%D/%Y
+B. date +%D
+C. date +%m/%d/%y
+D. date +%mm/%dd/%yy
+ANSWER=B,C
+ANSDESC=
+date format has various symbols, like d for date, m for month, y for truncated year, D for full date, M for minutes, Y for full year, etc.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+echo command is generally used for displaying ____.
+OPTIONS=
+A. errors
+B. OS details
+C. diagnostic messages
+D. ECG graph
+ANSWER=C
+ANSDESC=
+echo command is generally used for displaying diagnostic messages on to the terminal or to issue prompt for reading the user
+input. All shells now have echo built in i.e. it is an internal command.
+=========================================================================================
+
+
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+What are escape sequences?
+OPTIONS=
+A. special characters preceeded by /
+B. forbidden commands
+C. a sequence of “Esc” characters
+D. special characters preceeded by \
+ANSWER=D
+ANSDESC=
+An escape sequence is generally a two character string which begins with a \. The role of escape sequences is that they change the state of computer or the peripheral devices attached to it, For example, \n is an escape sequence which implies a new line character.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+Which is not a valid escape sequence?
+OPTIONS=
+A. \t
+B. \d
+C. \n
+D. \v
+ANSWER=B
+ANSDESC=
+t is for tab, n for new-line and v for vertical tab.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command is an alternative to echo in Unix?
+OPTIONS=
+A. cat
+B. print
+C. printf
+D. cout
+ANSWER=C
+ANSDESC=
+printf command is available on most UNIX systems and it behaves much like a substitution for echo command. It supports
+many of the formats which are used by C’s printf function. printf is also an external command.
+=========================================================================================
+QUESTION=fillblanks, BLANKS=1, CATEGORY=easy#bash
+Unix command for calculator? (give only the keyword without arguments)
+BLANK=text, MARKS=1.0, ANSWER ='bc'
+ANSDESC=
+bc command is used for invoking calculator on UNIX system. It comes with a wide library for performing calculations. The power of this tool can be derived from the fact that it can perform calculations up to and above 900 digits!
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+What is script command used for?
+OPTIONS=
+A. recording history
+B. recording session
+C. recording scripts
+D. recording output
+ANSWER=B
+ANSDESC=
+script command is basically used for recording our login session in a file. All the keystrokes, output, error messages that are encountered while our session will be stored in a file which we can view later. The name of the file in which the session is stored is typescript.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+history command displays a log of recently used commands.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+History command displays the list of recently used commands by the user which means whatever commands are used by the
+user in the current session will be displayed on the terminal using history command.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+We can use man command for displaying the documentation of man itself.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+Since man is also a UNIX command, it is necessary to know how man itself is used. For this purpose, use the same command to view its own documentation.
+=========================================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash
+Which control sequences are correctly matched? Select all that apply.
+OPTIONS=
+A. ctrl-c – terminate program (SIGINT)
+B. ctrl-\ – abort program (SIGTERM)
+C. ctrl-u – kill a command without executing it
+D. ctrl-d – end-of-file
+ANSWER=A,B,C,D
+ANSDESC=
+control sequences are activated by holding control key. C gives sigint signal, \ gives sigterm signal, u deletes the typed command and d is for ending input using EOF.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+When we log in, the UNIX places us in a directory, called ______ directory
+OPTIONS=
+A. main
+B. root
+C. home
+D. current
+ANSWER=C
+ANSDESC=
+When we log in, the system automatically places us in a directory called Home directory. We can change our directory if we want and can also view our home directory using the shell variable, HOME.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+UNIX treats everything as a file.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+All physical devices such as printers, hard disk are treated as files by the UNIX system. Even the kernel, shell and main memory is treated as a file by UNIX operating system.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+The root directory is represented by ___
+OPTIONS=
+A. \
+B. /
+C. $
+D. ~
+ANSWER=B
+ANSDESC=
+The root directory (/) serves as a reference point for all the files. All the files are hierarchically below it. All files in UNIX are related to one another. The file system in UNIX is a collection of all these related files (ordinary, directory and device files) organized in a hierarchical manner.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which command prints the home directory? Select all that apply. 
+OPTIONS=
+A. cd ~ && pwd
+B. echo $HOME
+C. echo ~
+D. pwd && cd ~
+ANSWER=A,B,C
+ANSDESC=
+pwd command is used for checking our current directory. Current directory is the directory in which we are currently working. pwd displays the absolute pathname i.e. with respect to the root directory.
+=========================================================================================
+
+
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which symbol when used with cat command can help create new file?
+OPTIONS=
+A. >
+B. <
+C. *
+D. /
+ANSWER=A
+ANSDESC=
+> symbol acts as a redirection symbol and records the input entered by the user in the specified file.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+If we create a file using cat command with the same filename which already exists in the current directory then?
+OPTIONS=
+A. existing file is deleted
+B. new file created separately
+C. existing file overwritten
+D. error reported
+ANSWER=C
+ANSDESC=
+As cat command is also used to create files, so if we want to create a file with the same filename which already exists in the
+directory then the existing file will be overwritten.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which command(s) can be used for removing file named -file.txt?Select all that apply.
+OPTIONS=
+A. rm -file.txt
+B. rm -f -file.txt
+C. rm ./-file.txt
+D. rm -- -file.txt
+ANSWER=C,D
+ANSDESC=
+
+
+To delete a file with filename beginning with a ” – “, we have to use ( — ) i.e. double-dash. ” — ” is used so that rm command does not misinterpret the filename as an option.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+A file contains 1026 bytes. How many bytes of disk space will it consume if size of a disk block is 1024 bytes?
+OPTIONS=
+A. 1026
+B. 2048
+C. 1024
+D. error reported
+ANSWER=B
+ANSDESC=
+Since files are written to the disk in terms of block size, the size consumed by the file varies from the original size of the file. Suppose, if a file size is 800 bytes but the block size on the system is 1024 bytes, then that file will consume 1024 bytes on diskspace i.e. 1 block.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+Which of the following expressions is a correct wildcard pattern if we want an expression in which the last character is not numeric?
+OPTIONS=
+A. *[!numeric]
+B. *[0-9]
+C. ^[!0-9]
+D. *[!0-9]
+ANSWER=D
+ANSDESC=
+Wildcards are used for pattern matching. The command *[!0-9] will match all expression containing any characters except that the last character entered is not numeric. Here ‘!’ is used for NOT.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+For escaping the newline character we can use ____
+OPTIONS=
+A. \
+B. /
+C. ?
+D. \n
+ANSWER=A
+ANSDESC=
+The newline character is also special, it marks the end of the command line. Some command lines that uses several arguments can be long enough to overflow to the next line. To split the wrapped line into two lines, make sure you input a \ before pressing [Enter].
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+Which command(s) will print the shell name? Select all that apply.
+OPTIONS=
+A. echo $SHELL
+B. echo ‘$SHELL’
+C. printf “$SHELL”
+D. printf ‘%s’ $SHELL
+ANSWER=A,C,D
+ANSDESC=
+Double quotes are more permissive than single quotes and allow the evaluation of the $ and ` itself. Formatted string fields are first evaluated and then printed.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+Which of the following command will remove (only) the file named * ? Select all that apply.
+OPTIONS=
+A. rm *
+B. rm “*”
+C. rm \*
+D. rm -f *
+ANSWER=B,C
+ANSDESC=
+To suppress the nature of wildcard * we can use either escaping or quoting. The \ symbol will suppress the feature of wildcard and will remove the file named *. Similarly using quoting we can turn off the meaning of the meta character.
+=========================================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+The size of /dev/null is always zero.
+OPTIONS=
+A. True
+B. False
+ANSWER=A
+ANSDESC=
+UNIX has a special file that simply accepts any stream without growing in size. This file is /dev/null. This file is used for redirecting error messages away from the terminal so that they don’t appear on the screen. This file is pseudo-device because like other device files, it’s not associated with any physical device.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+Which of the following meta-characters is/are used in command substitution? Select all that apply.
+OPTIONS=
+A. `
+B. ‘
+C. “
+D. $
+ANSWER=A,D
+ANSDESC=
+When scanning the command line, the shell looks for another metacharacter i.e. ` (the backquote) is usually placed on the top-left of our keyboard, and it should not be confused with a single quote (‘).
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command(s) are correctly matched to their description(s)? Select all that apply.
+OPTIONS=
+A. tr - translate/delete characters
+B. head - print first 10 (default amount) lines
+C. tail - print last 5 (default amount) lines
+D. diff - compare text files
+ANSWER=A,B,D
+ANSDESC=
+The tr command translates or deletes characters based on patterns. The head and tail commands can print first/last few lines (10 by default). diff is used for comparing text files.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash
+Which command(s) are correctly matched to their description(s)? Select all that apply.
+OPTIONS=
+A. which - locate executable in $PATH
+B. du - check usernames of disk users
+C. find - search through file system
+D. tar - compress files or folders
+ANSWER=A,C,D
+ANSDESC=
+The which command locates executables in the PATH variable. The du command checks disk usage. find command helps walking directory hierarchy. tar command is for archiving.
+=========================================================================================

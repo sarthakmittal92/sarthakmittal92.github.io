@@ -1,0 +1,176 @@
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+From the output of “ls -l”, what all can be inferred? Select all that apply.
+OPTIONS=
+A. who can access the files/folders listed
+B. time of last modification
+C. whether something is a file or directory
+D. names of hidden files or folder
+ANSWER=A,B,C
+ANSDESC=
+The output is fairly indicative of the correct options. For hidden files/folders we need to use -a switch.
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can mv command be used for? Select all that apply.
+OPTIONS=
+A. rename files
+B. move files
+C. rename folders
+D. move folders
+ANSWER=A,B,C,D
+ANSDESC=
+mv can move files or folders to destination, and hence even rename them.
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What of the following is true of cp? Select all that apply.
+OPTIONS=
+A. lists all the available files in the current directory and asks which to copy
+B. if the destination file specified in cp command does not exist, cp throws an error
+C. The -i option recursively copies files in a folder
+D. cp can copy folders as well
+ANSWER=D
+ANSDESC=
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can rm command be used for? Select all that apply.
+OPTIONS=
+A. remove files
+B. remove folders (using option -f)
+C. remove folders (using option -r)
+D. rm -d same as rmdir
+ANSWER=A,C,D
+ANSDESC=
+rm can remove files amd -r tells it to recursively copy the folder. rm -d removes empty directories
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can wc command be used for (assume appropriate options can be used)? Select all that apply.
+OPTIONS=
+A. count characters
+B. count lines
+C. count files
+D. count folders
+ANSWER=A,B
+ANSDESC=
+wc can count characters and lines in files. To count files and folders we need to combine it with ls.
+=========================================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+What can cd command be used for? Select all that apply.
+OPTIONS=
+A. move to a specific directory using its relative path
+B. move to a specific directory using its absolute path
+C. move to a child directory using '..'
+D. move to home directory using 'cd' without arguments
+ANSWER=A,B,D
+ANSDESC=
+cd can help move across directories using absolute and relative paths.
+=================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=easy#bash:basic
+If we have a text file with 4 lines, what command(s) can be used to print it to the terminal? Select all that apply.
+OPTIONS=
+A. cat
+B. head
+C. tail
+D. less
+ANSWER=A,B,C,D
+ANSDESC=
+All commands can help printing file contents to terminal
+=================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash: basic
+What options are correctly mapped for the list (ls) command? Select all that apply.
+OPTIONS=
+A. a – all
+B.  l (small L) – long
+C.  d – deleted
+D. s – sort by size
+ANSWER=A,B
+ANSDESC=
+The “a” switch shows hidden files in the list. The “l” switch enables a long description that includes permissions. The d switch is to list directories. The s switch lists sizes, while S sorts them.
+========================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=easy#bash:advanced
+Which of these are correct about processes? Select all that apply.
+OPTIONS=
+A. init has process id 0
+B. processes can create processes
+C. process could be running or suspended
+D. processes can only run in foreground
+ANSWER=B,C
+ANSDESC=
+init has process id 1. processes can use fork call to create more processes. states could be running or suspended. Processes can
+run in both foreground and background.
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=medium#bash:advanced
+Which command(s) are correctly mapped (the dash ‘-’ is the separator)? Select all that apply.
+OPTIONS=
+A. < - input redirect
+B. || - pipe
+C. >> - output overwrite
+D. ^ - pipe
+ANSWER=A
+ANSDESC=
+< and > redirect (overwrite) input and output. >> appends to output. | is pipe. || is for parallel commands.
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=medium#bash:advanced
+Which permission octal value(s) against a directory will allow access to a given directory’s files? Select all that apply.
+OPTIONS=
+A. 7
+B. 6
+C. 5
+D. 4
+ANSWER=A,C
+ANSDESC=
+Both read and execute permissions are needed. 7 (111 = rwx) and 5 (101 = r-x) are fine.
+========================================================================
+QUESTION=setcorrect, MARKS=1.00, CATEGORY=medium#bash:advanced
+Which flags are correct for grep command? Select all that apply.
+OPTIONS=
+A. i – invert (negation) search
+B. n – numerical search
+C. r – recursive search
+D. v – invert (negation) search
+ANSWER=C,D
+ANSDESC=
+i is for case-insensitive, n is for line number, r is for recursive and v is for inverting (negation).
+========================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=medium#bash:advanced
+Mark the correct statements (assume they are run by a non-root user on a Unix shell). Select all that apply.
+OPTIONS=
+A. “su <username>” starts the shell for the user <username>
+B. “sudo su <username>” is identical in behaviour to “sudo su”
+C. the shell started by “sudo su” has regular privileges
+D. “sudo -u root bash” is identical in behaviour to “sudo su”
+ANSWER=A,D
+ANSDESC=
+su just switches the shell session (creates a new bash session) for the user. sudo su by default switches to superuser, and if given username, behaves identical to su <username>. the shell launched by sudo su (or sudo -u root bash) has root priviledges.
+========================================================================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash
+Which is an invalid escape sequence?
+OPTIONS=
+A. \t
+B. \d
+C. \n
+D. \v
+ANSWER=B
+ANSDESC=
+t is for tab, n for new-line and v for vertical tab.
+=================
+QUESTION=singlecorrect, MARKS=1.00, CATEGORY=easy#bash:advanced
+Which of the following expressions is a correct wildcard pattern if we want an expression in which the last character is not numeric?
+OPTIONS=
+A. *[!numeric]
+B. *[0-9]
+C. ^[!0-9]
+D. *[!0-9]
+ANSWER=D
+ANSDESC=
+Wildcards are used for pattern matching. The command *[!0-9] will match all expression containing any characters except that the last character entered is not numeric. Here ‘!’ is used for NOT.
+========================================================================
+QUESTION=setcorrect, MARKS=2.00, CATEGORY=easy#bash
+Which command(s) are correctly matched to their description(s)? Select all that apply.
+OPTIONS=
+A. which - locate executable in $PATH
+B. du - check usernames of disk users
+C. find - search through file system
+D. tar - compress files or folders
+ANSWER=A,C,D
+ANSDESC=
+The which command locates executables in the PATH variable. The du command checks disk usage. find command helps walking directory hierarchy. tar command is for archiving.
+=========================================================================================

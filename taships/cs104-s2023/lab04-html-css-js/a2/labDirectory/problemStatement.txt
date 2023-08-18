@@ -1,0 +1,78 @@
+------------------- Lab 05 (HTML/CSS/JS) Activity ---------------------
+                              General Details
+
+THEME: CS-104 Course Website
+MAXIMUM MARKS: ?
+RECOMMENDED DURATION: ?
+NOTE: Please ensure that class and id selectors are correct for auto-grading.
+
+--------------------------------------------------------------------------
+                            Section A: HTML (?)
+
+The following will require use of HTML. Make sure to check with Sections B and C
+to fill up the additional styling/scripting features using CSS/JS.
+
+1. Create a navigation bar that links and redirects to respective pages
+
+2. Give a 'title' to each page - Home, Schedule, Logistics, Assignments, Feedback
+
+3. Home page (index.html):
+(a) Add a brief description (p tag, id=desc) of the course in minimum 150 words
+(b) Embed any appropriate image (id=myimage) and give course name as title
+
+4. Schedule page (schedule.html):
+(a) Make a bulleted/ordered list (id=schedule) of lecture schedule
+(b) Add a short description (date, topic, description) and link to material (if available)
+(c) Minimum 2 lecture days, if not then add dummy text
+
+5. Logistics page (logistics.html):
+(a) Make a table (id=logistics) of the grading scheme of the course
+(b) Add suitable columns like 'Category' (Assignments/Quizzes/Midsem/Endsem/Project),
+'Count' (1/2/3/etc), 'Weight' (in %)
+
+6. Assignments page (assignments.html):
+(a) Use checkboxes to give option to choose assignments
+(b) Create a button 'Learn More' (use JavaScript as told in Section C)
+(c) Display description of selected assignments upon clicking 'Learn More'
+
+7. feedback page (feedback.html):
+(a) Make a 'Feedback' section (div tag, id=feedback) and
+add emails of instructor(s) and TAs of the course
+(b) Have a form with text fields 'Name', 'Roll No.' and 'Feedback'
+(c) Display the result of submit button (use JavaScript as told in Section C)
+
+--------------------------------------------------------------------------
+                            Section B: CSS (?)
+
+The following will require CSS. The in-line and internal ones need to be added
+within respective HTML files, and the external ones need to be added to style.css.
+
+1. Use in-line CSS to:
+(a) Make font size of your description 11pt
+(b) Change font style of assignments class
+
+2. Use internal CSS for:
+(a) Styling the navigation bar
+(b) Styling of schedule page/list
+
+3. Use external CSS for:
+(a) Styling the table of logistics page
+(b) Styling the feedback form and result
+
+4. Use any kind of styling for:
+(a) Changing background and font colors
+(b) Improving overall look of the page
+
+--------------------------------------------------------------------------
+                        Section C: JavaScript (?)
+
+The following will require JavaScript. Create functions appropriately within
+HTML files or in script.js as indicated.
+
+1. Handle the 'Learn More' button in assignments page (add JavaScript within the HTML):
+(a) The description of selected assignments should appear in boxes/as list on the same page
+(b) A pop-up should ask for confirmation of selected assignments (use JavaScript events)
+
+2. Handle the 'Submit' button in feedback page (create function 'submitFeedback' in script.js):
+(a) Display a text in the form of 'Thank you {Name} (roll: {Roll No.}) for your feedback!'
+(b) Text should appear in a pop-up (id=popup) on the same page

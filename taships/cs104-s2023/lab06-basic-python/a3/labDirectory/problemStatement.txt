@@ -1,0 +1,57 @@
+--------------------- Lab 6 Activity 3 ---------------------
+                              General Details
+
+THEME: Functions and Memoization
+MAXIMUM MARKS: 6 (1.5 for each function)
+
+--------------------------------------------------------------------------
+                                References/Links
+
+1. math functions
+https://www.cuemath.com/numbers/factorial/
+https://www.cuemath.com/numbers/fibonacci-sequence/
+https://www.cuemath.com/algebra/binomial/
+https://encyclopediaofmath.org/wiki/Ackermann_function
+2. memoization
+https://www.geeksforgeeks.org/what-is-memoization-a-complete-tutorial/
+
+--------------------------------------------------------------------------
+                                Problem
+
+In this problem, we will be exploring recursive functions and their call records. There are
+four function signatures given to you. These include factorial, fibonacci, nCr and ackermann.
+
+You can find the mathematical definitions for these functions in the references given. You
+need to define these functions using recursion + base cases only. Do not use iterative methods
+or loops.
+
+In each of the functions, the first argument is a lookup table (lut), which is of the following
+format:
+lut is a dictionary whose keys are the input arguments to the function (for example in the case
+of factorial, lut[3] would be factorial(3), which is 6) and the values are the results of the
+function that is being executed. You need to populate this lut as and when you compute a new
+value of the function. Essentially, this lut is the cache that is used in memoization, and the
+length of this dictionary represents the height of the recursion call tree.
+
+The second argument of all functions is a call record (calls), which stores the following:
+calls is a dictionary whose keys are again the input arguments to the function and the values
+are the number of times the function was called with this argument (including the lookups).
+You would need to record the calls whenever you run the function with the argument for the
+first time, and whenever you lookup the value of the function for that argument henceforth.
+So this dictionary stores the call stack and symbolizes the recursion depth of the function.
+
+For the functions that take two arguments, you should use the pair of values as a key. For
+the recursive calls, keep the first two arguments as lut and calls itself.
+
+For example, when a call to factorial(3) ends, the lut should read as:
+{0:1, 1:1, 2:2, 3:6}
+And the calls should read as:
+{0:1, 1:1, 2:1, 3:1}
+
+This is because the calculation of factorial(3) requires values of factorials of 0,1 and 2.
+The number of calls made for these arguments is 1 each.
+
+You do not need to output anything. The outputs given in the out folder are the answer of the
+function for the given arguments, the number of arguments (or argument pairs) looked up or
+computed for the given arguments, and the total number of calls made to the function. As long
+as the lut and calls dictionaries are correctly populated, the evaluation should work.

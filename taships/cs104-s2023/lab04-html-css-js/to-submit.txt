@@ -1,0 +1,8 @@
+public_html/contact.html
+public_html/education.html
+public_html/hobbies.html
+public_html/index.html
+public_html/myimage.jpeg
+public_html/projects.html
+public_html/script.js
+public_html/style.css

@@ -1,0 +1,10 @@
+plots/plot0.png
+plots/plot1.png
+plots/plot2.png
+plots/plot3.png
+plots/plot4.png
+plots/plot5.png
+plots/plot6.png
+plots/plot7.png
+plots/plot8.png
+main.py
