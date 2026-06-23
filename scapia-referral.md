@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Scapia Travel Credit Card
-description: Zero forex markup • Airport benefits • Lifetime free • Travel rewards
 image: "/assets/img/scapia-referral.JPG"
 ---
 
