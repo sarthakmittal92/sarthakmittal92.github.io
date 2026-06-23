@@ -1,13 +1,9 @@
 ---
 layout: page
+title: Scapia Travel Credit Card
+description: Zero forex markup • Airport benefits • Lifetime free • Travel rewards
+image: ./assets/img/scapia-referral.JPG
 ---
-
-<html>
-<meta property="og:title" content="Scapia Travel Credit Card">
-<meta property="og:description" content="Zero forex markup • Airport benefits • Lifetime free • Travel rewards">
-<meta property="og:image" content="./assets/img/scapia-referral.JPG">
-<meta property="og:type" content="website">
-</html>
 
 [![scapia-referral](./assets/img/scapia-referral.JPG)](https://apply.scapia.cards/landing_page?referral_code=jd5ykb)
 
