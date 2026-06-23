@@ -9,7 +9,7 @@ share-img: "/assets/img/scapia-referral.JPG"
 [![scapia-referral](./assets/img/scapia-referral.JPG)](https://apply.scapia.cards/landing_page?referral_code=jd5ykb)
 
 Apply using any of the following:
-- 👇 Tap on the poster
+- ☝️ Tap on the poster
 - 📱 Scan the QR code above
 - 🔗 Click [here](https://apply.scapia.cards/landing_page?referral_code=jd5ykb) to apply
 
