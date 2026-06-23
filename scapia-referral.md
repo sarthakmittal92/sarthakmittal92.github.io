@@ -15,4 +15,4 @@ Apply using any of the following:
 
 Apply using my referral to be eligible for the Scapia referral rewards, subject to Scapia’s terms.
 
-_Note: Independent referral page. Not affiliated with, endorsed by, or sponsored by Scapia, Federal Bank, or BOBCARD. Benefits and eligibility are based on information available as of June 2026. Please refer to the official Scapia website for the latest terms and conditions._
+_Note: Independent referral page. Not affiliated with, endorsed by, or sponsored by Scapia, Federal Bank, BOBCARD, VISA or RuPay. Benefits and eligibility are based on information available as of June 2026. Please refer to the official Scapia website for the latest terms and conditions._
