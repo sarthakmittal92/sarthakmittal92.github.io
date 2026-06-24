@@ -13,7 +13,7 @@ Apply using any of the following:
 - 📱 Scan the QR code from another device
 - 🔗 [Click here](https://apply.scapia.cards/landing_page?referral_code=jd5ykb) to apply
 
-Apply using my referral to be eligible for Scapia referral rewards, subject to Scapia’s terms and conditions.
+Apply using my referral to be eligible for Scapia referral reward worth ₹200, subject to Scapia’s terms and conditions.
 
 _Note: Independent referral page. Not affiliated with, endorsed by, or sponsored by Scapia, Federal Bank, BOBCARD, VISA or RuPay. Benefits and eligibility are based on information available as of June 2026. Please refer to the official Scapia website for the latest terms and conditions._
 
